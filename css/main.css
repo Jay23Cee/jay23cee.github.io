@@ -458,7 +458,6 @@ h2 {
   max-width: 51em;
   margin-top: 1.5em;
   margin-bottom: 2em;
-  background: rgba(153, 5, 0, 0.959);
 }
 .about-me::after {
   content: "";
@@ -466,11 +465,6 @@ h2 {
   clear: both;
 }
 
-@media screen and (min-width: 62em) {
-  .about-me {
-    background: #002e6b !important;
-  }
-}
 .about-img {
   max-height: 23;
 }

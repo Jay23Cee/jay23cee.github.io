@@ -3,7 +3,7 @@
     @include  clearfix;
     margin-top:1.5em;
    margin-bottom: 2em;
-   background:rgba(153, 5, 0, 0.959);
+   
 
    
 
@@ -14,7 +14,7 @@ $media_size :62em;
 @media screen and (min-width:$media_size){
     
  .about-me{
-     background:rgb(0, 46, 107) !important;
+     
 
  }  
 }
