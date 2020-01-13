@@ -540,11 +540,6 @@ h2 {
   padding: 1em 0;
   background: #f0ecec;
 }
-@media (min-width: 50em) {
-  .portfolio h1 {
-    font-size: 3em;
-  }
-}
 
 .portfolio-items {
   display: flex;
@@ -619,11 +614,18 @@ h2 {
   .portfolio-items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 0.08em;
   }
-  @media (min-width: 30em) {
+  @media (min-width: 50em) {
     .portfolio-items {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, auto);
+      grid-template-columns: repeat(4, 12em);
+      grid-template-rows: repeat(2, 6em);
+      column-gap: 0.4em;
+      row-gap: 0.3em;
+      justify-content: center;
+      width: 90%;
+      margin: 0 auto;
+      max-width: 40;
     }
   }
 

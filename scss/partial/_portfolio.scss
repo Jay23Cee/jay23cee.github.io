@@ -3,12 +3,11 @@
     padding: 1em 0 ;
     background: $port-color;
 
-    @include mq{
 
-        h1{
-            font-size:3em;
-        }
-    }
+    //    h1{
+    //        font-size:3em;
+    //    }
+    
    
 
 }
@@ -119,21 +118,40 @@
 
 }
 
+
+
 @supports (display:grid){
      
-  
+    @include mq(){
+        .portfolio{
+            
+         
+        }
+
+    }
+
     .portfolio-items{
         display:grid;
         grid-template-columns:  repeat(2, 1fr);
+        gap: .08em;
+  
+      
+       // @include container($width: 47em);
+       
+
         
-        @include mq($width: 30em){
-            grid-template-columns: repeat(2,1fr);
-            grid-template-rows: repeat(2,auto);
+        @include mq{
+            grid-template-columns: repeat(4,12em);
+            grid-template-rows: repeat(2, 6em);
+            column-gap: .4em;
+            row-gap: .3em;
+            justify-content: center;
+            @include container($max-width:40);
             
-           
             
-         
-           
+            
+   
+
         }
      
         
