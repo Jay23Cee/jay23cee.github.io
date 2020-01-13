@@ -127,7 +127,7 @@
         grid-template-columns:  repeat(2, 1fr);
         
         @include mq($width: 30em){
-            grid-template-columns: repeat(4,2fr);
+            grid-template-columns: repeat(2,1fr);
             grid-template-rows: repeat(2,auto);
             
            
