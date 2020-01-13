@@ -620,7 +620,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  @media (min-width: 50em) {
+  @media (min-width: 30em) {
     .portfolio-items {
       grid-template-columns: repeat(4, 2fr);
       grid-template-rows: repeat(2, auto);
