@@ -123,10 +123,7 @@
 @supports (display:grid){
      
     @include mq(){
-        .portfolio{
-            
-         
-        }
+      
 
     }
 
@@ -140,7 +137,7 @@
        
 
         
-        @include mq($width:640px){
+        @include mq($width:768px){
             grid-template-columns: repeat(4,12em);
             grid-template-rows: repeat(2, 6em);
             column-gap: .4em;
