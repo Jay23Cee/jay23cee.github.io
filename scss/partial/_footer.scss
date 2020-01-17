@@ -10,7 +10,7 @@ footer {
     display:flex;
     justify-content: center;
     margin: 1.75em auto ;
-    margin-left:46%;
+    margin-left:44%;
     
     
 
@@ -57,13 +57,7 @@ footer {
     }
 
 
-    @include mq{
-       
-       .social-icon{
-           margin-left: 33%;
-           
-       } 
-    }
+  
 
 
 }
