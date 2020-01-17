@@ -759,4 +759,11 @@ footer {
   width: 25%;
 }
 
+@supports (display: grid) {
+  .social-icon {
+    display: grid;
+    grid-template-columns: repeat(3, 4em);
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

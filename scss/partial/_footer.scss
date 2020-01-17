@@ -11,6 +11,8 @@ footer {
     justify-content: center;
     margin: 1.75em auto ;
     margin-left:48%;
+    
+    
 
 
 
@@ -40,4 +42,14 @@ footer {
         margin: 2.25em auto;
         width:25%;
     }
+}
+
+@supports (display:grid){
+    .social-icon{
+        display: grid;
+        grid-template-columns: repeat(3, 4em);
+
+    }
+
+
 }
