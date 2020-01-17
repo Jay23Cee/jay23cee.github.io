@@ -50,7 +50,11 @@ footer {
         display: grid;
         grid-template-columns: repeat(3, 4em);
         grid-column-gap: .5em;
-
+        margin-left:47%;
+        
+        @include mq{
+            margin-left: 44%;
+        }
         
 
 
