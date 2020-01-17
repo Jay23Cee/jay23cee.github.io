@@ -765,6 +765,7 @@ footer {
     grid-template-columns: repeat(3, 4em);
     grid-column-gap: 0.5em;
   }
+
   @media (min-width: 50em) {
     .social-icon {
       margin-left: 33%;
