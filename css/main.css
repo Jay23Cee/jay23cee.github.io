@@ -736,7 +736,7 @@ footer {
   display: flex;
   justify-content: center;
   margin: 1.75em auto;
-  margin-left: 48%;
+  margin-left: 46%;
 }
 
 .social-icon {
@@ -763,7 +763,7 @@ footer {
   .social-icon {
     display: grid;
     grid-template-columns: repeat(3, 4em);
-    grid-column-gap: 0.1em;
+    grid-column-gap: 0.5em;
   }
 }
 
