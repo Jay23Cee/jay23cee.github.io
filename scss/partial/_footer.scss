@@ -51,6 +51,9 @@ footer {
         grid-template-columns: repeat(3, 4em);
         grid-column-gap: .5em;
         margin-left:47%;
+        margin-left: 46%;
+
+       
         
         @include mq{
             margin-left: 44%;
@@ -60,6 +63,18 @@ footer {
 
 
     }
+
+    #footer-follow{
+        margin-right: 5%;
+    }
+
+
+
+
+
+
+
+
 
 
   
