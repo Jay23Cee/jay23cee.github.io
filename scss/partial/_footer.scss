@@ -40,9 +40,11 @@ footer {
         display:block;
         height:1px;
         background: rgba($white, $alpha: 1.5);
-        margin: 2.25em auto;
+        margin: 2em auto;
+        margin-left: 20em;
         width:25%;
     }
+    margin-right: 1em;
 }
 
 @supports (display:grid){
