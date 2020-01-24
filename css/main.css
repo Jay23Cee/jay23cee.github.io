@@ -837,15 +837,16 @@ footer {
 
 .copyright {
   margin-right: 1em;
+  font-size: 0.8rem;
 }
 .copyright::before {
   content: "";
   display: block;
   height: 1px;
   background: white;
-  margin: 2em auto;
-  margin-left: 19.5em;
-  width: 22%;
+  margin-bottom: 2em;
+  margin-left: 30em;
+  width: 26%;
 }
 
 @supports (display: grid) {
