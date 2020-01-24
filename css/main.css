@@ -321,6 +321,7 @@ body {
   line-height: 1.6;
   background: #FFFFFF;
   font-size: 0.875rem;
+  overflow-x: hidden;
 }
 @media (min-width: 50em) {
   body {
@@ -363,6 +364,88 @@ h2 {
   }
 }
 
+.menu-button {
+  position: absolute;
+  top: 2em;
+  left: 4em;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 40%;
+  z-index: 10;
+  transform: translateX(-100%);
+  transition: transform ease-in 240ms;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: spacing-around;
+  align-items: stretch;
+  background: #03AFC2;
+}
+
+nav li {
+  text-align: center;
+}
+nav li:not(:last-of-type) {
+  border-bottom: 1px solid #050a4b;
+}
+
+nav li :hover {
+  background: rgba(5, 10, 75, 0.5);
+}
+
+nav a {
+  display: inline-block;
+  font-family: "Six Caps", sans-serif;
+  font-size: 4rem;
+  letter-spacing: 0.15em;
+  color: #050a4b;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 400;
+  text-decoration: none;
+  padding: calc(100vh/8 ) 0;
+  line-height: 0;
+  width: 100%;
+}
+
+.close-icon {
+  display: none;
+}
+
+.nav-is-open {
+  height: 100vh;
+  overflow-y: hidden;
+}
+.nav-is-open nav {
+  transform: translateX(0);
+}
+.nav-is-open .close-icon {
+  display: block;
+}
+.nav-is-open .container-all {
+  transform: translateX(55%);
+}
+.nav-is-open .menu-icon {
+  display: none;
+}
+.nav-is-open .menu-button {
+  transform: translateX(-10%);
+}
+
 .welcome {
   background-image: url(../img/triangle.jpg);
   background-size: cover;
@@ -371,6 +454,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .welcome h1 {
   font-size: 2.5rem;
@@ -562,7 +646,7 @@ h2 {
 }
 .portfolio-item:hover figcaption, .portfolio-item:focus figcaption {
   top: 0 !important;
-  background: blue;
+  background: rgba(168, 165, 0, 0.993);
 }
 
 .portfolio-item figcaption {
@@ -575,6 +659,7 @@ h2 {
   background: green;
   color: white;
   text-align: left;
+  font-size: 0.2em;
   display: flex;
   flex-direction: column;
   transition: top ease-in-out 250ms;

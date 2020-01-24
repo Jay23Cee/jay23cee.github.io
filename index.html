@@ -13,24 +13,38 @@
 
 <body>
 
+  
 
-  <!--
   <nav>
     <ul>
-      <li><a href="#home"></a></li>
-      <li><a href="#about"></a></li>
-      <li><a href="#portfolio"></a></li>
-      <li><a href="#contact"></a></li>
+      <li><a href="#home">home</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#portfolio">portfolio</a></li>
+      <li><a href="#contact">contact</a></li>
     </ul>
   </nav>
-      <button class="menu-button"></button class="Main-Menu">
+     
+<div class="container-all">
+  <div class="welcome" id='home'>
 
--->
-  <div class="welcome">
+    <button class="menu-button">    
+      <svg class="menu-icon" x="0px" y="0px"
+      viewBox="0 0 512 512"  width='30' height='27' ">
+   <g>
+     <rect y="48" width="512" height="37"/>
+     <rect y="176" width="512" height="43"/>
+     <rect x="-3" y="301.5" width="518" height="37"/>
+   </g>
+   </svg>
+
+   <svg  class="close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width='30' height='27' "><path d="M256 90c44.3 0 86 17.3 117.4 48.6C404.7 170 422 211.7 422 256s-17.3 86-48.6 117.4C342 404.7 300.3 422 256 422s-86-17.3-117.4-48.6C107.3 342 90 300.3 90 256s17.3-86 48.6-117.4C170 107.3 211.7 90 256 90m0-42C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48z"/><path d="M360 330.9L330.9 360 256 285.1 181.1 360 152 330.9l74.9-74.9-74.9-74.9 29.1-29.1 74.9 74.9 74.9-74.9 29.1 29.1-74.9 74.9z"/></svg>
+
+    </button>
+    
     <h1>Welcome to my  <span> Portfolio</span></h1>
   </div>
 
-  <section class="intro">
+  <section class="intro" id='about'>
 
     <div class="intro-left">
       <img src="img/laptop1.jpg" alt="a laptop on a wood table">  
@@ -51,7 +65,7 @@
 
 
 
-  <section class="about-me">
+  <section class="about-me" id='about'>
 
     <img class ='about-img'src="img/jc.jpg" alt="a picture of Jackson Garcia">
 
@@ -73,7 +87,7 @@
 
   </section>
 
-  <section class="portfolio">
+  <section class="portfolio" id = 'portfolio'>
 
     <h1>My Work</h1>
 
@@ -146,7 +160,7 @@
 
 
 
-  <section class="contact">
+  <section class="contact" id ='contact'>
     <h1>Contact Me</h1>
     <form action="">
       <label  class="name" clas="name">Name:
@@ -187,6 +201,9 @@
     <p class="copyright">Copyright © 2020 Jackson's Porfolio</p>
   </footer>
 
+</div>
+
+  <script src="js/nav.js"></script>
 </body>
 
 </imgsrc="img>

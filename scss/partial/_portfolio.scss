@@ -50,7 +50,7 @@
     &:focus {
         figcaption{
             top:0 !important;
-            background:blue;
+            background:rgba(168, 165, 0, 0.993);;
         }
 
        
@@ -70,6 +70,7 @@
     background: green;
     color:white;
     text-align:left;
+    font-size: .2em;
     display:flex;
     flex-direction: column;
     transition: top ease-in-out 250ms;
