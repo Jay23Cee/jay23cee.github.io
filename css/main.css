@@ -384,7 +384,7 @@ nav {
   left: 0;
   right: 40%;
   z-index: 10;
-  height: 10vh;
+  overflow-y: hidden !important;
   transform: translateX(-100%);
   transition: transform ease-in 240ms;
 }
