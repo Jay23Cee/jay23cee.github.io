@@ -431,8 +431,9 @@ nav a {
 }
 
 .nav-is-open {
-  height: 90vh;
+  height: 100vh;
   overflow-y: hidden;
+  overflow-X: hidden;
 }
 .nav-is-open nav {
   transform: translateX(0);
