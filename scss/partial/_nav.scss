@@ -15,7 +15,7 @@ nav{
     left: 0;
     right: 40%;
     z-index: 10;
-    overflow-y: hidden !important;
+  
     
 
 
@@ -70,8 +70,7 @@ nav a {
 .nav-is-open{
 
     //height:20vh;
-    overflow-y:hidden;
-    overflow-X:hidden;
+
 
     nav{
         transform: translateX(0);
@@ -89,7 +88,7 @@ nav a {
     .container-all{
         transform: translateX(55%);
         overflow-x: hidden !important;
-        overflow-y: hidden;
+        overflow-y: hidden !important;
         
     }
 
