@@ -384,7 +384,6 @@ nav {
   left: 0;
   right: 40%;
   z-index: 10;
-  overflow-y: hidden !important;
   transform: translateX(-100%);
   transition: transform ease-in 240ms;
 }
@@ -415,14 +414,14 @@ nav li :hover {
 nav a {
   display: inline-block;
   font-family: "Six Caps", sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   letter-spacing: 0.15em;
   color: #050a4b;
   text-transform: uppercase;
   line-height: 1;
   font-weight: 400;
   text-decoration: none;
-  padding: calc(100vh/8 ) 0;
+  padding: calc(90vh/8 ) 0;
   line-height: 0;
   width: 100%;
 }
@@ -431,10 +430,6 @@ nav a {
   display: none;
 }
 
-.nav-is-open {
-  overflow-y: hidden;
-  overflow-X: hidden;
-}
 .nav-is-open nav {
   transform: translateX(0);
 }
@@ -444,7 +439,7 @@ nav a {
 .nav-is-open .container-all {
   transform: translateX(55%);
   overflow-x: hidden !important;
-  overflow-y: hidden;
+  overflow-y: hidden !important;
 }
 .nav-is-open .menu-icon {
   display: none;

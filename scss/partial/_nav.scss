@@ -20,7 +20,7 @@ nav{
 
 
     transform: translateX(-100%);
-  transition: transform ease-in 240ms;
+    transition: transform ease-in 240ms;
    
 }
 
@@ -54,9 +54,9 @@ nav li :hover{
 
 nav a {
     display: inline-block;
-    @include sans-serif($fs:4rem, $color: $dark-blue);
+    @include sans-serif($fs:3rem, $color: $dark-blue);
     text-decoration:none;
-    padding: calc(100vh/8 ) 0;
+    padding: calc(90vh/8 ) 0;
     line-height: 0;
     width:100%;
     
