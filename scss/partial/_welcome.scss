@@ -26,7 +26,7 @@
       
 
        span{
-        @include sans-serif($fs:7.5rem, $color: $t-color);
+        @include sans-serif($fs:6.5rem, $color: $t-color);
         display:block;
 
         @include mq{

@@ -321,12 +321,16 @@ body {
   line-height: 1.6;
   background: #FFFFFF;
   font-size: 0.875rem;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 @media (min-width: 50em) {
   body {
     font-size: 1.125rem;
   }
+}
+
+.container-all {
+  overflow-x: hidden;
 }
 
 img {
@@ -427,7 +431,7 @@ nav a {
 }
 
 .nav-is-open {
-  height: 100vh;
+  height: 90vh;
   overflow-y: hidden;
 }
 .nav-is-open nav {
@@ -438,6 +442,8 @@ nav a {
 }
 .nav-is-open .container-all {
   transform: translateX(55%);
+  overflow-x: hidden !important;
+  overflow-y: hidden;
 }
 .nav-is-open .menu-icon {
   display: none;
@@ -470,7 +476,7 @@ nav a {
 }
 .welcome h1 span {
   font-family: "Six Caps", sans-serif;
-  font-size: 7.5rem;
+  font-size: 6.5rem;
   letter-spacing: 0.15em;
   color: rgba(201, 80, 0, 0.568);
   text-transform: uppercase;
