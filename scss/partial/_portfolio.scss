@@ -82,12 +82,12 @@
 
 .portfolio-title{
     color: $white;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     align-self: flex-end;
     margin-bottom: auto;
 
     .featured & {
-        font-size:4rem;
+        font-size:2rem;
     }
 }
 
@@ -162,7 +162,7 @@
 
     .featured{
         .portfolio-title{
-            font-size: 5rem;
+            font-size: 3.5rem;
         }
    
         .portfolio-desc{

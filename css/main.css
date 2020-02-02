@@ -384,6 +384,7 @@ nav {
   left: 0;
   right: 40%;
   z-index: 10;
+  height: 10vh;
   transform: translateX(-100%);
   transition: transform ease-in 240ms;
 }
@@ -431,7 +432,6 @@ nav a {
 }
 
 .nav-is-open {
-  height: 100vh;
   overflow-y: hidden;
   overflow-X: hidden;
 }
@@ -674,12 +674,12 @@ nav a {
 
 .portfolio-title {
   color: #FFFFFF;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   align-self: flex-end;
   margin-bottom: auto;
 }
 .featured .portfolio-title {
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .portfolio-desc {
@@ -727,7 +727,7 @@ nav a {
   }
 
   .featured .portfolio-title {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
   .featured .portfolio-desc {
     display: block;

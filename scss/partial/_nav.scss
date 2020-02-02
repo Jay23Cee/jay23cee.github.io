@@ -15,6 +15,7 @@ nav{
     left: 0;
     right: 40%;
     z-index: 10;
+    height: 10vh;
     
 
 
@@ -68,7 +69,7 @@ nav a {
 
 .nav-is-open{
 
-    height:100vh;
+    //height:20vh;
     overflow-y:hidden;
     overflow-X:hidden;
 
