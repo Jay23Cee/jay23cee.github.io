@@ -74,6 +74,8 @@ nav a {
 
     nav{
         transform: translateX(0);
+        overflow-x: hidden !important;
+        overflow-y: hidden !important;
         
        
     }
@@ -89,6 +91,7 @@ nav a {
         transform: translateX(55%);
         overflow-x: hidden !important;
         overflow-y: hidden !important;
+        
         
     }
 
