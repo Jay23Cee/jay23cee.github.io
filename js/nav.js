@@ -9,8 +9,11 @@ const bodyClassList = document.body.classList
 
 navToggle.addEventListener('click', _ =>{
     contAllStyle.transition = 'transform 250ms ease-in-out'
+
+    
   
     bodyClassList.toggle('nav-is-open')
+    
    
 })
 
