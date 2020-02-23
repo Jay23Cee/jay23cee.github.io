@@ -384,6 +384,8 @@ nav {
   left: 0;
   right: 40%;
   z-index: 10;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
   transform: translateX(-100%);
   transition: transform ease-in 240ms;
 }
@@ -432,6 +434,8 @@ nav a {
 
 .nav-is-open nav {
   transform: translateX(0);
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
 }
 .nav-is-open .close-icon {
   display: block;
@@ -440,6 +444,7 @@ nav a {
   transform: translateX(55%);
   overflow-x: hidden !important;
   overflow-y: hidden !important;
+  position: fixed;
 }
 .nav-is-open .menu-icon {
   display: none;
