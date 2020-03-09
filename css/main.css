@@ -645,6 +645,7 @@ nav a {
   overflow: hidden;
   flex: 1 1 20rem;
   margin: 0em 0em;
+  border: solid 7px rgba(168, 172, 173, 0.712);
 }
 .portfolio-item img {
   display: block;
@@ -653,7 +654,7 @@ nav a {
 }
 .portfolio-item:hover figcaption, .portfolio-item:focus figcaption {
   top: 0 !important;
-  background: rgba(168, 165, 0, 0.993);
+  background: rgba(0, 15, 231, 0.507);
 }
 
 .portfolio-item figcaption {
@@ -663,7 +664,6 @@ nav a {
   right: 0;
   left: 0;
   padding: 2em;
-  background: green;
   color: white;
   text-align: left;
   font-size: 0.2em;
