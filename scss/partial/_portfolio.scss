@@ -89,7 +89,7 @@
 
 .portfolio-title{
     color: $white;
-    font-size: 100 rem;
+    //font-size: 3.5 em;
     align-self: flex-end;
     margin-bottom: auto;
 
@@ -101,8 +101,6 @@
 
 .portfolio-desc{
     display:none !important;
-    
-
 
 }
 
@@ -121,7 +119,6 @@
         width: 1em;
         margin-left: 2em;
         
-
     }
 
 }
@@ -130,39 +127,23 @@
 
 @supports (display:grid){
      
-    @include mq(){
-      
-
-    }
-
     .portfolio-items{
         display:grid;
         grid-template-columns:  repeat(2, 1fr);
         gap: .08em;
         
-       
 
-  
-      
        // @include container($width: 47em);
        
-
-        
-        @include mq($width:768px){
+     @include mq($width:768px){
             grid-template-columns: repeat(4,12em);
             grid-template-rows: repeat(2, 6em);
             column-gap: .4em;
             row-gap: .3em;
             justify-content: center;
             @include container($max-width:40);
-            
-            
-            
-   
 
-        }
-     
-        
+        }        
     }
 
     .portfolio-item.featured{
@@ -170,13 +151,18 @@
         grid-row : 1/ span 2;
     }
 
+
+    .portfolio-title{
+        font-size: 1.4rem;
+    }
+
     .featured{
         .portfolio-title{
-            font-size: 3.5rem;
+            font-size: 2.2rem;
         }
    
         .portfolio-desc{
-           font-size: 1.3rem;
+           font-size: .9rem;
            display: inline !important;
         }
     }
@@ -252,16 +238,18 @@
 }
 
 
+// MODAL ! 
 .portfolio-title-box{
     background:rgba($accent, .75);
     padding: 3em 0 3em 3em;
-    color: white;
+    color: $white;
     width: 70%;
 
+    //MODAL TITLE
     .portfolio-title{
         font-size: 3.5rem; 
         display: inline-blocks;
-    
+        
         &::after {
             content: '';
             display:block;
@@ -271,10 +259,11 @@
             width: 100%;
         }
     }
-}
+
 
 .portfolio-subtitle{
-    font-size: .5rem;
+    font-size: 1.5rem;
+   
 }
 
 .portfolio-content{
@@ -318,4 +307,7 @@
 @keyframes modalOut{
     0% {opacity :1;}
     100% { opacity: 0;}
+}
+
+
 }
