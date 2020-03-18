@@ -135,11 +135,14 @@
 
        // @include container($width: 47em);
        
-     @include mq($width:768px){
+     @include mq($width:800px){   //768
             grid-template-columns: repeat(4,12em);
             grid-template-rows: repeat(2, 6em);
             column-gap: .1em;
             row-gap: .3em;
+
+            
+
             justify-content: center;
             @include container($max-width:40);
 
