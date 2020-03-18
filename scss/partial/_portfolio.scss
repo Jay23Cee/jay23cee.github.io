@@ -130,7 +130,7 @@
     .portfolio-items{
         display:grid;
         grid-template-columns:  repeat(2, 1fr);
-        gap: .08em;
+        gap: .02em;
         
 
        // @include container($width: 47em);

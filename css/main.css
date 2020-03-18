@@ -705,7 +705,7 @@ nav a {
   .portfolio-items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.08em;
+    gap: 0.02em;
   }
   @media (min-width: 768px) {
     .portfolio-items {
