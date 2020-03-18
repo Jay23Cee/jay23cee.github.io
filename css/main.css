@@ -709,10 +709,12 @@ nav a {
   }
   @media (min-width: 768px) {
     .portfolio-items {
-      grid-template-columns: repeat(4, 12em);
+      grid-template-columns: repeat(4, 10.2em);
       grid-template-rows: repeat(2, 6em);
       column-gap: 0.1em;
       row-gap: 0.3em;
+      padding-left: 2.1em;
+      padding-right: 4em;
       justify-content: center;
       width: 90%;
       margin: 0 auto;
