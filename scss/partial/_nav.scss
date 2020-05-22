@@ -16,6 +16,8 @@ nav{
     left: 0;
     right: 40%;
     z-index: 10;
+
+    width:59%;
   
     overflow-x: hidden !important;
     overflow-y: hidden !important;
@@ -25,6 +27,11 @@ nav{
     transform: translateX(-100%);
     transition: transform ease-in 240ms;
    
+
+
+    @include mq{
+        width:23%;
+    }
 }
 
 nav ul{
@@ -37,6 +44,7 @@ nav ul{
     justify-content:spacing-around;
     align-items:stretch;
     background:$accent;
+
 }
 
 nav li{
@@ -96,8 +104,14 @@ nav a {
         overflow-y: hidden !important;
         position: fixed;
         
+    
+
+    
         
     }
+
+
+
 
     .menu-icon{
         display:none;
@@ -107,6 +121,55 @@ nav a {
         transform: translateX(-10%);
         
     }
+
+
+    nav{
+        transform: translateX(0);
+        overflow-x: hidden !important;
+        overflow-y: hidden !important;
+        
+       
+    }
+
+    
+
+    .close-icon{
+        display:block;
+        
+    }
+
+    .container-all{
+        transform: translateX(55%);
+        overflow-x: hidden !important;
+        overflow-y: hidden !important;
+        position: fixed;
+        
+    
+
+        
+    }
+
+    @include mq{
+
+        
+    
+
+    
+        .container-all{
+            transform: translateX(20%);
+            overflow-x: hidden !important;
+            overflow-y: hidden !important;
+            position: fixed;
+            
+        
+    
+            
+        }
+
+    }
+
+
+
 }
 
 

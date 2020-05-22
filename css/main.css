@@ -384,10 +384,16 @@ nav {
   left: 0;
   right: 40%;
   z-index: 10;
+  width: 59%;
   overflow-x: hidden !important;
   overflow-y: hidden !important;
   transform: translateX(-100%);
   transition: transform ease-in 240ms;
+}
+@media (min-width: 50em) {
+  nav {
+    width: 23%;
+  }
 }
 
 nav ul {
@@ -451,6 +457,28 @@ nav a {
 }
 .nav-is-open .menu-button {
   transform: translateX(-10%);
+}
+.nav-is-open nav {
+  transform: translateX(0);
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+}
+.nav-is-open .close-icon {
+  display: block;
+}
+.nav-is-open .container-all {
+  transform: translateX(55%);
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+  position: fixed;
+}
+@media (min-width: 50em) {
+  .nav-is-open .container-all {
+    transform: translateX(20%);
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    position: fixed;
+  }
 }
 
 .welcome {
