@@ -613,7 +613,7 @@ nav a {
     grid-column: port-start/img-end;
     grid-row: 1/2;
   }
-  @media (min-width: 50em) {
+  @media (min-width: 768px) {
     .about-img {
       grid-row: 1/4;
     }
@@ -624,7 +624,7 @@ nav a {
     grid-row: 1/2;
     align-self: end;
   }
-  @media (min-width: 50em) {
+  @media (min-width: 768px) {
     .about-title {
       margin-left: 1em;
     }
@@ -637,7 +637,7 @@ nav a {
 .about-text {
     grid-column: port-start/port-end;
   }
-  @media (min-width: 50em) {
+  @media (min-width: 768px) {
     .about-subtitle,
 .about-text {
       grid-column: image-end/port-end;
