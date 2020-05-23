@@ -136,8 +136,8 @@
        // @include container($width: 47em);
        
      @include mq($width:768px){   //768
-            grid-template-columns: repeat(4,10.2em);  // 4 -> 2
-            grid-template-rows: repeat(2, 6em);
+            grid-template-columns: repeat(4,18.2em);  // 4 -> 2
+            grid-template-rows: repeat(2, 14em);
             column-gap: .1em;
             row-gap: .3em;
             padding-left: 2.1em; 
@@ -180,6 +180,8 @@
             }
         }
     }
+
+
 
 }
 
