@@ -737,16 +737,19 @@ nav a {
   }
   @media (min-width: 768px) {
     .portfolio-items {
-      grid-template-columns: repeat(4, 18.2em);
-      grid-template-rows: repeat(2, 14em);
+      grid-template-columns: repeat(4, 10.2em);
+      grid-template-rows: repeat(2, 13em);
       column-gap: 0.1em;
       row-gap: 0.3em;
-      padding-left: 2.1em;
-      padding-right: 4em;
+      padding-left: 3.1em;
+      padding-right: 1em;
       justify-content: center;
       width: 90%;
       margin: 0 auto;
       max-width: 40;
+    }
+    .portfolio-items img {
+      height: 100%;
     }
   }
 
@@ -856,18 +859,6 @@ nav a {
   margin: 2em calc(55% - 50vw);
   height: 20vh;
   object-fit: cover;
-}
-@media (min-width: 50em) {
-  .portfolio-title-box .portfolio-pull-right {
-    width: 65%;
-    float: right;
-    margin-left: 2em;
-  }
-  .portfolio-title-box .portfolio-pull-right {
-    width: 65%;
-    float: right;
-    margin-left: 2em;
-  }
 }
 @keyframes modalIn {
   0% {

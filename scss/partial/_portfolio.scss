@@ -19,6 +19,7 @@
     display:flex;
     flex-wrap:wrap;
   @include container($max-width:47em);
+
     
 
 
@@ -33,7 +34,7 @@
     flex: 1 1 20rem;
     margin:  0em 0em;
     border: solid 7px rgba(168, 172, 173, 0.712);
-      
+    
 
 
 
@@ -136,18 +137,20 @@
        // @include container($width: 47em);
        
      @include mq($width:768px){   //768
-            grid-template-columns: repeat(4,18.2em);  // 4 -> 2
-            grid-template-rows: repeat(2, 14em);
+            grid-template-columns: repeat(4,10.4em);  // 4 -> 2
+            grid-template-rows: repeat(2, 13em);
             column-gap: .1em;
             row-gap: .3em;
-            padding-left: 2.1em; 
-            padding-right: 4em;           
+            padding-left: 3.1em; 
+            padding-right: 1em;           
 
             justify-content: center;
             @include container($max-width:40);
+          
 
-
-
+            img{
+                height:100%;
+            }
 
         }        
     }
@@ -297,21 +300,21 @@
     object-fit:cover;
 }
 
-@include mq {
+// @include mq() {
 
-.portfolio-pull-right{
-    width: 65%;
-    float: right;
-    margin-left:  2em;
-}
+// .portfolio-pull-right{
+//     width: 65%;
+//     float: right;
+//     margin-left:  200em;
+// }
 
-.portfolio-pull-right{
-    width: 65%;
-    float: right;
-    margin-left: 2em;
-}
+// .portfolio-pull-right{
+//     width: 65%;
+//     float: right;
+//     margin-left: 2em;
+// }
 
-}
+// }
 
 
 @keyframes modalIn{
