@@ -741,7 +741,7 @@ nav a {
       grid-template-rows: repeat(2, 9em);
       column-gap: 0.1em;
       row-gap: 0.3em;
-      padding-left: 3.1em;
+      padding-left: 0.91em;
       padding-right: 1em;
       justify-content: center;
       width: 90%;
