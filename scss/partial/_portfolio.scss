@@ -138,7 +138,7 @@
        
      @include mq($width:768px){   //768
             grid-template-columns: repeat(4,10.4em);  // 4 -> 2
-            grid-template-rows: repeat(2, 13em);
+            grid-template-rows: repeat(2, 9em);
             column-gap: .1em;
             row-gap: .3em;
             padding-left: 3.1em; 
