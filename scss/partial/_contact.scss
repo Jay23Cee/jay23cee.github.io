@@ -22,6 +22,8 @@ form{
            font-size:.8rem;
            input{
                height:1em;
+               
+
            }
         display:grid;
         grid-column-gap: .1em;
@@ -82,5 +84,8 @@ textarea{
 
     @include sans-serif($fs:2rem, $color: $white);
     padding: .5em 1.5em;
+    line-height: 0.9px
+
+    
 
 }
