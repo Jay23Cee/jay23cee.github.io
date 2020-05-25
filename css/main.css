@@ -556,21 +556,24 @@ nav a {
 
 .intro-middle {
   background: #050a4b;
-  padding: 2.5em 2vw;
+  padding: 2.2em 2vw;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .intro-middle ul {
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
   font-size: 13px;
+  text-align: left;
+  padding-inline-start: 8px;
 }
 @media (min-width: 768px) {
   .intro-middle ul {
     font-size: 16px;
+    text-align: center;
   }
 }
 
