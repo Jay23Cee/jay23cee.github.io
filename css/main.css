@@ -567,7 +567,7 @@ nav a {
   -webkit-columns: 3;
   -moz-columns: 3;
   font-size: 13px;
-  text-align: left;
+  text-align: center;
   padding-inline-start: 8px;
 }
 @media (min-width: 768px) {
