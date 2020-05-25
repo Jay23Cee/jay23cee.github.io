@@ -550,7 +550,7 @@ nav a {
 @supports (display: grid) {
   .intro {
     display: grid;
-    grid-template-columns: minmax(8em, 1fr) minmax(auto, 40em) minmax(8em, 1fr);
+    grid-template-columns: minmax(6.5em, 1fr) minmax(auto, 40em) minmax(6.5em, 1fr);
   }
 }
 
