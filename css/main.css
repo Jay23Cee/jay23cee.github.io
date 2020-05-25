@@ -562,6 +562,17 @@ nav a {
   flex-direction: column;
   justify-content: center;
 }
+.intro-middle ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  font-size: 13px;
+}
+@media (min-width: 768px) {
+  .intro-middle ul {
+    font-size: 16px;
+  }
+}
 
 .intro-left img,
 .intro-right img {
