@@ -892,6 +892,7 @@ nav a {
 @media (min-width: 768px) {
   .portfolio-content {
     padding-left: 2px;
+    padding-bottom: 25px;
   }
   .portfolio-content .portfolio-full-width {
     width: calc(84vw - 3em);

@@ -327,6 +327,7 @@
     @include mq($width:768px){
         // @include mq() {
         padding-left: 2px;
+        padding-bottom: 15px;
         
         .portfolio-full-width{
             width: calc(84vw - 3em);
