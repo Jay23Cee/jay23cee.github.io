@@ -831,6 +831,11 @@ nav a {
   background-size: cover;
   background-position: center;
 }
+@media (min-width: 768px) {
+  .portfolio-header {
+    margin-top: 8px;
+  }
+}
 
 .header-one {
   background-image: url(../img/portfolio-01.jpg);
@@ -885,17 +890,21 @@ nav a {
   padding-bottom: 2em;
 }
 @media (min-width: 768px) {
+  .portfolio-content {
+    padding-left: 22px;
+  }
   .portfolio-content .portfolio-full-width {
-    width: calc(100vw - 4em);
+    width: calc(95vw - 3em);
     max-width: initial;
     margin: 2em calc(55% - 50vw);
+    padding-left: 50px;
     height: 20vh;
     object-fit: cover;
   }
   .portfolio-content .portfolio-pull-right {
     width: 35%;
     float: left;
-    margin-left: em;
+    margin-left: 16em;
   }
   .portfolio-content .portfolio-pull-left {
     width: 35%;

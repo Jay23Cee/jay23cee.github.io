@@ -241,13 +241,19 @@
 .portfolio-header{
     text-align : left;
     padding: 5em 0;
+
     margin-bottom:  2em;
     background-size: cover;
     background-position: center;
+
+    @include mq($width: 768px){
+        margin-top:8px;
+    }
 }
 
 .header-one{
     background-image: url(../img/portfolio-01.jpg);
+    
 
 }
 
@@ -317,11 +323,13 @@
 
     @include mq($width:768px){
         // @include mq() {
-
+        padding-left: 22px;
+        
         .portfolio-full-width{
-            width: calc(100vw - 4em);
+            width: calc(95vw - 3em);
             max-width: initial;
             margin: 2em calc(55% - 50vw);
+            padding-left: 50px;
             height: 20vh;
             object-fit:cover;
         }
