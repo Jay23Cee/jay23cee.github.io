@@ -247,7 +247,10 @@
     background-position: center;
 
     @include mq($width: 768px){
-        margin-top:8px;
+        margin-top:2px;
+        
+       
+        ;
     }
 }
 
@@ -323,10 +326,10 @@
 
     @include mq($width:768px){
         // @include mq() {
-        padding-left: 22px;
+        padding-left: 2px;
         
         .portfolio-full-width{
-            width: calc(95vw - 3em);
+            width: calc(84vw - 3em);
             max-width: initial;
             margin: 2em calc(55% - 50vw);
             padding-left: 50px;
