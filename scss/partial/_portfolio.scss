@@ -259,13 +259,14 @@
 
 // MODAL ! 
 .portfolio-title-box{
-    background:rgba($accent, .75);
-    padding: 3em 0 3em 3em;
+    background:rgba(rgb(2, 77, 138), .75);
+    padding: 2em 0em 3em 3em;
     color: $white;
     width: 70%;
 
     //MODAL TITLE
     .portfolio-title{
+        
         font-size: 3.5rem; 
         display: inline-blocks;
         
@@ -285,36 +286,10 @@
    
 }
 
-.portfolio-content{
-    text-align: left;
-    width: 85%;
-    margin: 0 auto;
-    padding-bottom: 2em;
-}
 
-.portfolio-full-width{
-    width: calc(100vw - 4em);
-    max-width: initial;
-    margin: 2em calc(55% - 50vw);
-    height: 20vh;
-    object-fit:cover;
-}
 
-// @include mq() {
 
-// .portfolio-pull-right{
-//     width: 65%;
-//     float: right;
-//     margin-left:  200em;
-// }
 
-// .portfolio-pull-right{
-//     width: 65%;
-//     float: right;
-//     margin-left: 2em;
-// }
-
-// }
 
 
 @keyframes modalIn{
@@ -329,4 +304,42 @@
 }
 
 
+}
+
+.portfolio-content{
+    text-align: left;
+    width: 85%;
+    // 
+    margin-top: 20px;
+    
+    padding-bottom: 2em;
+
+
+    @include mq($width:768px){
+        // @include mq() {
+
+        .portfolio-full-width{
+            width: calc(100vw - 4em);
+            max-width: initial;
+            margin: 2em calc(55% - 50vw);
+            height: 20vh;
+            object-fit:cover;
+        }
+
+.portfolio-pull-right{
+    width: 35%;
+    float: left;
+    margin-left:  16em;
+}
+
+.portfolio-pull-left{
+    width: 35%;
+    float: right;
+    margin-left: 2em;
+}
+
+// }
+
+    }
+   
 }

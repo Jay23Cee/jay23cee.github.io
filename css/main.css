@@ -841,8 +841,8 @@ nav a {
 }
 
 .portfolio-title-box {
-  background: rgba(3, 175, 194, 0.75);
-  padding: 3em 0 3em 3em;
+  background: rgba(2, 77, 138, 0.75);
+  padding: 2em 0em 3em 3em;
   color: #FFFFFF;
   width: 70%;
 }
@@ -861,19 +861,6 @@ nav a {
 .portfolio-title-box .portfolio-subtitle {
   font-size: 1.5rem;
 }
-.portfolio-title-box .portfolio-content {
-  text-align: left;
-  width: 85%;
-  margin: 0 auto;
-  padding-bottom: 2em;
-}
-.portfolio-title-box .portfolio-full-width {
-  width: calc(100vw - 4em);
-  max-width: initial;
-  margin: 2em calc(55% - 50vw);
-  height: 20vh;
-  object-fit: cover;
-}
 @keyframes modalIn {
   0% {
     opacity: 0;
@@ -888,6 +875,32 @@ nav a {
   }
   100% {
     opacity: 0;
+  }
+}
+
+.portfolio-content {
+  text-align: left;
+  width: 85%;
+  margin-top: 20px;
+  padding-bottom: 2em;
+}
+@media (min-width: 768px) {
+  .portfolio-content .portfolio-full-width {
+    width: calc(100vw - 4em);
+    max-width: initial;
+    margin: 2em calc(55% - 50vw);
+    height: 20vh;
+    object-fit: cover;
+  }
+  .portfolio-content .portfolio-pull-right {
+    width: 35%;
+    float: left;
+    margin-left: em;
+  }
+  .portfolio-content .portfolio-pull-left {
+    width: 35%;
+    float: right;
+    margin-left: 2em;
   }
 }
 
