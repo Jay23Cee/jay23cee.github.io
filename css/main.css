@@ -800,6 +800,7 @@ nav a {
   box-shadow: 0 0 0 3em rbga black, 0.5;
   overflow-y: scroll;
   overflow-x: hidden;
+  border-style: solid;
   display: none;
 }
 .portfolio-modal.is-open {
