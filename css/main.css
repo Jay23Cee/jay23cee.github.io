@@ -505,7 +505,7 @@ nav a {
 }
 .welcome h1 span {
   font-family: "Georgia", sans-serif;
-  font-size: 6.5rem;
+  font-size: 3.5rem;
   letter-spacing: 0.15em;
   color: rgba(201, 80, 0, 0.568);
   text-transform: uppercase;
@@ -550,7 +550,7 @@ nav a {
 @supports (display: grid) {
   .intro {
     display: grid;
-    grid-template-columns: minmax(7.5em, 1fr) minmax(auto, 40em) minmax(13.5em, 1fr);
+    grid-template-columns: minmax(6.2em, 1fr) minmax(auto, 40em) minmax(13.5em, 1fr);
   }
 }
 
