@@ -511,7 +511,6 @@ nav a {
   text-transform: uppercase;
   line-height: 1;
   font-weight: 400;
-  display: block;
 }
 @media (min-width: 50em) {
   .welcome h1 span {
@@ -530,6 +529,15 @@ nav a {
 }
 .welcome h1::after {
   margin: 2em auto 0;
+}
+.welcome span {
+  transition: all 6.5s ease-out;
+}
+.welcome span.fade {
+  transform: translateY(20px);
+}
+.welcome span.fade .fade {
+  transform: translateY(0px);
 }
 
 .intro {
