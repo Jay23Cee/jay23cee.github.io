@@ -257,6 +257,7 @@
 .header-one{
     background-image: url(../img/portfolio-01.jpg);
     
+ 
 
 }
 
@@ -334,8 +335,10 @@
             max-width: initial;
             margin: 2em calc(55% - 50vw);
             padding-left: 50px;
-            height: 20vh;
-            object-fit:cover;
+            height: 26vh;
+            object-fit: cover;
+            object-position: 100% 76%; /* default value: image is centered*/
+   
         }
 
 .portfolio-pull-right{

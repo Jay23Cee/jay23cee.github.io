@@ -892,15 +892,17 @@ nav a {
 @media (min-width: 768px) {
   .portfolio-content {
     padding-left: 2px;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
   }
   .portfolio-content .portfolio-full-width {
     width: calc(84vw - 3em);
     max-width: initial;
     margin: 2em calc(55% - 50vw);
     padding-left: 50px;
-    height: 20vh;
+    height: 26vh;
     object-fit: cover;
+    object-position: 100% 76%;
+    /* default value: image is centered*/
   }
   .portfolio-content .portfolio-pull-right {
     width: 35%;
