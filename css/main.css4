@@ -891,7 +891,7 @@ nav a {
   padding-bottom: 2em;
 }
 .portfolio-content p {
-  padding-left: 13px;
+  padding-left: 20px;
 }
 @media (min-width: 768px) {
   .portfolio-content {
@@ -1063,4 +1063,4 @@ footer {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css4.map */
