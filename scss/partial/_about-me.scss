@@ -3,7 +3,12 @@
     @include  clearfix;
     margin-top:1.5em;
    margin-bottom: 2em;
-   
+   background-image: linear-gradient(to right,  rgb(208, 221, 224), rgba(255,0,0,0));
+ 
+
+   -webkit-box-shadow: 9px 10px 61px 0px rgba(0,0,0,0.33);
+-moz-box-shadow: 9px 10px 61px 0px rgba(0,0,0,0.33);
+box-shadow: 9px 10px 61px 0px rgba(0,0,0,0.33);
 
    
 
