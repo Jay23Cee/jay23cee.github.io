@@ -695,7 +695,7 @@ nav a {
 }
 .portfolio-item:hover figcaption, .portfolio-item:focus figcaption {
   top: 0 !important;
-  background: rgba(43, 41, 41, 0.9);
+  background: rgba(105, 105, 105, 0.678);
 }
 
 .portfolio-item figcaption {
@@ -727,7 +727,7 @@ nav a {
 }
 
 .portfolio-link {
-  color: #ffae00;
+  color: white;
   font-weight: 900;
   font-size: 1.1rem;
   text-decoration: none;
@@ -773,12 +773,6 @@ nav a {
 
   .portfolio-title {
     font-size: 1.2rem;
-    color: #05a3ca;
-  }
-  @media (min-width: 768px) {
-    .portfolio-title {
-      font-size: 0.8rem;
-    }
   }
 
   .featured .portfolio-title {
@@ -787,11 +781,10 @@ nav a {
   .featured .portfolio-desc {
     font-size: 1.1rem;
     display: inline !important;
-    color: #FFFFFF;
   }
   @media (min-width: 768px) {
     .featured .portfolio-desc {
-      font-size: 5.1em;
+      font-size: 3.1em;
     }
   }
 }

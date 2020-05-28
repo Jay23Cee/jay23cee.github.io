@@ -56,7 +56,7 @@
     &:focus {
         figcaption{
             top:0 !important;
-            background:rgba(43, 41, 41, 0.9);;
+            background:rgba(105, 105, 105, 0.678);;
         }
 
        
@@ -106,7 +106,7 @@
 }
 
 .portfolio-link{
-    color:rgb(255, 174, 0);
+    color:white;
     font-weight: $fw-b;
     font-size: 1.1rem;
     text-decoration: none;
@@ -163,29 +163,22 @@
 
     .portfolio-title{
         font-size: 1.2rem;
-        color:rgb(5, 163, 202);
-
-        @include mq($width: 768px){
-            font-size:.8rem;
-        }
     }
 
     .featured{
         .portfolio-title{
             font-size: 2.2rem;
-
         }
    
         .portfolio-desc{
            font-size: 1.1rem;
            display: inline !important;
-           color:$white;
         }
 
 
         @include mq($width:768px){
             .portfolio-desc{
-                font-size:5.1em;
+                font-size:3.1em;
                
             }
         }
