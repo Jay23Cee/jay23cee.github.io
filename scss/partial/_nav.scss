@@ -140,7 +140,7 @@ nav a {
     }
 
     .container-all{
-        transform: translateX(55%);
+        transform: translateX(43%);
         overflow-x: hidden !important;
         overflow-y: hidden !important;
         position: fixed;
@@ -150,7 +150,7 @@ nav a {
         
     }
 
-    @include mq{
+    @include mq($width: 768px){
 
         
     

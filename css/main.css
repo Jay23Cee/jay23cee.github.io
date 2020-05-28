@@ -468,12 +468,12 @@ nav a {
   display: block;
 }
 .nav-is-open .container-all {
-  transform: translateX(55%);
+  transform: translateX(43%);
   overflow-x: hidden !important;
   overflow-y: hidden !important;
   position: fixed;
 }
-@media (min-width: 50em) {
+@media (min-width: 768px) {
   .nav-is-open .container-all {
     transform: translateX(20%);
     overflow-x: hidden !important;
