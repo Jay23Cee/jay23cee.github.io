@@ -24,11 +24,11 @@
       
 
        span{
-        @include sans-serif($fs:6.5rem, $color: $t-color);
+        @include sans-serif($fs:3.5rem, $color: $t-color);
         display:block;
 
         @include mq($width: 768px){
-            font-size:1.5em;
+            font-size:5rem;
         }
         
       
