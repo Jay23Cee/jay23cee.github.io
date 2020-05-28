@@ -1,4 +1,4 @@
-const  wtext = document.querySelector(".welcome-bannertext")
+const  wtext = document.querySelector(".")
 const strtext = wtext.textContent;
 const splitText = strtext.split("")
 

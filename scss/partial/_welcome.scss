@@ -17,25 +17,18 @@
        color:$dark-blue;
        line-height: 2;
        text-align: center; 
-       @include mq{
-        font-size:3vw;
-        
-    }
+   
 
       
        
       
-    
+
        span{
-     
         @include sans-serif($fs:3.5rem, $color: $t-color);
-      
+        display:block;
 
-        
-
-
-        @include mq{
-            font-size:10vw;
+        @include mq($width: 768px){
+            font-size:1.5em;
         }
         
       
@@ -66,17 +59,4 @@
 
 
  
-    span{
-      //  transition: all 6.5s ease-out;
-        transform: translateY(20px); 
-            
-    }
-    span.fade{
-       
-
-            
-            transition: all 10 ease-in
-        
-    }
 }
-
