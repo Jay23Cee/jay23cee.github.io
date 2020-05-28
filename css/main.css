@@ -428,6 +428,7 @@ nav a {
   text-transform: uppercase;
   line-height: 1;
   font-weight: 400;
+
   text-decoration: none;
   padding: calc(90vh/8 ) 0;
   line-height: 0;

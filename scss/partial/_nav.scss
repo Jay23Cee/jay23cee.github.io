@@ -66,6 +66,7 @@ nav li :hover{
 nav a {
     display: inline-block;
     @include sans-serif($fs:3rem, $color: $dark-blue);
+   font-family: 'Six Caps';
     text-decoration:none;
     padding: calc(90vh/8 ) 0;
     line-height: 0;
