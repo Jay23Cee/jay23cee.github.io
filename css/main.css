@@ -729,6 +729,9 @@ nav a {
   border-bottom: 2px solid #FFFFFF;
   align-self: flex-start;
 }
+.portfolio-link:hover {
+  color: #00d4c2;
+}
 .portfolio-link::after {
   content: url(../img/arrow2.svg);
   display: inline-block;
