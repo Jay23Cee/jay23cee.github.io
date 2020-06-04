@@ -17,7 +17,7 @@ nav{
     right: 40%;
     z-index: 10;
 
-    width:59%;
+    width:250px;
   
     overflow-x: hidden !important;
     overflow-y: hidden !important;
@@ -30,7 +30,7 @@ nav{
 
 
     @include mq($width: 768px){
-        width:23%;
+        width:240px;
     }
 }
 
@@ -99,17 +99,6 @@ nav a {
         
     }
 
-    .container-all{
-        transform: translateX(55%);
-        overflow-x: hidden !important;
-        overflow-y: hidden !important;
-        position: fixed;
-        
-    
-
-    
-        
-    }
 
 
 
@@ -140,7 +129,7 @@ nav a {
     }
 
     .container-all{
-        transform: translateX(43%);
+        transform: translateX(199px);
         overflow-x: hidden !important;
         overflow-y: hidden !important;
         position: fixed;
@@ -157,7 +146,7 @@ nav a {
 
     
         .container-all{
-            transform: translateX(20%);
+            transform: translateX(182px);
             overflow-x: hidden !important;
             overflow-y: hidden !important;
             position: fixed;
