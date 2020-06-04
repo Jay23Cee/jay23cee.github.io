@@ -390,7 +390,7 @@ nav {
   transform: translateX(-100%);
   transition: transform ease-in 240ms;
 }
-@media (min-width: 50em) {
+@media (min-width: 768px) {
   nav {
     width: 23%;
   }
