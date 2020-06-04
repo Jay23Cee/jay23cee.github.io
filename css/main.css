@@ -722,7 +722,7 @@ nav a {
 }
 
 .portfolio-link {
-  color: white;
+  color: orange;
   font-weight: 900;
   font-size: 1.1rem;
   text-decoration: none;
@@ -767,7 +767,7 @@ nav a {
   }
 
   .portfolio-title {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .featured .portfolio-title {
