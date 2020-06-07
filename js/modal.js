@@ -31,13 +31,21 @@ closeButton.addEventListener('click', _ => {
         
     })
 
-    document.addEventListener('keydown', e=>{
-        if (e.keycode === 27){
-            modal.style.animation = 'modalOut 500ms forwards'
-            modal.addEventListener('animationend', modalClose)
-            document.body.style.overflowY = 'hidden'
-        }
-    })
+   
+    
     modalOpen()
 
 })
+
+
+document.addEventListener('keydown', e=>{
+    if (e.keycode === 27){
+        modal.style.animation = 'modalOut 500ms forwards'
+        modal.addEventListener('animationend', modalClose)
+        document.body.style.overflowY ='scroll'
+        console.log(e.keycode)
+    }
+})
+
+
+
