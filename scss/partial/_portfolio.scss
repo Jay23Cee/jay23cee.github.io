@@ -151,11 +151,11 @@
 
             justify-content: center;
             @include container($max-width:40);
-          
 
-            img{
-                height:100%;
-            }
+        
+           
+
+           
 
         }        
     }
@@ -163,6 +163,9 @@
     .portfolio-item.featured{
         grid-column:  1/ span 2;
         grid-row : 1/ span 2;
+        img{
+            height:100%;
+        }
     }
 
 

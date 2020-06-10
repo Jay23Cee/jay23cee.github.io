@@ -759,14 +759,14 @@ nav a {
       margin: 0 auto;
       max-width: 40;
     }
-    .portfolio-items img {
-      height: 100%;
-    }
   }
 
   .portfolio-item.featured {
     grid-column: 1/span 2;
     grid-row: 1/span 2;
+  }
+  .portfolio-item.featured img {
+    height: 100%;
   }
 
   .portfolio-title {
