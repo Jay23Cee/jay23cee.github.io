@@ -743,8 +743,10 @@ nav a {
 @supports (display: grid) {
   .portfolio-items {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 50%);
     gap: 0.08em;
+    margin-left: 5%;
+    object-fit: cover;
   }
   @media (min-width: 768px) {
     .portfolio-items {
@@ -765,8 +767,10 @@ nav a {
     grid-column: 1/span 2;
     grid-row: 1/span 2;
   }
-  .portfolio-item.featured img {
-    height: 100%;
+  @media (min-width: 768px) {
+    .portfolio-item.featured img {
+      height: 100%;
+    }
   }
 
   .portfolio-title {

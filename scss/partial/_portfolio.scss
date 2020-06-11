@@ -135,10 +135,20 @@
      
     .portfolio-items{
         display:grid;
-        grid-template-columns:  repeat(2, 1fr);
+        grid-template-columns:  repeat(2, 50%);
         gap: .08em;
+        margin-left: 5%;
+        object-fit: cover;
         
 
+        // .portfolio-img4{
+        //     //gym img
+        //     height:auto;
+        //     object-fit: cover;
+        // }
+        // .portfolio-img3{
+        //     height:17em;
+        // }
        // @include container($width: 47em);
        
      @include mq($width:768px){   //768
@@ -161,11 +171,16 @@
     }
 
     .portfolio-item.featured{
-        grid-column:  1/ span 2;
+        grid-column:  1/ span
+         2;
         grid-row : 1/ span 2;
-        img{
-            height:100%;
+        
+        @include mq($width: 768px){
+            img{
+                height:100%;
+            }
         }
+
     }
 
 
