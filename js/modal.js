@@ -48,4 +48,12 @@ document.addEventListener('keydown', e=>{
 })
 
 
+function openlink(){
+    var link = document.getElementById('rel').href;
+    console.log(link);
+    window.open(
+        link,
+        '_blank' // <- This is what makes it open in a new window.
+      );
 
+}
