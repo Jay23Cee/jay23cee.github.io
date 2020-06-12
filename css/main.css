@@ -750,8 +750,8 @@ nav a {
   }
   @media (min-width: 768px) {
     .portfolio-items {
-      grid-template-columns: repeat(4, 10.4em);
-      grid-template-rows: repeat(2, 9em);
+      grid-template-columns: repeat(4, 10.5em);
+      grid-template-rows: repeat(2, 11em);
       column-gap: 0.1em;
       row-gap: 0.3em;
       padding-left: 0.91em;
@@ -817,9 +817,9 @@ nav a {
 }
 @media (min-width: 768px) {
   .portfolio-modal {
-    max-width: 75%;
+    max-width: 85%;
     margin-top: -1.5em;
-    margin-left: 5em;
+    margin-left: 1.5em;
   }
 }
 
@@ -838,7 +838,7 @@ nav a {
 }
 @media (min-width: 768px) {
   .modal-close {
-    left: 6em;
+    left: 2.5em;
     top: 1em;
   }
 }
