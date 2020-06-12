@@ -219,13 +219,20 @@
     left: 2em; 
     right:2em;
 
-    background:$port-color;
+   
+    background: rgb(155,154,148);
+background: linear-gradient(21deg, rgba(155,154,148,1) 0%, rgba(255,255,255,1) 50%, rgba(173,252,250,1) 100%);
+    border: 5px solid #050505;
+border-radius: 23px;
+
+
     box-shadow:  0 0 0 3em rbga (black, .5);
     overflow-y: scroll; 
     overflow-x:hidden;
     border-style: solid;
 
     display: none;
+    color:black;
 
     &.is-open{
         display:block;
@@ -255,15 +262,20 @@
 .modal-close{
     background: white;
     position:fixed;
-    left: 1em;
-    top: 1em;
+    left:1em;
+    top: 3em;
     border: 0;
     width:2em;
     height:2em;
     padding: 4px 0 0;
     border-radius: 50%;
     box-shadow: 0 0 5px rbga(black, .5);
-    cursor: pointer
+    cursor: pointer;
+
+    @include mq($width:768px){
+        left:6em;
+        top:1em
+    }
 
 
 }

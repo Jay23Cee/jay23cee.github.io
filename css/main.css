@@ -797,12 +797,16 @@ nav a {
   bottom: 2em;
   left: 2em;
   right: 2em;
-  background: #f0ecec;
+  background: #9b9a94;
+  background: linear-gradient(21deg, #9b9a94 0%, white 50%, #adfcfa 100%);
+  border: 5px solid #050505;
+  border-radius: 23px;
   box-shadow: 0 0 0 3em rbga black, 0.5;
   overflow-y: scroll;
   overflow-x: hidden;
   border-style: solid;
   display: none;
+  color: black;
 }
 .portfolio-modal.is-open {
   display: block;
@@ -823,7 +827,7 @@ nav a {
   background: white;
   position: fixed;
   left: 1em;
-  top: 1em;
+  top: 3em;
   border: 0;
   width: 2em;
   height: 2em;
@@ -831,6 +835,12 @@ nav a {
   border-radius: 50%;
   box-shadow: 0 0 5px rbga(black, 0.5);
   cursor: pointer;
+}
+@media (min-width: 768px) {
+  .modal-close {
+    left: 6em;
+    top: 1em;
+  }
 }
 
 .portfolio-header {
