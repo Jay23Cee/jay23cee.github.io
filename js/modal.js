@@ -48,8 +48,8 @@ document.addEventListener('keydown', e=>{
 })
 
 
-function openlink(){
-    var link = document.getElementById('rel').href;
+function openlink(obj){
+    var link = obj.href;
     console.log(link);
     window.open(
         link,
