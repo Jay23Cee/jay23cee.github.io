@@ -817,7 +817,7 @@ nav a {
 }
 @media (min-width: 768px) {
   .portfolio-modal {
-    max-width: 85%;
+    max-width: 95%;
     margin-top: -1.5em;
     margin-left: 1.5em;
   }
