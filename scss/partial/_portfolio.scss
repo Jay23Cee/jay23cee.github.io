@@ -152,8 +152,8 @@
        // @include container($width: 47em);
        
      @include mq($width:768px){   //768
-        grid-template-columns: repeat(4, 10.5em);
-        grid-template-rows: repeat(2, 11em);
+            grid-template-columns: repeat(4, 10.5em);
+            grid-template-rows: repeat(2, 11em);
             column-gap: .1em;
             row-gap: .3em;
             padding-left: .91em; 
@@ -221,9 +221,9 @@
 
    
     background: rgb(155,154,148);
-background: linear-gradient(21deg, rgba(155,154,148,1) 0%, rgba(255,255,255,1) 50%, rgba(173,252,250,1) 100%);
+    background: linear-gradient(21deg, rgba(155,154,148,1) 0%, rgba(255,255,255,1) 50%, rgba(173,252,250,1) 100%);
     border: 5px solid #050505;
-border-radius: 23px;
+    border-radius: 23px;
 
 
     box-shadow:  0 0 0 3em rbga (black, .5);
@@ -393,7 +393,10 @@ border-radius: 23px;
             padding-left: 50px;
             height: 26vh;
             object-fit: cover;
-            object-position: 100% 76%; /* default value: image is centered*/
+             /* default value: image is centered*/
+
+            @include mq($width: 768px){
+                max-width:calc(65vh - 1em);            }
    
         }
 
