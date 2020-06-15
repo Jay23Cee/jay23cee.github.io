@@ -1069,8 +1069,13 @@ footer {
   height: 1px;
   background: white;
   margin-bottom: 2em;
-  margin-left: 30em;
+  margin-left: 20em;
   width: 26%;
+}
+@media (min-width: 768px) {
+  .copyright::before {
+    margin-left: 23em;
+  }
 }
 
 @supports (display: grid) {
