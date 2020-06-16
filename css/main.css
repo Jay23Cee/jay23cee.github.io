@@ -477,7 +477,7 @@ nav a {
 }
 
 .welcome {
-  background-image: url(../img/triangle.jpg);
+  background-image: url(../img/triangle2.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -1067,14 +1067,16 @@ footer {
   content: "";
   display: block;
   height: 1px;
+  align-items: center;
   background: white;
   margin-bottom: 2em;
-  margin-left: 20em;
-  width: 26%;
+  margin-left: 37%;
+  width: 27vh;
 }
 @media (min-width: 768px) {
   .copyright::before {
-    margin-left: 23em;
+    margin-left: 38%;
+    width: 28vh;
   }
 }
 

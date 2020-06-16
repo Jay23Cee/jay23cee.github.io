@@ -39,16 +39,18 @@ footer {
         content:'';
         display:block;
         height:1px;
+        align-items: center;
       
         background: rgba($white, $alpha: 1.5);
         margin-bottom: 2em;
-        margin-left: 20em;
+        margin-left: 37%;
         
-        width:26%;
+        width:27vh;
 
         @include mq($width:768px){
 
-            margin-left:23em;
+            margin-left:38%;
+            width:28vh;
 
         }
     }
