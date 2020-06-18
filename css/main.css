@@ -560,13 +560,13 @@ nav a {
   text-align: center;
   padding-inline-start: 8px;
   display: grid;
-  grid-template-columns: repeat(3, 5.5em);
-  grid-template-rows: repeat(4, 10em);
+  grid-template-columns: repeat(3, 30%);
 }
 @media (min-width: 768px) {
   .intro-middle ul {
     font-size: 16px;
     text-align: center;
+    grid-template-columns: repeat(4, 24%);
   }
 }
 
