@@ -540,7 +540,7 @@ nav a {
 @supports (display: grid) {
   .intro {
     display: grid;
-    grid-template-columns: minmax(8.5em, 1fr) minmax(auto, 40em) minmax(8.5em, 1fr);
+    grid-template-columns: minmax(5.5em, 1fr) minmax(auto, 40em) minmax(5.5em, 1fr);
   }
 }
 
@@ -560,8 +560,8 @@ nav a {
   text-align: center;
   padding-inline-start: 8px;
   display: grid;
-  grid-template-columns: repeat(4, 8.5em);
-  grid-template-rows: 10em 10em 9em;
+  grid-template-columns: repeat(3, 5.5em);
+  grid-template-rows: repeat(4, 10em);
 }
 @media (min-width: 768px) {
   .intro-middle ul {
