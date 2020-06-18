@@ -559,6 +559,9 @@ nav a {
   font-size: 13px;
   text-align: center;
   padding-inline-start: 8px;
+  display: grid;
+  grid-template-columns: 10em 10em 10em 10em;
+  grid-template-rows: 10em 10em 9em;
 }
 @media (min-width: 768px) {
   .intro-middle ul {
