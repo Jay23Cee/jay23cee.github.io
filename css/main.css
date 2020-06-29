@@ -750,6 +750,7 @@ nav a {
     gap: 0.08em;
     margin-left: 5%;
     object-fit: cover;
+    overflow: hidden;
   }
   @media (min-width: 768px) {
     .portfolio-items {
