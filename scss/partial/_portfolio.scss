@@ -7,7 +7,7 @@
     
   
     @include mq{
-        height:95vh;
+        height:95%;
     }
 
     //    h1{
@@ -41,20 +41,11 @@
     border: solid 4px $u-blue;
     
 
-
-
-
     img{
         display:block;
         max-width:  auto;
         height: auto;
-
-        
-
-    
-        
-        
-        
+ 
     }
 
     &:hover , 
@@ -63,8 +54,7 @@
             top:0 !important;
             background:rgba(19, 28, 39, 0.774);;
         }
-
-       
+  
     }
 
 
