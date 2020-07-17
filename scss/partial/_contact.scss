@@ -1,6 +1,12 @@
 .contact{
     @include container;
     padding: 2.5em 0;
+    height: 90vh;
+
+    @include mq{
+      
+        margin-bottom: 2em;
+    }
  
     h1{
         text-align: center;
@@ -43,7 +49,7 @@ form{
         .message{
             grid-area:message;
             textarea{
-                height: 5em;
+                height: 10em;
             }
         }
 
@@ -59,7 +65,7 @@ form{
 label{
     display:block;
     margin:1em;
-    color:$dark-gray;
+    color:$light-gray;
 }
 
 input,
@@ -79,7 +85,8 @@ textarea{
     width:auto;
     margin-top: 1em;
     margin-left: auto;
-    background: $accent;
+    background: $true-blue;
+    
     border:none;
 
     @include sans-serif($fs:2rem, $color: $white);

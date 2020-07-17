@@ -15,7 +15,7 @@
 
 }
 
-@mixin mq($width:50em){
+@mixin mq($width:768px){
 
     @media(min-width: $width){
         @content;
