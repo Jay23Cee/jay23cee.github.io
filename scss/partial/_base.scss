@@ -24,7 +24,9 @@ background: linear-gradient(126deg, rgba(0,40,85,1) 27%, rgba(11,19,43,1) 100%);
 }
 
 .container-all{
-    overflow-x:hidden;
+    overflow-x:hidden  !important ;
+    overflow:hidden !important;
+   
 }
 
 img{

@@ -337,7 +337,8 @@ body {
 }
 
 .container-all {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  overflow: hidden !important;
 }
 
 img {
@@ -778,7 +779,7 @@ nav a {
   @media (min-width: 768px) {
     .portfolio-items {
       grid-template-columns: repeat(4, 10.5em);
-      grid-template-rows: repeat(2, 11em);
+      grid-template-rows: repeat(2, 11%);
       column-gap: 0.1em;
       row-gap: 0.3em;
       padding-left: 0.91em;
