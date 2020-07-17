@@ -1023,7 +1023,7 @@ form {
       grid-area: message;
     }
     form .message textarea {
-      height: 20vh;
+      height: 10vh;
     }
     form .button {
       grid-area: button;
