@@ -1070,6 +1070,7 @@ footer {
   background: #0B132B;
   padding: 2em 0;
   text-align: center;
+  position: fixed;
   background: linear-gradient(260deg, #002855 27%, #0b132b 100%);
   overflow: hidden;
   max-height: 5em;
