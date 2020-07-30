@@ -3,18 +3,19 @@ footer {
     padding: 2em 0;
     text-align: center;
     position: relative;
-    
+    font-size: .5rem;
+    max-height: 108em;
   
     
     
     background: linear-gradient(260deg, rgba(0,40,85,1) 27%, rgba(11,19,43,1) 100%);
 
     overflow:hidden;
-    max-height: 5em;
+    max-height: 10em;
 
     @include mq{
-        
-        max-height: 1em;
+        font-size: .5rem;
+        padding-top: 30px;
     }
     
 }
@@ -28,6 +29,13 @@ footer {
     
     img{
         max-width: 60%;
+
+        @include mq(){
+            max-width:100%;
+            
+        }
+
+        
     }
     
 
@@ -54,7 +62,6 @@ footer {
     
     margin-left: 5vw;
     
-    font-size: .8rem;
 
     
     

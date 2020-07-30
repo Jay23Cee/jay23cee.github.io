@@ -1072,13 +1072,16 @@ footer {
   padding: 2em 0;
   text-align: center;
   position: relative;
+  font-size: 0.5rem;
+  max-height: 108em;
   background: linear-gradient(260deg, #002855 27%, #0b132b 100%);
   overflow: hidden;
-  max-height: 5em;
+  max-height: 10em;
 }
 @media (min-width: 768px) {
   footer {
-    max-height: 1em;
+    font-size: 0.5rem;
+    padding-top: 30px;
   }
 }
 
@@ -1092,6 +1095,11 @@ footer {
 }
 .social-icon img {
   max-width: 60%;
+}
+@media (min-width: 768px) {
+  .social-icon img {
+    max-width: 100%;
+  }
 }
 
 .social-icon {
@@ -1107,7 +1115,6 @@ footer {
 
 .copyright {
   margin-left: 5vw;
-  font-size: 0.8rem;
 }
 @media (min-width: 768px) {
   .copyright {
