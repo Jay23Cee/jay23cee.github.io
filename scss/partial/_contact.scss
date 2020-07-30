@@ -50,6 +50,9 @@ form{
             grid-area:message;
             textarea{
                 height: 10vh;
+                @include mq{
+                    height:25vh;
+                }
             }
         }
 
