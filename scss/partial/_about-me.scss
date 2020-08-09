@@ -1,6 +1,7 @@
 .about-me{
     @include container($max-width:51em);
     @include  clearfix;
+    
     margin-top:1.5em;
    margin-bottom: 2em;
    background: rgb(0,40,85);
@@ -22,7 +23,8 @@ box-shadow: 9px 10px 61px 0px rgba(0,0,0,0.33);
 
 .about-img{
     max-height: 23;
-    
+    background: orange;
+    opacity: .67;
 
 
     @media (min-width: 42em){
@@ -41,7 +43,7 @@ box-shadow: 9px 10px 61px 0px rgba(0,0,0,0.33);
 .about-title{
     margin-bottom:.25em;
     margin-left: 1.25;
-
+   
 
 
 
@@ -77,16 +79,18 @@ box-shadow: 9px 10px 61px 0px rgba(0,0,0,0.33);
 
 
     .about-title{
-        grid-column: name-start / port-end;
+        grid-column: name-start /por-end;
         grid-row: 1 / 2;
         align-self: end;
+         z-index: 4;
+
       
         @include mq($width:768px){
             margin-left: 1em;
            
 
             a{
-                font-size: 3rem;
+                font-size: 3.5rem;
             }
         }
        
