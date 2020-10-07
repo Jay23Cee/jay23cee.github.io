@@ -614,7 +614,6 @@ nav a {
 
 .about-img {
   max-height: 23;
-  background: orange;
   opacity: 0.67;
 }
 @media (min-width: 42em) {
@@ -688,6 +687,7 @@ nav a {
 .portfolio {
   text-align: center;
   padding: 1em 0;
+  overflow: auto;
   background: #002855;
 }
 @media (min-width: 768px) {
@@ -719,6 +719,38 @@ nav a {
 .portfolio-item:hover figcaption, .portfolio-item:focus figcaption {
   top: 0 !important;
   background: rgba(19, 28, 39, 0.774);
+}
+
+.item1 {
+  background-image: url("/img/rock-paper-scissor.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.item2 {
+  background-image: url("/img/ecommerce_site.JPG");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.item3 {
+  background-image: url("/img/covid_19.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.item4 {
+  background-image: url("/img/gym.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.item5 {
+  background-image: url("/img/payroll_c.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .portfolio-item figcaption {
@@ -771,11 +803,13 @@ nav a {
 @supports (display: grid) {
   .portfolio-items {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 40vw);
+    grid-template-rows: repeat(4, 18vh);
     gap: 0.08em;
     margin-left: 5%;
     object-fit: cover;
     overflow: hidden;
+    position: relative;
   }
   @media (min-width: 768px) {
     .portfolio-items {
