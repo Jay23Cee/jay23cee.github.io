@@ -1,51 +1,13 @@
-.swiper-container {
-    width: 80vw;
-    height: 60vh;
-    position: relative !important;
-    z-index: 0;
-    overflow:hidden !important;
-
-
-
-    .swiper-slide{
-        
-        justify-content: center;
-        align-items: center;
-        overflow:hidden;
-
-    }
-
-    
-    
-}
-
-.swiper-container-cube{
-
-    position:relative;
-}
-.swiper-button-prev {
-    &.is-open{
-         z-index:-5;
-    }
-       
-    }
- .swiper-button-next{
-    &.is-open{
-        z-index:-5;
-   }
-    }
-
 .portfolio{
     text-align: center;
     padding: 1em 0 ;
-    overflow:hidden !important;
-    position: relative;
+    
     background: $o-blue2;
-
+    height:100vh;
     
   
     @include mq{
-        height:95%;
+        height:100vh;
     }
 
     //    h1{
@@ -58,10 +20,12 @@
 
 
 .portfolio-items{
-    // display:flex;
-    // flex-wrap:wrap;
-    
+    display:flex;
+    flex-wrap:wrap;
+    width:100vw;
+    height:80vh;
   @include container($max-width:47em);
+
 
     
 
@@ -70,22 +34,20 @@
 }
 
 
- figcaption{
-      display:none;
-  }
+
 .portfolio-item{
-   //  position: relative;
-    // overflow: hidden;
-    // flex: 1 1 20rem;
-    // margin:  0em 0em;
-    // border: solid 4px $u-blue;
-   
- 
+    position: relative;
+    overflow: hidden;
+    flex: 1 1 20rem;
+    margin:  0em 0em;
+    border: solid 4px $u-blue;
+    
 
     img{
         display:block;
         max-width:  auto;
-        height: auto;
+        height: 100%;
+        width: 100%;
  
     }
 
@@ -94,8 +56,6 @@
         figcaption{
             top:0 !important;
             background:rgba(19, 28, 39, 0.774);;
-         //  display: inline !important;
-           
         }
   
     }
@@ -103,75 +63,26 @@
 
 }
 
-.item1{
-    background-image: url('/img/rock-paper-scissor.jpg');
-
-       
-    background-size: cover;
-background-position: center center;
-background-repeat: no-repeat;
-    
-    }
-
-.item2{
-  
-
-    background-image: url('/img/ecommerce_site.JPG');
-
-       
-    background-size: cover;
-background-position: center center;
-background-repeat: no-repeat;
-    
-}
-    
-    .item3{
-    background-image: url('/img/covid_19.jpg');
-       
-    background-size: cover;
-
-    background-repeat: no-repeat;
-    }
-    
-.item4{
-    background-image: url('/img/gym.jpg');
-       
-    background-size: cover;
-
-    background-repeat: no-repeat;
-
-}
-
-.item5{
-    background-image: url('/img/payroll_c.jpg');
-       
-    background-size: cover;
-
-    background-repeat: no-repeat;
-    
-}
-
 .portfolio-item figcaption {
     position: absolute;
-    top:110%;
+    top:100%;
     bottom:0;
     right:0;
     left:0;
-    padding:0 0 4.5em 1em;
-    
-    //display: none !important;
+    padding:2em;
 
     
     
 
     color:white;
-    text-align:center;
-    font-size:0.8em;
+    text-align:left;
+    font-size: .2em;
     display:flex;
     flex-direction: column;
     transition: top ease-in-out 250ms;
    
-
+   
+ 
 
 }
 
@@ -189,6 +100,10 @@ background-repeat: no-repeat;
 }
 
 
+.portfolio-desc{
+    display:none !important;
+
+}
 
 .portfolio-link{
     color:orange;
@@ -214,20 +129,15 @@ background-repeat: no-repeat;
 
 
 
-
 @supports (display:grid){
-   
+     
     .portfolio-items{
-        // display:grid;
-        // grid-template-columns:  repeat(2, 40vw);
-        // grid-template-rows: repeat(4, 18vh);
- 
-        // gap: .08em;
-        // margin-left: 5%;
-        // object-fit: cover;
-        // overflow: hidden;
-
-        // position: relative ;
+        display:grid;
+        grid-template-columns:  repeat(2, 50%);
+        gap: .08em;
+        margin-left: 5vw;
+        object-fit: cover;
+        overflow: hidden;
         
 
         // .portfolio-img4{
@@ -240,23 +150,23 @@ background-repeat: no-repeat;
         // }
        // @include container($width: 47em);
        
-    //  @include mq($width:768px){   //768
-    //         grid-template-columns: repeat(4, 10.5em);
-    //         grid-template-rows: repeat(2, 31vh);
-    //         column-gap: .1em;
-    //         row-gap: .3em;
-    //         padding-left: .91em; 
-    //         padding-right: 1em;           
+     @include mq($width:768px){   //768
+            grid-template-columns: repeat(4, 10.5em);
+            grid-template-rows: repeat(2, 31vh);
+            column-gap: .1em;
+            row-gap: .3em;
+            padding-left: .91em; 
+            padding-right: 1em;           
 
-    //         justify-content: center;
-    //         @include container($max-width:40);
+            justify-content: center;
+            @include container($max-width:40);
 
         
            
 
            
 
-    //     }        
+        }        
     }
 
     .portfolio-item.featured{
@@ -301,19 +211,13 @@ background-repeat: no-repeat;
 
 }
 
-
-
 .portfolio-modal{
-    position: absolute !important;
-
-    z-index:910 !important;
-    top:5em;
+    position:fixed;
+    z-index:910;
+    top:2em;
     bottom:2em;
-    padding-right: 2em;;
-    left: 3em; 
-    right:0em;
-    width: 85vw;
-    height: 70vh;
+    left: 2em; 
+    right:2em;
 
    
     background: rgb(155,154,148);
@@ -329,25 +233,19 @@ background-repeat: no-repeat;
 
     display: none;
     color:black;
-    align-items: center;
-    align-content: center;
-
 
     &.is-open{
         display:block;
-       
 
 
         .container-all{
             overflow-x: hidden !important;
             position: fixed;
-
-
-
     
         }
     
-   
+        
+
     }
 
 
@@ -363,11 +261,9 @@ background-repeat: no-repeat;
 
 .modal-close{
     background: white;
-    position: sticky;
-    align-items: center;
-    ;
-    right:200em;
-    top: 0em;
+    position:fixed;
+    left:1em;
+    top: 3em;
     border: 0;
     width:2em;
     height:2em;
@@ -376,13 +272,17 @@ background-repeat: no-repeat;
     box-shadow: 0 0 5px rbga(black, .5);
     cursor: pointer;
 
+    @include mq($width:768px){
+        left:2.5em;
+        top:1em
+    }
 
 
 }
 
 .portfolio-header{
     text-align : left;
-    padding: 1vh 0;
+    padding: 5em 0;
 
     margin-bottom:  2em;
     background-size: cover;
@@ -414,17 +314,12 @@ background-repeat: no-repeat;
     background:rgba(rgb(2, 77, 138), .75);
     padding: 2em 0em 3em 3em;
     color: $white;
-    width: 70vw;
-    max-width: 70%;
-
-    @include mq($width:768px){
-        padding: 1em 0em 1.2em 1.4em;
-    }
+    width: 70%;
 
     //MODAL TITLE
     .portfolio-title{
         
-        font-size: 6.2vw; 
+        font-size: 2.2rem; 
         display: inline-blocks;
         
         &::after {
@@ -435,28 +330,17 @@ background-repeat: no-repeat;
             background : white;
             width: 100%;
         }
-
-        @include mq($width:768px){
-            font-size: 1.4rem;
-            margin-left: 1.2em;
-        
-        }
-
-
     }
 
 
 .portfolio-subtitle{
-    font-size: 2.95vw;
+    font-size: .95rem;
 
      a:hover{
         color: rgb(255, 251, 7);
     }
 
-    @include mq($width:768px){
-        font-size: 0.8rem;
-        margin-left: 2.5em;
-    }
+
 
   
    
@@ -491,27 +375,42 @@ background-repeat: no-repeat;
     margin-top: 20px;
     ;
     
-    padding-bottom: 35.5vh;
+    padding-bottom: 2em;
 
     p{
-        padding-left: 10vw;
+        padding-left: 13px;
     }
 
     @include mq($width:768px){
         // @include mq() {
         padding-left: 2px;
         padding-bottom: 15px;
-        font-size: .9rem;
         
-     
+        .portfolio-full-width{
+            width: calc(84vw - 3em);
+            max-width: initial;
+            margin: 2em calc(55% - 50vw);
+            padding-left: 50px;
+            height: 26vh;
+            object-fit: cover;
+             /* default value: image is centered*/
+
+            @include mq($width: 768px){
+                max-width:calc(65vh - 1em);            }
+   
+        }
 
 .portfolio-pull-right{
     width: 35%;
-    float: center;
+    float: left;
     margin-left:  16em;
 }
 
-
+.portfolio-pull-left{
+    width: 45%;
+    float: left;
+    margin-left: 12em;
+}
 
 // }
 
@@ -519,24 +418,6 @@ background-repeat: no-repeat;
    
 }
 
-.portfolio-pull-left{
-      max-width:25vw;
-    
-    float: left;
-    margin-left:20vw;
-    margin-bottom:20vh;
-    
-    
-
-    @include mq($width:768px){
-        width: 15%;
-        position: absolute;
-        top:5em;
-        right:1em;
-        float: left;
-        margin-left: 12em;
-    }
-}
 
 
 

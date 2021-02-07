@@ -1,0 +1,542 @@
+// .swiper-container {
+//     width: 80vw;
+//     height: 60vh;
+//     position: relative !important;
+//     z-index: 0;
+//     overflow:hidden !important;
+
+
+
+//     .swiper-slide{
+        
+//         justify-content: center;
+//         align-items: center;
+//         overflow:hidden;
+
+//     }
+
+    
+    
+// }
+
+// .swiper-container-cube{
+
+//     position:relative;
+// }
+// .swiper-button-prev {
+//     &.is-open{
+//          z-index:-5;
+//     }
+       
+//     }
+//  .swiper-button-next{
+//     &.is-open{
+//         z-index:-5;
+//    }
+//     }
+
+// .portfolio{
+//     text-align: center;
+//     padding: 1em 0 ;
+//     overflow:hidden !important;
+//     position: relative;
+//     background: $o-blue2;
+
+    
+  
+//     @include mq{
+//         height:95%;
+//     }
+
+//     //    h1{
+//     //        font-size:3em;
+//     //    }
+    
+   
+
+// }
+
+
+// .portfolio-items{
+//     // display:flex;
+//     // flex-wrap:wrap;
+    
+//   @include container($max-width:47em);
+
+    
+
+
+
+// }
+
+
+//  figcaption{
+//       display:none;
+//   }
+// .portfolio-item{
+//    //  position: relative;
+//     // overflow: hidden;
+//     // flex: 1 1 20rem;
+//     // margin:  0em 0em;
+//     // border: solid 4px $u-blue;
+   
+ 
+
+//     img{
+//         display:block;
+//         max-width:  auto;
+//         height: auto;
+ 
+//     }
+
+//     &:hover , 
+//     &:focus {
+//         figcaption{
+//             top:0 !important;
+//             background:rgba(19, 28, 39, 0.774);;
+//          //  display: inline !important;
+           
+//         }
+  
+//     }
+
+
+// }
+
+// .item1{
+//     background-image: url('/img/rock-paper-scissor.jpg');
+
+       
+//     background-size: cover;
+// background-position: center center;
+// background-repeat: no-repeat;
+    
+//     }
+
+// .item2{
+  
+
+//     background-image: url('/img/ecommerce_site.JPG');
+
+       
+//     background-size: cover;
+// background-position: center center;
+// background-repeat: no-repeat;
+    
+// }
+    
+//     .item3{
+//     background-image: url('/img/covid_19.jpg');
+       
+//     background-size: cover;
+
+//     background-repeat: no-repeat;
+//     }
+    
+// .item4{
+//     background-image: url('/img/gym.jpg');
+       
+//     background-size: cover;
+
+//     background-repeat: no-repeat;
+
+// }
+
+// .item5{
+//     background-image: url('/img/payroll_c.jpg');
+       
+//     background-size: cover;
+
+//     background-repeat: no-repeat;
+    
+// }
+
+// .portfolio-item figcaption {
+//     position: absolute;
+//     top:110%;
+//     bottom:0;
+//     right:0;
+//     left:0;
+//     padding:0 0 4.5em 1em;
+    
+//     //display: none !important;
+
+    
+    
+
+//     color:white;
+//     text-align:center;
+//     font-size:0.8em;
+//     display:flex;
+//     flex-direction: column;
+//     transition: top ease-in-out 250ms;
+   
+
+
+// }
+
+// .portfolio-title{
+//     color: $white;
+//     //font-size: 3.5 em;
+//     align-self: flex-end;
+//     margin-bottom: auto;
+
+//     .featured & {
+//      font-size:1 rem;
+//     }
+
+    
+// }
+
+
+
+// .portfolio-link{
+//     color:orange;
+//     font-weight: $fw-b;
+//     font-size: 1.1rem;
+//     text-decoration: none;
+//     border-bottom: 2px solid $white;
+//     align-self: flex-start;
+//     &:hover {
+//         color: rgb(0, 212, 194);
+//     }
+
+//     &::after{
+//         content: url(../img/arrow2.svg);
+//         display:inline-block;
+//         height: 1em;
+//         width: 1em;
+//         margin-left: 2em;
+        
+//     }
+
+// }
+
+
+
+
+// @supports (display:grid){
+   
+//     .portfolio-items{
+//         // display:grid;
+//         // grid-template-columns:  repeat(2, 40vw);
+//         // grid-template-rows: repeat(4, 18vh);
+ 
+//         // gap: .08em;
+//         // margin-left: 5%;
+//         // object-fit: cover;
+//         // overflow: hidden;
+
+//         // position: relative ;
+        
+
+//         // .portfolio-img4{
+//         //     //gym img
+//         //     height:auto;
+//         //     object-fit: cover;
+//         // }
+//         // .portfolio-img3{
+//         //     height:17em;
+//         // }
+//        // @include container($width: 47em);
+       
+//     //  @include mq($width:768px){   //768
+//     //         grid-template-columns: repeat(4, 10.5em);
+//     //         grid-template-rows: repeat(2, 31vh);
+//     //         column-gap: .1em;
+//     //         row-gap: .3em;
+//     //         padding-left: .91em; 
+//     //         padding-right: 1em;           
+
+//     //         justify-content: center;
+//     //         @include container($max-width:40);
+
+        
+           
+
+           
+
+//     //     }        
+//     }
+
+//     .portfolio-item.featured{
+//         grid-column:  1/ span
+//          2;
+//         grid-row : 1/ span 2;
+        
+//         @include mq($width: 768px){
+//             img{
+//                 height:100%;
+//                 width:100%;
+//             }
+//         }
+
+//     }
+
+
+//     .portfolio-title{
+//         font-size: 1.0rem;
+//     }
+
+//     .featured{
+//         .portfolio-title{
+//             font-size: 2.2rem;
+//         }
+   
+//         .portfolio-desc{
+//            font-size: 1.1rem;
+//            display: inline !important;
+//         }
+
+
+//         @include mq($width:768px){
+//             .portfolio-desc{
+//                 font-size:3.1em;
+               
+//             }
+//         }
+//     }
+
+
+
+// }
+
+
+
+// .portfolio-modal{
+//     position: absolute !important;
+
+//     z-index:910 !important;
+//     top:5em;
+//     bottom:2em;
+//     padding-right: 2em;;
+//     left: 3em; 
+//     right:0em;
+//     width: 85vw;
+//     height: 70vh;
+
+   
+//     background: rgb(155,154,148);
+//     background: linear-gradient(21deg, rgba(155,154,148,1) 0%, rgba(255,255,255,1) 50%, rgba(173,252,250,1) 100%);
+//     border: 5px solid #050505;
+//     border-radius: 23px;
+
+
+//     box-shadow:  0 0 0 3em rbga (black, .5);
+//     overflow-y: scroll; 
+//     overflow-x:hidden;
+//     border-style: solid;
+
+//     display: none;
+//     color:black;
+//     align-items: center;
+//     align-content: center;
+
+
+//     &.is-open{
+//         display:block;
+       
+
+
+//         .container-all{
+//             overflow-x: hidden !important;
+//             position: fixed;
+
+
+
+    
+//         }
+    
+   
+//     }
+
+
+//     @include mq($width:768px){
+//         max-width: 95%;
+//         margin-top: -0.5em;
+//         margin-left: 1.5em;
+
+//     }
+
+
+// }
+
+// .modal-close{
+//     background: white;
+//     position: sticky;
+//     align-items: center;
+//     ;
+//     right:200em;
+//     top: 0em;
+//     border: 0;
+//     width:2em;
+//     height:2em;
+//     padding: 4px 0 0;
+//     border-radius: 50%;
+//     box-shadow: 0 0 5px rbga(black, .5);
+//     cursor: pointer;
+
+
+
+// }
+
+// .portfolio-header{
+//     text-align : left;
+//     padding: 1vh 0;
+
+//     margin-bottom:  2em;
+//     background-size: cover;
+//     background-position: center;
+
+//     @include mq($width: 768px){
+//         margin-top:2px;
+        
+       
+//         ;
+//     }
+// }
+
+// .header-one{
+//     background-image: url(../img/portfolio-01.jpg);
+    
+ 
+
+// }
+
+// .header-two{
+//     background-image: url(../img/portfolio-02.jpg);
+
+// }
+
+
+// // MODAL ! 
+// .portfolio-title-box{
+//     background:rgba(rgb(2, 77, 138), .75);
+//     padding: 2em 0em 3em 3em;
+//     color: $white;
+//     width: 70vw;
+//     max-width: 70%;
+
+//     @include mq($width:768px){
+//         padding: 1em 0em 1.2em 1.4em;
+//     }
+
+//     //MODAL TITLE
+//     .portfolio-title{
+        
+//         font-size: 6.2vw; 
+//         display: inline-blocks;
+        
+//         &::after {
+//             content: '';
+//             display:block;
+//             height: 1px;
+//             margin: .5em 0;
+//             background : white;
+//             width: 100%;
+//         }
+
+//         @include mq($width:768px){
+//             font-size: 1.4rem;
+//             margin-left: 1.2em;
+        
+//         }
+
+
+//     }
+
+
+// .portfolio-subtitle{
+//     font-size: 2.95vw;
+
+//      a:hover{
+//         color: rgb(255, 251, 7);
+//     }
+
+//     @include mq($width:768px){
+//         font-size: 0.8rem;
+//         margin-left: 2.5em;
+//     }
+
+  
+   
+// }
+
+
+
+
+
+
+
+
+
+// @keyframes modalIn{
+//     0% {opacity :0;}
+//     100% { opacity: 1;}
+// }
+
+
+// @keyframes modalOut{
+//     0% {opacity :1;}
+//     100% { opacity: 0;}
+// }
+
+
+// }
+
+// .portfolio-content{
+//     text-align: left;
+//     width: 85%;
+//     // 
+//     margin-top: 20px;
+//     ;
+    
+//     padding-bottom: 35.5vh;
+
+//     p{
+//         padding-left: 10vw;
+//     }
+
+//     @include mq($width:768px){
+//         // @include mq() {
+//         padding-left: 2px;
+//         padding-bottom: 15px;
+//         font-size: .9rem;
+        
+     
+
+// .portfolio-pull-right{
+//     width: 35%;
+//     float: center;
+//     margin-left:  16em;
+// }
+
+
+
+// // }
+
+//     }
+   
+// }
+
+// .portfolio-pull-left{
+//       max-width:25vw;
+    
+//     float: left;
+//     margin-left:20vw;
+//     margin-bottom:20vh;
+    
+    
+
+//     @include mq($width:768px){
+//         width: 15%;
+//         position: absolute;
+//         top:5em;
+//         right:1em;
+//         float: left;
+//         margin-left: 12em;
+//     }
+// }
+
+
+

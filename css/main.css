@@ -332,7 +332,7 @@ body {
 }
 @media (min-width: 768px) {
   body {
-    font-size: 0.89em;
+    font-size: 0.85em;
   }
 }
 
@@ -624,6 +624,7 @@ nav a {
   margin-top: 5em;
   padding-left: 3.5em;
   margin-bottom: 2em;
+  max-height: 90vh;
   -webkit-box-shadow: 9px 10px 61px 0px rgba(0, 0, 0, 0.33);
   -moz-box-shadow: 9px 10px 61px 0px rgba(0, 0, 0, 0.33);
   box-shadow: 9px 10px 61px 0px rgba(0, 0, 0, 0.33);
@@ -635,7 +636,7 @@ nav a {
 }
 @media (min-width: 768px) {
   .about-me {
-    margin-top: 8em;
+    margin-top: 3.5em;
   }
 }
 
@@ -719,107 +720,57 @@ nav a {
     grid-row: 3/4;
   }
 }
-.swiper-container {
-  width: 80vw;
-  height: 60vh;
-  position: relative !important;
-  z-index: 0;
-  overflow: hidden !important;
-}
-.swiper-container .swiper-slide {
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.swiper-container-cube {
-  position: relative;
-}
-
-.swiper-button-prev.is-open {
-  z-index: -5;
-}
-
-.swiper-button-next.is-open {
-  z-index: -5;
-}
-
 .portfolio {
   text-align: center;
   padding: 1em 0;
-  overflow: hidden !important;
-  position: relative;
   background: #002855;
+  height: 100vh;
 }
 @media (min-width: 768px) {
   .portfolio {
-    height: 95%;
+    height: 100vh;
   }
 }
 
 .portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 80vh;
   width: 90%;
   margin: 0 auto;
   -webkit-margin: 0 auto;
   max-width: 47em;
 }
 
-figcaption {
-  display: none;
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  flex: 1 1 20rem;
+  margin: 0em 0em;
+  border: solid 4px #0353A4;
 }
-
 .portfolio-item img {
   display: block;
   max-width: auto;
-  height: auto;
+  height: 100%;
+  width: 100%;
 }
 .portfolio-item:hover figcaption, .portfolio-item:focus figcaption {
   top: 0 !important;
   background: rgba(19, 28, 39, 0.774);
 }
 
-.item1 {
-  background-image: url("/img/rock-paper-scissor.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.item2 {
-  background-image: url("/img/ecommerce_site.JPG");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.item3 {
-  background-image: url("/img/covid_19.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.item4 {
-  background-image: url("/img/gym.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.item5 {
-  background-image: url("/img/payroll_c.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .portfolio-item figcaption {
   position: absolute;
-  top: 110%;
+  top: 100%;
   bottom: 0;
   right: 0;
   left: 0;
-  padding: 0 0 4.5em 1em;
+  padding: 2em;
   color: white;
-  text-align: center;
-  font-size: 0.8em;
+  text-align: left;
+  font-size: 0.2em;
   display: flex;
   flex-direction: column;
   transition: top ease-in-out 250ms;
@@ -832,6 +783,10 @@ figcaption {
 }
 .featured .portfolio-title {
   font-size: 1 rem;
+}
+
+.portfolio-desc {
+  display: none !important;
 }
 
 .portfolio-link {
@@ -854,6 +809,30 @@ figcaption {
 }
 
 @supports (display: grid) {
+  .portfolio-items {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 0.08em;
+    margin-left: 5vw;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  @media (min-width: 768px) {
+    .portfolio-items {
+      grid-template-columns: repeat(4, 10.5em);
+      grid-template-rows: repeat(2, 31vh);
+      column-gap: 0.1em;
+      row-gap: 0.3em;
+      padding-left: 0.91em;
+      padding-right: 1em;
+      justify-content: center;
+      width: 90%;
+      margin: 0 auto;
+      -webkit-margin: 0 auto;
+      max-width: 40;
+    }
+  }
+
   .portfolio-item.featured {
     grid-column: 1/span 2;
     grid-row: 1/span 2;
@@ -883,15 +862,12 @@ figcaption {
   }
 }
 .portfolio-modal {
-  position: absolute !important;
-  z-index: 910 !important;
-  top: 5em;
+  position: fixed;
+  z-index: 910;
+  top: 2em;
   bottom: 2em;
-  padding-right: 2em;
-  left: 3em;
-  right: 0em;
-  width: 85vw;
-  height: 70vh;
+  left: 2em;
+  right: 2em;
   background: #9b9a94;
   background: linear-gradient(21deg, #9b9a94 0%, white 50%, #adfcfa 100%);
   border: 5px solid #050505;
@@ -902,8 +878,6 @@ figcaption {
   border-style: solid;
   display: none;
   color: black;
-  align-items: center;
-  align-content: center;
 }
 .portfolio-modal.is-open {
   display: block;
@@ -922,10 +896,9 @@ figcaption {
 
 .modal-close {
   background: white;
-  position: sticky;
-  align-items: center;
-  right: 200em;
-  top: 0em;
+  position: fixed;
+  left: 1em;
+  top: 3em;
   border: 0;
   width: 2em;
   height: 2em;
@@ -934,10 +907,16 @@ figcaption {
   box-shadow: 0 0 5px rbga(black, 0.5);
   cursor: pointer;
 }
+@media (min-width: 768px) {
+  .modal-close {
+    left: 2.5em;
+    top: 1em;
+  }
+}
 
 .portfolio-header {
   text-align: left;
-  padding: 1vh 0;
+  padding: 5em 0;
   margin-bottom: 2em;
   background-size: cover;
   background-position: center;
@@ -960,16 +939,10 @@ figcaption {
   background: rgba(2, 77, 138, 0.75);
   padding: 2em 0em 3em 3em;
   color: #FFFFFF;
-  width: 70vw;
-  max-width: 70%;
-}
-@media (min-width: 768px) {
-  .portfolio-title-box {
-    padding: 1em 0em 1.2em 1.4em;
-  }
+  width: 70%;
 }
 .portfolio-title-box .portfolio-title {
-  font-size: 6.2vw;
+  font-size: 2.2rem;
   display: inline-blocks;
 }
 .portfolio-title-box .portfolio-title::after {
@@ -980,23 +953,11 @@ figcaption {
   background: white;
   width: 100%;
 }
-@media (min-width: 768px) {
-  .portfolio-title-box .portfolio-title {
-    font-size: 1.4rem;
-    margin-left: 1.2em;
-  }
-}
 .portfolio-title-box .portfolio-subtitle {
-  font-size: 2.95vw;
+  font-size: 0.95rem;
 }
 .portfolio-title-box .portfolio-subtitle a:hover {
   color: #fffb07;
-}
-@media (min-width: 768px) {
-  .portfolio-title-box .portfolio-subtitle {
-    font-size: 0.8rem;
-    margin-left: 2.5em;
-  }
 }
 @keyframes modalIn {
   0% {
@@ -1019,36 +980,41 @@ figcaption {
   text-align: left;
   width: 85%;
   margin-top: 20px;
-  padding-bottom: 35.5vh;
+  padding-bottom: 2em;
 }
 .portfolio-content p {
-  padding-left: 10vw;
+  padding-left: 13px;
 }
 @media (min-width: 768px) {
   .portfolio-content {
     padding-left: 2px;
     padding-bottom: 15px;
-    font-size: 0.9rem;
   }
+  .portfolio-content .portfolio-full-width {
+    width: calc(84vw - 3em);
+    max-width: initial;
+    margin: 2em calc(55% - 50vw);
+    padding-left: 50px;
+    height: 26vh;
+    object-fit: cover;
+    /* default value: image is centered*/
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .portfolio-content .portfolio-full-width {
+    max-width: calc(65vh - 1em);
+  }
+}
+@media (min-width: 768px) {
   .portfolio-content .portfolio-pull-right {
     width: 35%;
-    float: center;
+    float: left;
     margin-left: 16em;
   }
 }
-
-.portfolio-pull-left {
-  max-width: 25vw;
-  float: left;
-  margin-left: 20vw;
-  margin-bottom: 20vh;
-}
 @media (min-width: 768px) {
-  .portfolio-pull-left {
-    width: 15%;
-    position: absolute;
-    top: 5em;
-    right: 1em;
+  .portfolio-content .portfolio-pull-left {
+    width: 45%;
     float: left;
     margin-left: 12em;
   }

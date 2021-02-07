@@ -23,6 +23,7 @@
     margin-top:5em;
     padding-left: 3.5em;
    margin-bottom: 2em;
+   max-height:90vh;
    
 
  
@@ -33,7 +34,9 @@ box-shadow: 9px 10px 61px 0px rgba(0,0,0,0.33);
 
    
 @include mq($width:768px){
-        margin-top: 8em;
+        margin-top: 3.5em;
+
+    
 
      }
    
