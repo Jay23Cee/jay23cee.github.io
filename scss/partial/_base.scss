@@ -5,12 +5,14 @@
     
 }
 
+
+
 body{
     color: $light-gray;
     font-family: $ff-s;
     line-height: 1.6;
     
-    font-size: .875rem;
+    font-size: 12px;
     overflow-x: hidden !important;
     background: rgb(0,40,85);
 background: linear-gradient(126deg, rgba(0,40,85,1) 27%, rgba(11,19,43,1) 100%);
@@ -19,7 +21,7 @@ background: linear-gradient(126deg, rgba(0,40,85,1) 27%, rgba(11,19,43,1) 100%);
 
 
     @include mq{
-        font-size:1.125rem;
+        font-size:.89em;
     }
 }
 
@@ -65,7 +67,7 @@ h2{
     color:$u-blue;
 
     @include mq{
-        font-size:3rem;
+        font-size:2.4em;
     }
 }
 

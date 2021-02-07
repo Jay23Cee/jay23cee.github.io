@@ -5,6 +5,7 @@
     left:4em;
     background:transparent;
     border: 0;
+    z-index: 4;
   
     cursor:pointer;
 }
@@ -84,6 +85,7 @@ nav a {
 .nav-is-open{
 
     //height:20vh;
+    z-index: 4;
     
 
     nav{

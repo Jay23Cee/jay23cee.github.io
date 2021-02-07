@@ -1,6 +1,7 @@
 @mixin container($width: 90%, $max-width: 50em){
     width:$width;
     margin:0 auto;
+    -webkit-margin:0 auto;
     max-width:$max-width;
 }
 

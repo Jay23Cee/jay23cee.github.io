@@ -325,14 +325,14 @@ body {
   color: #E8E9EB;
   font-family: "Merriweather", sans-serif;
   line-height: 1.6;
-  font-size: 0.875rem;
+  font-size: 12px;
   overflow-x: hidden !important;
   background: #002855;
   background: linear-gradient(126deg, #002855 27%, #0b132b 100%);
 }
 @media (min-width: 768px) {
   body {
-    font-size: 1.125rem;
+    font-size: 0.89em;
   }
 }
 
@@ -371,7 +371,7 @@ h2 {
 }
 @media (min-width: 768px) {
   h2 {
-    font-size: 3rem;
+    font-size: 2.4em;
   }
 }
 
@@ -381,6 +381,7 @@ h2 {
   left: 4em;
   background: transparent;
   border: 0;
+  z-index: 4;
   cursor: pointer;
 }
 
@@ -447,6 +448,9 @@ nav a {
   display: none;
 }
 
+.nav-is-open {
+  z-index: 4;
+}
 .nav-is-open nav {
   transform: translateX(0);
   overflow-x: hidden !important;
@@ -487,23 +491,30 @@ nav a {
 .welcome {
   background-image: url("/img/bg.jpg");
   background-size: cover;
+  -webkit-background-size: cover;
   background-position: center;
   height: 100vh;
+  max-width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 .welcome h1 {
-  font-size: 2.5rem;
+  font-size: 8.5vw;
   font-weight: 400;
   color: #0466C8;
   line-height: 2;
   text-align: center;
 }
+@media (min-width: 768px) {
+  .welcome h1 {
+    font-size: 2.5rem;
+  }
+}
 .welcome h1 span {
   font-family: "Georgia", sans-serif;
-  font-size: 3.5rem;
+  font-size: 7.8vw;
   letter-spacing: 0.15em;
   color: #0353A4;
   text-transform: uppercase;
@@ -594,14 +605,25 @@ nav a {
     font-size: 44px;
   }
 }
+.about {
+  background-image: url("/img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
 .about-me {
   width: 90%;
   margin: 0 auto;
-  max-width: 51em;
-  margin-top: 1.5em;
+  -webkit-margin: 0 auto;
+  max-width: 768px;
+  margin-top: 5em;
+  padding-left: 3.5em;
   margin-bottom: 2em;
-  background: #002855;
-  background: linear-gradient(299deg, #002855 27%, #0b132b 100%);
   -webkit-box-shadow: 9px 10px 61px 0px rgba(0, 0, 0, 0.33);
   -moz-box-shadow: 9px 10px 61px 0px rgba(0, 0, 0, 0.33);
   box-shadow: 9px 10px 61px 0px rgba(0, 0, 0, 0.33);
@@ -611,12 +633,17 @@ nav a {
   display: block;
   clear: both;
 }
+@media (min-width: 768px) {
+  .about-me {
+    margin-top: 8em;
+  }
+}
 
 .about-img {
-  max-height: 23;
+  max-height: 60vw;
   opacity: 0.67;
 }
-@media (min-width: 42em) {
+@media (min-width: 768px) {
   .about-img {
     float: left;
     margin-right: 3em;
@@ -636,6 +663,12 @@ nav a {
   .about-me {
     display: grid;
     grid-template-columns: [port-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [img-end] 1.5fr [port-end];
+    grid-template-rows: repeat(4em, 1fr);
+  }
+  @media (min-width: 768px) {
+    .about-me {
+      grid-template-columns: [port-start] minmax(8em, 1fr) [name-start] minmax(12em, 1fr) [img-end] 1.5fr [port-end];
+    }
   }
 
   .about-img {
@@ -645,6 +678,8 @@ nav a {
   @media (min-width: 768px) {
     .about-img {
       grid-row: 1/4;
+      grid-column: 1/4;
+      max-height: 100vw;
     }
   }
 
@@ -684,10 +719,36 @@ nav a {
     grid-row: 3/4;
   }
 }
+.swiper-container {
+  width: 80vw;
+  height: 60vh;
+  position: relative !important;
+  z-index: 0;
+  overflow: hidden !important;
+}
+.swiper-container .swiper-slide {
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.swiper-container-cube {
+  position: relative;
+}
+
+.swiper-button-prev.is-open {
+  z-index: -5;
+}
+
+.swiper-button-next.is-open {
+  z-index: -5;
+}
+
 .portfolio {
   text-align: center;
   padding: 1em 0;
-  overflow: auto;
+  overflow: hidden !important;
+  position: relative;
   background: #002855;
 }
 @media (min-width: 768px) {
@@ -697,20 +758,16 @@ nav a {
 }
 
 .portfolio-items {
-  display: flex;
-  flex-wrap: wrap;
   width: 90%;
   margin: 0 auto;
+  -webkit-margin: 0 auto;
   max-width: 47em;
 }
 
-.portfolio-item {
-  position: relative;
-  overflow: hidden;
-  flex: 1 1 20rem;
-  margin: 0em 0em;
-  border: solid 4px #0353A4;
+figcaption {
+  display: none;
 }
+
 .portfolio-item img {
   display: block;
   max-width: auto;
@@ -755,14 +812,14 @@ nav a {
 
 .portfolio-item figcaption {
   position: absolute;
-  top: 100%;
+  top: 110%;
   bottom: 0;
   right: 0;
   left: 0;
-  padding: 2em;
+  padding: 0 0 4.5em 1em;
   color: white;
-  text-align: left;
-  font-size: 0.2em;
+  text-align: center;
+  font-size: 0.8em;
   display: flex;
   flex-direction: column;
   transition: top ease-in-out 250ms;
@@ -775,10 +832,6 @@ nav a {
 }
 .featured .portfolio-title {
   font-size: 1 rem;
-}
-
-.portfolio-desc {
-  display: none !important;
 }
 
 .portfolio-link {
@@ -801,31 +854,6 @@ nav a {
 }
 
 @supports (display: grid) {
-  .portfolio-items {
-    display: grid;
-    grid-template-columns: repeat(2, 40vw);
-    grid-template-rows: repeat(4, 18vh);
-    gap: 0.08em;
-    margin-left: 5%;
-    object-fit: cover;
-    overflow: hidden;
-    position: relative;
-  }
-  @media (min-width: 768px) {
-    .portfolio-items {
-      grid-template-columns: repeat(4, 10.5em);
-      grid-template-rows: repeat(2, 31vh);
-      column-gap: 0.1em;
-      row-gap: 0.3em;
-      padding-left: 0.91em;
-      padding-right: 1em;
-      justify-content: center;
-      width: 90%;
-      margin: 0 auto;
-      max-width: 40;
-    }
-  }
-
   .portfolio-item.featured {
     grid-column: 1/span 2;
     grid-row: 1/span 2;
@@ -855,12 +883,15 @@ nav a {
   }
 }
 .portfolio-modal {
-  position: fixed;
-  z-index: 910;
-  top: 2em;
+  position: absolute !important;
+  z-index: 910 !important;
+  top: 5em;
   bottom: 2em;
-  left: 2em;
-  right: 2em;
+  padding-right: 2em;
+  left: 3em;
+  right: 0em;
+  width: 85vw;
+  height: 70vh;
   background: #9b9a94;
   background: linear-gradient(21deg, #9b9a94 0%, white 50%, #adfcfa 100%);
   border: 5px solid #050505;
@@ -871,6 +902,8 @@ nav a {
   border-style: solid;
   display: none;
   color: black;
+  align-items: center;
+  align-content: center;
 }
 .portfolio-modal.is-open {
   display: block;
@@ -889,9 +922,10 @@ nav a {
 
 .modal-close {
   background: white;
-  position: fixed;
-  left: 1em;
-  top: 3em;
+  position: sticky;
+  align-items: center;
+  right: 200em;
+  top: 0em;
   border: 0;
   width: 2em;
   height: 2em;
@@ -900,16 +934,10 @@ nav a {
   box-shadow: 0 0 5px rbga(black, 0.5);
   cursor: pointer;
 }
-@media (min-width: 768px) {
-  .modal-close {
-    left: 2.5em;
-    top: 1em;
-  }
-}
 
 .portfolio-header {
   text-align: left;
-  padding: 5em 0;
+  padding: 1vh 0;
   margin-bottom: 2em;
   background-size: cover;
   background-position: center;
@@ -932,10 +960,16 @@ nav a {
   background: rgba(2, 77, 138, 0.75);
   padding: 2em 0em 3em 3em;
   color: #FFFFFF;
-  width: 70%;
+  width: 70vw;
+  max-width: 70%;
+}
+@media (min-width: 768px) {
+  .portfolio-title-box {
+    padding: 1em 0em 1.2em 1.4em;
+  }
 }
 .portfolio-title-box .portfolio-title {
-  font-size: 2.2rem;
+  font-size: 6.2vw;
   display: inline-blocks;
 }
 .portfolio-title-box .portfolio-title::after {
@@ -946,11 +980,23 @@ nav a {
   background: white;
   width: 100%;
 }
+@media (min-width: 768px) {
+  .portfolio-title-box .portfolio-title {
+    font-size: 1.4rem;
+    margin-left: 1.2em;
+  }
+}
 .portfolio-title-box .portfolio-subtitle {
-  font-size: 0.95rem;
+  font-size: 2.95vw;
 }
 .portfolio-title-box .portfolio-subtitle a:hover {
   color: #fffb07;
+}
+@media (min-width: 768px) {
+  .portfolio-title-box .portfolio-subtitle {
+    font-size: 0.8rem;
+    margin-left: 2.5em;
+  }
 }
 @keyframes modalIn {
   0% {
@@ -973,41 +1019,36 @@ nav a {
   text-align: left;
   width: 85%;
   margin-top: 20px;
-  padding-bottom: 2em;
+  padding-bottom: 35.5vh;
 }
 .portfolio-content p {
-  padding-left: 13px;
+  padding-left: 10vw;
 }
 @media (min-width: 768px) {
   .portfolio-content {
     padding-left: 2px;
     padding-bottom: 15px;
+    font-size: 0.9rem;
   }
-  .portfolio-content .portfolio-full-width {
-    width: calc(84vw - 3em);
-    max-width: initial;
-    margin: 2em calc(55% - 50vw);
-    padding-left: 50px;
-    height: 26vh;
-    object-fit: cover;
-    /* default value: image is centered*/
-  }
-}
-@media (min-width: 768px) and (min-width: 768px) {
-  .portfolio-content .portfolio-full-width {
-    max-width: calc(65vh - 1em);
-  }
-}
-@media (min-width: 768px) {
   .portfolio-content .portfolio-pull-right {
     width: 35%;
-    float: left;
+    float: center;
     margin-left: 16em;
   }
 }
+
+.portfolio-pull-left {
+  max-width: 25vw;
+  float: left;
+  margin-left: 20vw;
+  margin-bottom: 20vh;
+}
 @media (min-width: 768px) {
-  .portfolio-content .portfolio-pull-left {
-    width: 45%;
+  .portfolio-pull-left {
+    width: 15%;
+    position: absolute;
+    top: 5em;
+    right: 1em;
     float: left;
     margin-left: 12em;
   }
@@ -1016,6 +1057,7 @@ nav a {
 .contact {
   width: 90%;
   margin: 0 auto;
+  -webkit-margin: 0 auto;
   max-width: 50em;
   padding: 2.5em 0;
   height: 90%;
@@ -1130,6 +1172,7 @@ footer {
 .social-icon {
   width: 90%;
   margin: 0 auto;
+  -webkit-margin: 0 auto;
   max-width: 5em;
   display: flex;
   justify-content: center;

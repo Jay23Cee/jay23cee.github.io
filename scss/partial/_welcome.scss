@@ -5,10 +5,12 @@
     // NEEDS TO BE INPUTED FOR INTRO WALLPAPER
     background-image: url("/img/bg.jpg");
     background-size :cover;
+    -webkit-background-size:cover;
     background-position:center; 
 
     
     height: 100vh;
+    max-width: 100vw;
     
     display:flex;
     align-items: center;
@@ -17,7 +19,7 @@
 
     h1{
         
-       font-size: 2.5rem;
+       font-size: 8.5vw;
        font-weight: $fw-n;
        color:$true-blue;
        line-height: 2;
@@ -26,10 +28,12 @@
  
       
        
-      
+       @include mq($width: 768px){
+        font-size: 2.5rem;
+       }
 
        span{
-        @include sans-serif($fs:3.5rem, $color: $u-blue);
+        @include sans-serif($fs:7.8vw, $color: $u-blue);
         display:block;
 
         @include mq($width: 768px){

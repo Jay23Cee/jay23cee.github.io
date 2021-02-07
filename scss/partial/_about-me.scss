@@ -1,11 +1,30 @@
+.about{
+
+   
+   
+    background-image: url("/img/bg.jpg");
+    background-size :cover;
+    background-position:center; 
+    width: 100vw;
+    height:100vh;
+    margin:0;
+    position:relative;
+    overflow: hidden;
+   
+
+    
+}
+
+
 .about-me{
-    @include container($max-width:51em);
+    @include container($max-width:768px);
     @include  clearfix;
     
-    margin-top:1.5em;
+    margin-top:5em;
+    padding-left: 3.5em;
    margin-bottom: 2em;
-   background: rgb(0,40,85);
-   background: linear-gradient(299deg, rgba(0,40,85,1) 27%, rgba(11,19,43,1) 100%);
+   
+
  
 
    -webkit-box-shadow: 9px 10px 61px 0px rgba(0,0,0,0.33);
@@ -13,7 +32,10 @@
 box-shadow: 9px 10px 61px 0px rgba(0,0,0,0.33);
 
    
+@include mq($width:768px){
+        margin-top: 8em;
 
+     }
    
 }
 
@@ -22,15 +44,15 @@ box-shadow: 9px 10px 61px 0px rgba(0,0,0,0.33);
 
 
 .about-img{
-    max-height: 23;
-
+   
+    max-height:60vw;
     opacity: .67;
 
 
-    @media (min-width: 42em){
+    @include mq($width:768px){
         float:left;
         margin-right: 3em;
-        
+
 
         
        
@@ -58,6 +80,13 @@ box-shadow: 9px 10px 61px 0px rgba(0,0,0,0.33);
         display: grid;
       // grid-template-columns:1fr 1fr;
         grid-template-columns: [port-start] minmax(6em, 1fr)  [name-start] minmax(6em, 1fr) [img-end] 1.5fr [port-end];
+        grid-template-rows: repeat(4em , 1fr);
+
+        @include mq($width:768px){
+            grid-template-columns: [port-start] minmax(8em, 1fr)  [name-start] minmax(12em, 1fr) [img-end] 1.5fr [port-end];
+
+        }
+
 
         
        
@@ -71,6 +100,8 @@ box-shadow: 9px 10px 61px 0px rgba(0,0,0,0.33);
 
         @include mq($width:768px){
             grid-row:1/4;
+            grid-column: 1/4;
+            max-height: 100vw;
         }
 
         

@@ -6,6 +6,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0 , user-scalable=no", user-scalable=nocontain" />
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   
   <title>Jackson's' Portfolio</title>
   <link rel=" stylesheet" type="text/css" href="css\main.css">
@@ -26,23 +32,46 @@
   </nav>
      
 <div class="container-all">
-  <div class="welcome" id='home'>
+  <button class="menu-button" \>    
+    <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+    width="30" height="27"
+    viewBox="0 0 48 48"
+    style=" fill:#000000;"><linearGradient id="9iHXMuvV7brSX7hFt~tsna_Rdp3AydLFY2A_gr1" x1="12.066" x2="34.891" y1=".066" y2="22.891" gradientUnits="userSpaceOnUse"><stop offset=".237" stop-color="#3bc9f3"></stop><stop offset=".85" stop-color="#1591d8"></stop></linearGradient><path fill="url(#9iHXMuvV7brSX7hFt~tsna_Rdp3AydLFY2A_gr1)" d="M43,15H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,14.1,44.1,15,43,15z"></path><linearGradient id="9iHXMuvV7brSX7hFt~tsnb_Rdp3AydLFY2A_gr2" x1="12.066" x2="34.891" y1="12.066" y2="34.891" gradientUnits="userSpaceOnUse"><stop offset=".237" stop-color="#3bc9f3"></stop><stop offset=".85" stop-color="#1591d8"></stop></linearGradient><path fill="url(#9iHXMuvV7brSX7hFt~tsnb_Rdp3AydLFY2A_gr2)" d="M43,27H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,26.1,44.1,27,43,27z"></path><linearGradient id="9iHXMuvV7brSX7hFt~tsnc_Rdp3AydLFY2A_gr3" x1="12.066" x2="34.891" y1="24.066" y2="46.891" gradientUnits="userSpaceOnUse"><stop offset=".237" stop-color="#3bc9f3"></stop><stop offset=".85" stop-color="#1591d8"></stop></linearGradient><path fill="url(#9iHXMuvV7brSX7hFt~tsnc_Rdp3AydLFY2A_gr3)" d="M43,39H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,38.1,44.1,39,43,39z"></path></svg>
 
-    <button class="menu-button" \>    
-      <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-      width="30" height="27"
-      viewBox="0 0 48 48"
-      style=" fill:#000000;"><linearGradient id="9iHXMuvV7brSX7hFt~tsna_Rdp3AydLFY2A_gr1" x1="12.066" x2="34.891" y1=".066" y2="22.891" gradientUnits="userSpaceOnUse"><stop offset=".237" stop-color="#3bc9f3"></stop><stop offset=".85" stop-color="#1591d8"></stop></linearGradient><path fill="url(#9iHXMuvV7brSX7hFt~tsna_Rdp3AydLFY2A_gr1)" d="M43,15H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,14.1,44.1,15,43,15z"></path><linearGradient id="9iHXMuvV7brSX7hFt~tsnb_Rdp3AydLFY2A_gr2" x1="12.066" x2="34.891" y1="12.066" y2="34.891" gradientUnits="userSpaceOnUse"><stop offset=".237" stop-color="#3bc9f3"></stop><stop offset=".85" stop-color="#1591d8"></stop></linearGradient><path fill="url(#9iHXMuvV7brSX7hFt~tsnb_Rdp3AydLFY2A_gr2)" d="M43,27H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,26.1,44.1,27,43,27z"></path><linearGradient id="9iHXMuvV7brSX7hFt~tsnc_Rdp3AydLFY2A_gr3" x1="12.066" x2="34.891" y1="24.066" y2="46.891" gradientUnits="userSpaceOnUse"><stop offset=".237" stop-color="#3bc9f3"></stop><stop offset=".85" stop-color="#1591d8"></stop></linearGradient><path fill="url(#9iHXMuvV7brSX7hFt~tsnc_Rdp3AydLFY2A_gr3)" d="M43,39H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,38.1,44.1,39,43,39z"></path></svg>
+    <svg class='close-icon' x="0px" y="0px"
+    width="30" height="27"
+    viewBox="0 0 172 172"
+    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,6.88c-43.65603,0 -79.12,35.46397 -79.12,79.12c0,43.65603 35.46397,79.12 79.12,79.12c43.65603,0 79.12,-35.46397 79.12,-79.12c0,-43.65603 -35.46397,-79.12 -79.12,-79.12zM86,13.76c39.93779,0 72.24,32.30221 72.24,72.24c0,39.93779 -32.30221,72.24 -72.24,72.24c-39.93779,0 -72.24,-32.30221 -72.24,-72.24c0,-39.93779 32.30221,-72.24 72.24,-72.24zM60.29406,55.04l20.94234,30.76515l-21.19765,31.15485h8.75453l16.5214,-24.41594h0.68531l16.22578,24.41594h9.26515l-20.98265,-30.80547l21.45297,-31.11453h-8.79485l-16.56172,24.63094h-0.69203l-16.3064,-24.63094z"></path></g></g></svg>
 
-      <svg class='close-icon' x="0px" y="0px"
-      width="30" height="27"
-      viewBox="0 0 172 172"
-      style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,6.88c-43.65603,0 -79.12,35.46397 -79.12,79.12c0,43.65603 35.46397,79.12 79.12,79.12c43.65603,0 79.12,-35.46397 79.12,-79.12c0,-43.65603 -35.46397,-79.12 -79.12,-79.12zM86,13.76c39.93779,0 72.24,32.30221 72.24,72.24c0,39.93779 -32.30221,72.24 -72.24,72.24c-39.93779,0 -72.24,-32.30221 -72.24,-72.24c0,-39.93779 32.30221,-72.24 72.24,-72.24zM60.29406,55.04l20.94234,30.76515l-21.19765,31.15485h8.75453l16.5214,-24.41594h0.68531l16.22578,24.41594h9.26515l-20.98265,-30.80547l21.45297,-31.11453h-8.79485l-16.56172,24.63094h-0.69203l-16.3064,-24.63094z"></path></g></g></svg>
+  </button>
 
-    </button>
+  <section class="about">
+  <div class="about-me" id='home'>
+
+ 
+
+    <img class ='about-img'src="img/jayc.png" alt="a picture of Jackson Garcia">
+
+    <h1 class="about-title"> <a>Jackson</a> Cortez</h1>
+    <h2 class="about-subtitle"> Full Stack Developer</h2>
+    <div class="about-text">
+      <p>I live by the words of Sir Francis Bacon, “Knowledge is
+        power”.With this I prioritize learning, gaining wisdom and understanding. Having this goal in
+        mind I was determined to be the first in my family to earned a high school diploma and obtain a
+        bachelor’s degree in Psychology. My determinations, reliability, persistence and positive attitude towards challenges has
+        led me to overcome many obstacles. In 2003 I first learned how to programmed in HTML &CSS using MySpace. I didn't see programming as a career but as a hobby. That changed in 2016, when I decided to change majors to computer science
+        because the first semester I took a programming course in Python, I immediately found my passion. Since then I tutored in computer science subjects such as Python, C++, Java, and
+        JavaScript at West LA College and USC Upward Bound program.My goal is to have a career
+        as a full stack developer and become an IT mentor. When I achieve this goal, it is important for
+        me to motivate, encourage, instruct and support those seeking to succeed. Just the way I have
+        been mentored to reach my goals, I would like to share the knowledge obtained to mentor others.
+
+     
+    </div>
     
-    <h1 >Welcome to my  <span class='welcome-bannertext'> Portfolio</span></h1>
+   
   </div>
+</section>
 
   <section class="intro" id='Languages'>
 
@@ -183,82 +212,46 @@ style=" fill:#000000;"><defs><linearGradient x1="43" y1="72.5625" x2="43" y2="99
 
   </section>
 
-
+<!-- 
 
   <section class="about-me" id='about'>
 
-    <img class ='about-img'src="img/jc.jpg" alt="a picture of Jackson Garcia">
-
-    <h1 class="about-title"> <a>Jackson's</a> Porfolio</h1>
-    <h2 class="about-subtitle"> Full Stack Developer</h2>
-    <div class="about-text">
-      <p>Welcome, my name is Jackson. I learned how to code using Myspace in 2003. I was first introduce to Html and CSS and was able to create spectacular static sites.
-       After earning a bachelors in psychology from Cal State Long beach, I went back to West Los Angeles College to learn and have experience in  Java, Python, Javascript, HTML, CSS, SQL, ASP.NET, PHP, SWIFT, React, Angular, MongoDB and Flask. I also have experience creating apps using Android Studio and iOS Swift Xcode. Since then I have earned 2 Associates Degree, one in Computer Science and the other in Web design and databases administration.
-       <br>
-       My apps will be available in the play store and app store soon. Below are some projects I have worked on. </p>
-
-     
-    </div>
+    
 
 
-  </section>
+  </section> -->
 
   <section class="portfolio" id = 'portfolio'>
 
     <h1>My Work</h1>
 
-    <div class="portfolio-items ">
+<!-- Slider main container -->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
 
-      <!-- Portfolio item 1-->
+      
 
-      <figure class="portfolio-item item1 ">
+
+
+
+      <div class="portfolio-item swiper-slide item1 ">
 
         
         <figcaption>
           <h2 class="portfolio-title"> Rock, Paper,Sciccor</h2>
           <p class="portfolio-desc"> This a site that you can play Rock, Paper, Scissor using Javascript</p>
-          <a href="#" class="portfolio-link">More Info</a>
+          <a href="modal1" class="portfolio-link">More Info</a>
         </figcaption>
        
            <!-- Portfolio modal 1-->
-        <div class="portfolio-modal">
-          
-          <button class="modal-close">
-           <svg   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width='30' height='27' "><path d="M256 90c44.3 0 86 17.3 117.4 48.6C404.7 170 422 211.7 422 256s-17.3 86-48.6 117.4C342 404.7 300.3 422 256 422s-86-17.3-117.4-48.6C107.3 342 90 300.3 90 256s17.3-86 48.6-117.4C170 107.3 211.7 90 256 90m0-42C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48z"/><path d="M360 330.9L330.9 360 256 285.1 181.1 360 152 330.9l74.9-74.9-74.9-74.9 29.1-29.1 74.9 74.9 74.9-74.9 29.1 29.1-74.9 74.9z"/></svg>
-        </button>
-
-          <div class="portfolio-header header-one "> 
-            <div class="portfolio-title-box">
-              <h2 class="portfolio-title"> Rock , Paper , Scissor</h2>
-              <p class="portfolio-subtitle">
-                <a href="https://hardcore-raman-b987d8.netlify.app" id='rel'  onclick=openlink(this)>Visit Website</a>
-                <br>
-                <a href="https://github.com/Jay23Cee/Rock-Paper-Scissors" id='rel'  onclick=openlink(this)>View Code</a>
-              </p>
-          </div><!-- /close portfolio header-->
-          <div class="portfolio-content">
-            <p><b>Summary:</b> Enjoy a Rock,Paper,Scissor game.. <br>
-              <b>Obsticle:</b> An obsticle with this project was displaying the players choice under the image. Solution was adding an increment to z-index to players choice. </p>
-  
-              <p> <b>Languages:</b> Html,CSS,SAAS,Javascript</p>
-              <p><b>Update:</b> If I were to update this Project I would add a 'rock,paper, scissor' animation.</p>
-  
-            <img class="portfolio-pull-left" src="img/rock-paper-scissor1.jpg" alt=" Rock, Paper , Sciccor">
-          
-
-
-
-          </div>
-          </div>
-
-
-        </div>
+      
 
            
-      </figure>
+      </div>
       <!-- Portfolio item 2-->
 
-      <figure class="portfolio-item item2 featured">
+      <div class="portfolio-item swiper-slide item2 featured">
 
 
         <figcaption>
@@ -310,10 +303,10 @@ style=" fill:#000000;"><defs><linearGradient x1="43" y1="72.5625" x2="43" y2="99
 
 
            <!-- /modal-->
-      </figure>
+      </div>
       <!-- Portfolio item 3-->
 
-      <figure class="portfolio-item item3">
+      <div class="portfolio-item swiper-slide item3">
 
       
         <figcaption>
@@ -360,12 +353,12 @@ style=" fill:#000000;"><defs><linearGradient x1="43" y1="72.5625" x2="43" y2="99
 
 
            <!-- /modal-->
-      </figure>
+      </div>
 
 
       <!-- Portfolio item 4-->
 
-        <figure class="portfolio-item  item4 ">
+        <div class="portfolio-item swiper-slide  item4 ">
 
         <figcaption>
           <h2 class="portfolio-title"> Fitness Club</h2>
@@ -411,11 +404,11 @@ style=" fill:#000000;"><defs><linearGradient x1="43" y1="72.5625" x2="43" y2="99
 
 
            <!-- /modal-->
-    </figure>
+    </div>
 
       <!-- Portfolio item 5-->
 
-      <figure class="portfolio-item item5">
+      <div class="portfolio-item swiper-slide item5">
 
 
         
@@ -461,10 +454,75 @@ style=" fill:#000000;"><defs><linearGradient x1="43" y1="72.5625" x2="43" y2="99
 
 
            <!-- /modal-->
-     </figure>
+     </div>
+    
+
+
+
+    </div> <!--   SLIDERS -->
+    <!-- If we need pagination -->
+    <div class="swiper-pagination "></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev "></div>
+    <div class="swiper-button-next "></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+</div>
+
+
+
+
+<!-- MODAL SECTIONS HERES -->
+
+<div class="portfolio-modal modal1">
+          
+  <button class="modal-close">
+   <svg   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width='30' height='27' "><path d="M256 90c44.3 0 86 17.3 117.4 48.6C404.7 170 422 211.7 422 256s-17.3 86-48.6 117.4C342 404.7 300.3 422 256 422s-86-17.3-117.4-48.6C107.3 342 90 300.3 90 256s17.3-86 48.6-117.4C170 107.3 211.7 90 256 90m0-42C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48z"/><path d="M360 330.9L330.9 360 256 285.1 181.1 360 152 330.9l74.9-74.9-74.9-74.9 29.1-29.1 74.9 74.9 74.9-74.9 29.1 29.1-74.9 74.9z"/></svg>
+</button>
+
+  <div class="portfolio-header header-one "> 
+    <div class="portfolio-title-box">
+      <h2 class="portfolio-title"> Rock , Paper , Scissor</h2>
+      <p class="portfolio-subtitle">
+        <a href="https://hardcore-raman-b987d8.netlify.app" id='rel'  onclick=openlink(this)>Visit Website</a>
+        <br>
+        <a href="https://github.com/Jay23Cee/Rock-Paper-Scissors" id='rel'  onclick=openlink(this)>View Code</a>
+      </p>
+  </div><!-- /close portfolio header-->
+  <div class="portfolio-content">
+    <p><b>Summary:</b> Enjoy a Rock,Paper,Scissor game.. <br>
+      <b>Obsticle:</b> An obsticle with this project was displaying the players choice under the image. Solution was adding an increment to z-index to players choice. </p>
+
+      <p> <b>Languages:</b> Html,CSS,SAAS,Javascript</p>
+      <p><b>Update:</b> If I were to update this Project I would add a 'rock,paper, scissor' animation.</p>
+
+    <img class="portfolio-pull-left" src="img/rock-paper-scissor1.jpg" alt=" Rock, Paper , Sciccor">
+  
+
+
+
+  </div>
+  </div>
 
 
 </div>
+
+
+
+
+
+
+<!-- MODALS SECTION END -->
+
+
+
+
+
+
+
+
   </section>
 
 
@@ -519,6 +577,7 @@ style=" fill:#000000;"><defs><linearGradient x1="43" y1="72.5625" x2="43" y2="99
   <script src="js/modal.js"></script>
   <script src="js/mail.js"></script>
   <script src="js/welcome.js"> </script>
+  <script src="js/portfolio.js"> </script>
 </body>
 
 </imgsrc="img>
