@@ -838,7 +838,7 @@ nav a {
     grid-row: 1/span 2;
   }
   @media (min-width: 768px) {
-    .portfolio-item.featured img {
+    .portfolio-item.featured .feat-img {
       height: 100%;
       width: 100%;
     }
@@ -1014,7 +1014,7 @@ nav a {
 }
 @media (min-width: 768px) {
   .portfolio-content .portfolio-pull-left {
-    width: 45%;
+    width: 40%;
     float: left;
     margin-left: 12em;
   }

@@ -19,6 +19,8 @@
 }
 
 
+
+
 .portfolio-items{
     display:flex;
     flex-wrap:wrap;
@@ -175,7 +177,7 @@
         grid-row : 1/ span 2;
         
         @include mq($width: 768px){
-            img{
+            .feat-img{
                 height:100%;
                 width:100%;
             }
@@ -396,27 +398,39 @@
              /* default value: image is centered*/
 
             @include mq($width: 768px){
-                max-width:calc(65vh - 1em);            }
+                max-width:calc(65vh - 1em);            
+            }
    
         }
 
-.portfolio-pull-right{
-    width: 35%;
-    float: left;
-    margin-left:  16em;
+    .portfolio-pull-right{
+        width: 35%;
+        float: left;
+        margin-left:  16em;
+    }
+
+    .portfolio-pull-left{
+        width: 40%;
+        float: left;
+        margin-left: 12em;
+
+       
+  
+    
 }
 
-.portfolio-pull-left{
-    width: 45%;
-    float: left;
-    margin-left: 12em;
-}
+
+
 
 // }
 
     }
    
 }
+
+
+
+
 
 
 
