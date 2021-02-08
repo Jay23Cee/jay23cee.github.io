@@ -1,7 +1,7 @@
 .intro{
     display:flex;
     color:$white;
-    
+    height:100vh;
 
     h2{
         color:$u-blue;
@@ -20,7 +20,11 @@
     @supports(display:grid) {
         display:grid;
         grid-template-columns: minmax(5.5em,1fr) minmax(auto,40em) minmax(5.5em, 1fr);
-        
+
+
+        @include mq($width:768px){
+            grid-template-columns: minmax(5.5em,1fr) minmax(auto,40vw) minmax(5.5em, 1fr)
+        }
     }
 
 }
@@ -58,7 +62,7 @@
         @include mq($width:768px){
             font-size:16px;
         text-align:center;
-        grid-template-columns: repeat(4, 24%);
+        grid-template-columns: repeat(4, 25%);
      
 
         }

@@ -3,15 +3,15 @@ footer {
     padding: 2em 0;
     text-align: center;
     position: relative;
-    font-size: .5rem;
-    max-height: 108em;
+    font-size: 1rem;
+    height:15vh;
   
     
     
     background: linear-gradient(260deg, rgba(0,40,85,1) 27%, rgba(11,19,43,1) 100%);
 
     overflow:hidden;
-    max-height: 10em;
+   
 
     @include mq{
         font-size: .5rem;
@@ -26,6 +26,7 @@ footer {
     justify-content: center;
     
     margin-left:47%;
+   
     
     img{
         max-width: 60%;
@@ -47,8 +48,8 @@ footer {
 }
 
 .social-icon{
-    width:15%;
-    height:15%;
+    width:auto;
+    height:5vh;
 
     @include mq{
         width: 10%;
@@ -78,7 +79,8 @@ footer {
         align-items: center;
       
         background: rgba($white, $alpha: 1.5);
-        margin-bottom: .75em;
+       margin-bottom: 1vh;;
+        margin-top:.2vh;
         margin-left: 31vw;
         
         max-width:32%;
@@ -98,10 +100,10 @@ footer {
 @supports (display:grid){
     .social-icon{
         display: grid;
-        grid-template-columns: repeat(3, 4em);
+        grid-template-columns: repeat(3, 10vw);
         grid-column-gap: .5em;
        
-        margin-left: 50vw;
+        margin-left: 45vw;
 
        
         

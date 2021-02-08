@@ -321,11 +321,15 @@ template {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 12px;
+}
+
 body {
   color: #E8E9EB;
   font-family: "Merriweather", sans-serif;
   line-height: 1.6;
-  font-size: 12px;
+  font-size: 2.6vw;
   overflow-x: hidden !important;
   background: #002855;
   background: linear-gradient(126deg, #002855 27%, #0b132b 100%);
@@ -544,6 +548,7 @@ nav a {
 .intro {
   display: flex;
   color: #FFFFFF;
+  height: 100vh;
 }
 .intro h2 {
   color: #0353A4;
@@ -560,6 +565,11 @@ nav a {
   .intro {
     display: grid;
     grid-template-columns: minmax(5.5em, 1fr) minmax(auto, 40em) minmax(5.5em, 1fr);
+  }
+  @media (min-width: 768px) {
+    .intro {
+      grid-template-columns: minmax(5.5em, 1fr) minmax(auto, 40vw) minmax(5.5em, 1fr);
+    }
   }
 }
 
@@ -586,7 +596,7 @@ nav a {
   .intro-middle ul {
     font-size: 16px;
     text-align: center;
-    grid-template-columns: repeat(4, 24%);
+    grid-template-columns: repeat(4, 25%);
   }
 }
 
@@ -1122,11 +1132,10 @@ footer {
   padding: 2em 0;
   text-align: center;
   position: relative;
-  font-size: 0.5rem;
-  max-height: 108em;
+  font-size: 1rem;
+  height: 15vh;
   background: linear-gradient(260deg, #002855 27%, #0b132b 100%);
   overflow: hidden;
-  max-height: 10em;
 }
 @media (min-width: 768px) {
   footer {
@@ -1154,8 +1163,8 @@ footer {
 }
 
 .social-icon {
-  width: 15%;
-  height: 15%;
+  width: auto;
+  height: 5vh;
 }
 @media (min-width: 768px) {
   .social-icon {
@@ -1178,7 +1187,8 @@ footer {
   height: 1px;
   align-items: center;
   background: white;
-  margin-bottom: 0.75em;
+  margin-bottom: 1vh;
+  margin-top: 0.2vh;
   margin-left: 31vw;
   max-width: 32%;
 }
@@ -1193,9 +1203,9 @@ footer {
 @supports (display: grid) {
   .social-icon {
     display: grid;
-    grid-template-columns: repeat(3, 4em);
+    grid-template-columns: repeat(3, 10vw);
     grid-column-gap: 0.5em;
-    margin-left: 50vw;
+    margin-left: 45vw;
   }
   @media (min-width: 768px) {
     .social-icon {
