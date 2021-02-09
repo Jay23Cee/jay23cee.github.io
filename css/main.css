@@ -329,7 +329,7 @@ body {
   color: #E8E9EB;
   font-family: "Merriweather", sans-serif;
   line-height: 1.6;
-  font-size: 2.6vw;
+  font-size: min(max(8px, 2.5vw), 12px);
   overflow-x: hidden !important;
   background: #002855;
   background: linear-gradient(126deg, #002855 27%, #0b132b 100%);
@@ -634,7 +634,7 @@ nav a {
   margin-top: 5em;
   padding-left: 3.5em;
   margin-bottom: 2em;
-  max-height: 90vh;
+  max-height: 100vh;
   -webkit-box-shadow: 9px 10px 61px 0px rgba(0, 0, 0, 0.33);
   -moz-box-shadow: 9px 10px 61px 0px rgba(0, 0, 0, 0.33);
   box-shadow: 9px 10px 61px 0px rgba(0, 0, 0, 0.33);
@@ -651,13 +651,15 @@ nav a {
 }
 
 .about-img {
-  max-height: 60vw;
+  max-height: 30vh;
   opacity: 0.67;
+  padding-left: 10vw;
 }
 @media (min-width: 768px) {
   .about-img {
     float: left;
     margin-right: 3em;
+    padding-left: 0;
   }
 }
 

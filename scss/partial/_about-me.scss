@@ -23,8 +23,8 @@
     margin-top:5em;
     padding-left: 3.5em;
    margin-bottom: 2em;
-   max-height:90vh;
-   
+   max-height:100vh;
+
 
  
 
@@ -48,14 +48,16 @@ box-shadow: 9px 10px 61px 0px rgba(0,0,0,0.33);
 
 .about-img{
    
-    max-height:60vw;
+    max-height:30vh;
     opacity: .67;
+    padding-left: 10vw;
 
 
     @include mq($width:768px){
         float:left;
         margin-right: 3em;
-
+        padding-left: 0;
+        
 
         
        
