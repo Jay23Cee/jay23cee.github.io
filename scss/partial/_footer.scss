@@ -52,8 +52,9 @@ footer {
     height:5vh;
 
     @include mq{
+        padding-top: 1em;
         width: 10%;
-        height: 1%;
+        height: 80%;
     }
     
 }
@@ -86,10 +87,10 @@ footer {
         max-width:32%;
 
         @include mq($width:768px){
-         
+        
             margin-left:38%;
             max-width:23%;
-            margin-bottom: -.07em;
+            margin-bottom: .07em;
 
         }
     }
@@ -100,17 +101,18 @@ footer {
 @supports (display:grid){
     .social-icon{
         display: grid;
-        grid-template-columns: repeat(3, 10vw);
+        grid-template-columns: repeat(3, minmax(8vh, 10vh));
         grid-column-gap: .5em;
        
         margin-left: 45vw;
-
+        padding-bottom: 2.5vh;
        
         
         @include mq{
            
             margin-top:-0.9%;
-            grid-template-columns: repeat(3, 2.9em);
+            margin-left:50vw;
+            grid-template-columns: repeat(3, 3vw);
 
         }
         
@@ -127,6 +129,7 @@ footer {
             margin-right:5%;
             margin-top:-2.5em;
             font-size: .75rem;
+            padding: bottom 5vh;;
         }
     }
 

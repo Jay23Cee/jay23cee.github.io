@@ -832,12 +832,13 @@ nav a {
   }
   @media (min-width: 768px) {
     .portfolio-items {
-      grid-template-columns: repeat(4, 10.5em);
-      grid-template-rows: repeat(2, 31vh);
+      grid-template-columns: repeat(4, 20vw);
+      grid-template-rows: repeat(2, 35vh);
       column-gap: 0.1em;
       row-gap: 0.3em;
       padding-left: 0.91em;
       padding-right: 1em;
+      overflow: visible;
       justify-content: center;
       width: 90%;
       margin: 0 auto;
@@ -1171,8 +1172,9 @@ footer {
 }
 @media (min-width: 768px) {
   .social-icon {
+    padding-top: 1em;
     width: 10%;
-    height: 1%;
+    height: 80%;
   }
 }
 
@@ -1199,21 +1201,23 @@ footer {
   .copyright::before {
     margin-left: 38%;
     max-width: 23%;
-    margin-bottom: -0.07em;
+    margin-bottom: 0.07em;
   }
 }
 
 @supports (display: grid) {
   .social-icon {
     display: grid;
-    grid-template-columns: repeat(3, 10vw);
+    grid-template-columns: repeat(3, minmax(8vh, 10vh));
     grid-column-gap: 0.5em;
     margin-left: 45vw;
+    padding-bottom: 2.5vh;
   }
   @media (min-width: 768px) {
     .social-icon {
       margin-top: -0.9%;
-      grid-template-columns: repeat(3, 2.9em);
+      margin-left: 50vw;
+      grid-template-columns: repeat(3, 3vw);
     }
   }
 
@@ -1226,6 +1230,7 @@ footer {
       margin-right: 5%;
       margin-top: -2.5em;
       font-size: 0.75rem;
+      padding: bottom 5vh;
     }
   }
 }
