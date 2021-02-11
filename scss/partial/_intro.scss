@@ -3,6 +3,7 @@
     color:$white;
     height:100vh;
     position: relative;
+    margin-bottom:3em;
 
     h2{
         color:$u-blue;
@@ -21,6 +22,7 @@
     @supports(display:grid) {
         display:grid;
         grid-template-columns: minmax(5.5em,1fr) minmax(auto,40em) minmax(5.5em, 1fr);
+       
 
 
         @include mq($width:768px){
@@ -34,7 +36,7 @@
     background: $oxford-blue;
     background: linear-gradient(356deg, rgba(0,40,85,1) 27%, rgba(11,19,43,1) 100%);
     padding: 2.2em 2vw;
-  
+    
     text-align: center;
     display:flex;
     flex-direction: column;
@@ -52,8 +54,8 @@
 
 
         display:grid;
-        grid-template-columns: repeat(3, 30%);
-        // grid-template-rows: repeat(4, 10em);
+        grid-template-columns: repeat(3,20vw);
+        grid-template-rows: repeat(4, 20vh);
        // grid-template-columns: 8em 8em 8em 8em;
       //  grid-template-rows: 10em 10em 9em;
 
@@ -63,7 +65,7 @@
         @include mq($width:768px){
             font-size:16px;
         text-align:center;
-        grid-template-columns: repeat(4, 25%);
+        grid-template-columns: repeat(4, 9vw);
      
 
         }

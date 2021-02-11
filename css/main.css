@@ -550,6 +550,7 @@ nav a {
   color: #FFFFFF;
   height: 100vh;
   position: relative;
+  margin-bottom: 3em;
 }
 .intro h2 {
   color: #0353A4;
@@ -591,13 +592,14 @@ nav a {
   text-align: center;
   padding-inline-start: 8px;
   display: grid;
-  grid-template-columns: repeat(3, 30%);
+  grid-template-columns: repeat(3, 20vw);
+  grid-template-rows: repeat(4, 20vh);
 }
 @media (min-width: 768px) {
   .intro-middle ul {
     font-size: 16px;
     text-align: center;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(4, 9vw);
   }
 }
 
