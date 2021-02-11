@@ -13,6 +13,7 @@ footer {
     overflow:hidden;
    
 
+   
     @include mq{
         font-size: .5rem;
         padding-top: 30px;
@@ -34,7 +35,6 @@ footer {
 
         @include mq(){
             max-width:100%;
-            margin-bottom: 10em;
            //footer image to 100% for tablet and desktop 
         }
 
@@ -92,7 +92,7 @@ footer {
         
             margin-left:38%;
             max-width:23%;
-            margin-bottom: .507em;
+            margin-bottom: .07em;
 
         }
     }
@@ -115,8 +115,7 @@ footer {
             margin-top:-0.9%;
             margin-left:50vw;
             grid-template-columns: repeat(3, 3vw);
-           
-           
+
         }
         
 
@@ -132,7 +131,7 @@ footer {
             margin-right:5%;
             margin-top:-2.5em;
             font-size: .75rem;
-           
+            padding: bottom 5vh;;
         }
     }
 

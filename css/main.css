@@ -1164,7 +1164,6 @@ footer {
 @media (min-width: 768px) {
   .social-icon img {
     max-width: 100%;
-    margin-bottom: 10em;
   }
 }
 
@@ -1203,7 +1202,7 @@ footer {
   .copyright::before {
     margin-left: 38%;
     max-width: 23%;
-    margin-bottom: 0.507em;
+    margin-bottom: 0.07em;
   }
 }
 
@@ -1232,6 +1231,7 @@ footer {
       margin-right: 5%;
       margin-top: -2.5em;
       font-size: 0.75rem;
+      padding: bottom 5vh;
     }
   }
 }
