@@ -570,7 +570,7 @@ nav a {
   }
   @media (min-width: 768px) {
     .intro {
-      grid-template-columns: minmax(5.5em, 1fr) minmax(auto, 40vw) minmax(5.5em, 1fr);
+      grid-template-columns: minmax(5.5em, 1fr) minmax(auto, 1fr) minmax(5.5em, 1fr);
     }
   }
 }
@@ -599,7 +599,7 @@ nav a {
   .intro-middle ul {
     font-size: 16px;
     text-align: center;
-    grid-template-columns: repeat(4, 9vw);
+    grid-template-columns: repeat(4, 6em);
   }
 }
 
@@ -627,7 +627,7 @@ nav a {
   margin: 0;
   position: relative;
   overflow: hidden;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 
 .about-me {

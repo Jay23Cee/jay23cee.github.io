@@ -27,7 +27,7 @@
     width:100vw;
     height:80vh;
   @include container($max-width:47em);
-
+    
 
     
 
@@ -43,6 +43,8 @@
     flex: 1 1 20rem;
     margin:  0em 0em;
     border: solid 4px $u-blue;
+    
+
     
 
     img{
