@@ -4,7 +4,7 @@ footer {
     text-align: center;
     position: relative;
     font-size: 1rem;
-    height:15vh;
+    height:80px;
   
     
     
@@ -33,6 +33,7 @@ footer {
 
         @include mq(){
             max-width:100%;
+            margin-bottom: 10em;
            //footer image to 100% for tablet and desktop 
         }
 
@@ -90,7 +91,7 @@ footer {
         
             margin-left:38%;
             max-width:23%;
-            margin-bottom: .07em;
+            margin-bottom: .507em;
 
         }
     }
@@ -113,7 +114,8 @@ footer {
             margin-top:-0.9%;
             margin-left:50vw;
             grid-template-columns: repeat(3, 3vw);
-
+           
+           
         }
         
 
@@ -129,7 +131,7 @@ footer {
             margin-right:5%;
             margin-top:-2.5em;
             font-size: .75rem;
-            padding: bottom 5vh;;
+           
         }
     }
 
