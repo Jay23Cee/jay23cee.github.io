@@ -52,11 +52,14 @@ footer {
 .social-icon{
     width:auto;
     height:5vh;
+    
+    
 
     @include mq{
         padding-top: 1em;
-        width: 10%;
-        height: 80%;
+        width: 10;
+        height: 70%;
+        margin-bottom: 2em;
     }
     
 }
@@ -113,8 +116,9 @@ footer {
         @include mq{
            
             margin-top:-0.9%;
-            margin-left:50vw;
-            grid-template-columns: repeat(3, 3vw);
+            margin-left:48vw;
+            grid-template-columns: repeat(3, 5em);
+           
 
         }
         
