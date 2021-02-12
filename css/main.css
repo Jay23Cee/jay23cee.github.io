@@ -385,7 +385,7 @@ h2 {
   left: 4em;
   background: transparent;
   border: 0;
-  z-index: 4;
+  z-index: 11;
   cursor: pointer;
 }
 
@@ -450,11 +450,9 @@ nav a {
 
 .close-icon {
   display: none;
+  z-index: 99;
 }
 
-.nav-is-open {
-  z-index: 4;
-}
 .nav-is-open nav {
   transform: translateX(0);
   overflow-x: hidden !important;
@@ -638,7 +636,7 @@ nav a {
   margin-top: 5em;
   padding-left: 3.5em;
   margin-bottom: 2em;
-  max-height: 100vh;
+  max-height: 90vh;
   -webkit-box-shadow: 9px 10px 61px 0px rgba(0, 0, 0, 0.33);
   -moz-box-shadow: 9px 10px 61px 0px rgba(0, 0, 0, 0.33);
   box-shadow: 9px 10px 61px 0px rgba(0, 0, 0, 0.33);
@@ -664,6 +662,7 @@ nav a {
     float: left;
     margin-right: 3em;
     padding-left: 0;
+    border-radius: 10%;
   }
 }
 
@@ -1177,8 +1176,9 @@ footer {
 @media (min-width: 768px) {
   .social-icon {
     padding-top: 1em;
-    width: 10%;
-    height: 80%;
+    width: 10;
+    height: 70%;
+    margin-bottom: 2em;
   }
 }
 
@@ -1220,8 +1220,8 @@ footer {
   @media (min-width: 768px) {
     .social-icon {
       margin-top: -0.9%;
-      margin-left: 50vw;
-      grid-template-columns: repeat(3, 3vw);
+      margin-left: 48vw;
+      grid-template-columns: repeat(3, 5em);
     }
   }
 
