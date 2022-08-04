@@ -1614,7 +1614,7 @@ footer p a {
     display: none;
   }
   .dl-side-content > .logo h1 {
-    color: #fff;
+    color: rgba(9, 38, 255, 0.8);
     font-weight: 400;
     margin: 0;
     font-size: 30px;
