@@ -51,7 +51,7 @@
     font-family: "Open Sans", sans-serif;
     letter-spacing: 0.5px;
     background-color: $main-color;
-    color: #fff;
+    color: rgb(0, 0, 0);
     line-height: 45px;
     display: inline-block;
     padding: 0 35px;
@@ -76,7 +76,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background: #333;
+    background: rgb(255, 255, 255);
     -webkit-transform-origin: right center;
     -moz-transform-origin: right center;
     -ms-transform-origin: right center;

@@ -6,11 +6,11 @@
         margin-bottom: 30px;
 
         .form-control {
-            background-color: #222;
+            background-color: $light-gray;
             border: none;
             height: 60px;
             border-radius: 2px;
-            color: #fff;
+            color: $text-color;
 
             &:focus {
                 box-shadow: none;
