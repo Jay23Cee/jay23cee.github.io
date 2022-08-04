@@ -1,0 +1,242 @@
+/* ==========================================================================
+   Footer Section
+   ========================================================================== */
+
+footer {
+    padding: 60px 0;
+    border-top: 1px solid #333;
+
+    p {
+        color: $text-color;
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 0;
+
+        a {
+            color: $main-color;
+        }
+    }
+}
+
+.footer-social {
+    a {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .mobile-navigation {
+        display: inline-block;
+    }
+
+    #primary-navigation {
+        display: none;
+    }
+
+    .dl-side-content {
+        >.logo {
+            h1 {
+                color: #fff;
+                font-weight: 400;
+                margin: 0;
+                font-size: 30px;
+
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .sm-padding {
+        padding: 15px 0;
+    }
+
+    .mb-50 {
+        margin-bottom: 50px;
+    }
+
+    .about-bg {
+        .dots {
+            display: none;
+        }
+    }
+
+    .header {
+        background-attachment: scroll !important;
+        background-position: 50% 0 !important;
+
+        .caption {
+            h4 {
+                font-size: 30px;
+            }
+
+            h1 {
+                font-size: 45px;
+                line-height: 1.2em;
+            }
+        }
+    }
+
+    .services {
+        .feat-item.active {
+            .text-center {
+                padding-top: 50px;
+                margin-top: 0;
+            }
+        }
+    }
+
+    .about {
+        .tab-content {
+            .image {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+                margin: 50px 0 0;
+            }
+        }
+    }
+
+    .dl-side-content {
+        >.logo {
+            h1 {
+                color: #fff;
+                font-weight: 400;
+                margin: 0;
+                font-size: 30px;
+
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .row {
+        margin: 0;
+    }
+
+    .xs-padding {
+        padding: 15px;
+    }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    .dl-side-content {
+        >.logo {
+            img {
+                max-width: inherit;
+                max-height: 30px;
+                width: auto;
+            }
+
+            h1 {
+                color: #fff;
+                font-weight: 400;
+                margin: 0;
+                font-size: 30px;
+
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .hero-social {
+        position: inherit;
+        left: inherit;
+        top: inherit;
+        transform: translateY(0);
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+
+        li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+    }
+
+    .contact-form {
+        .form-group {
+            margin-bottom: 15px;
+        }
+    }
+
+    .cta-section {
+        text-align: center !important;
+
+        .text-right {
+            text-align: center !important;
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {
+    footer {
+        text-align: center;
+    }
+
+    .footer-social {
+        text-align: center !important;
+        margin-top: 14px;
+
+        a {
+            margin: 0 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        .caption {
+            h4 {
+                font-size: 15px;
+                line-height: 1.75em;
+            }
+
+            h1 {
+                font-size: 40px;
+                line-height: 1.2em;
+            }
+
+            p {
+                font-size: 15px;
+                font-weight: 400;
+                color: #eee;
+                word-spacing: 2px;
+                -webkit-animation-delay: 1s;
+                animation-delay: 1s;
+            }
+        }
+    }
+
+    .dl-side-content {
+        >.logo {
+            img {
+                max-width: inherit;
+                max-height: 30px;
+                width: auto;
+            }
+
+            h1 {
+                color: #fff;
+                font-weight: 400;
+                margin: 0;
+                font-size: 30px;
+
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+}

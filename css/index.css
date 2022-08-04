@@ -177,7 +177,7 @@
   height: 100%;
   z-index: 9999999;
   overflow-y: auto;
-  background-color: #1a191d;
+  background-color: #ffffff;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
@@ -219,7 +219,7 @@
   z-index: 999999;
   opacity: 0;
   visibility: hidden;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -891,10 +891,10 @@ body {
   font-size: 15px;
   line-height: 26px;
   font-weight: 400;
-  color: #a3a3a3;
+  color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #26252b;
+  background-color: #fefefe;
 }
 
 p {
@@ -902,7 +902,7 @@ p {
   font-size: 15px;
   line-height: 26px;
   font-weight: 400;
-  color: #a3a3a3;
+  color: #000000;
   margin-bottom: 20px;
 }
 
@@ -959,7 +959,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-weight: 400;
   font-family: "Teko", sans-serif;
 }
@@ -1351,7 +1351,7 @@ h6 {
    Hero Section
    ========================================================================== */
 .hero-section {
-  background-image: url(../img/hero-bg.jpg);
+  background-image: url(../img/hero-bg.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1361,7 +1361,7 @@ h6 {
   padding-top: 75px;
   padding-bottom: 75px;
   width: 100%;
-  background-color: rgba(38, 37, 43, 0.75);
+  background-color: rgba(227, 226, 230, 0.306);
 }
 
 .hero-content h1 {
@@ -1432,7 +1432,7 @@ h6 {
    skill Section
    ========================================================================== */
 .skill-item {
-  background: #1a191d;
+  background: #ffffff;
 }
 .skill-item .logo {
   width: auto;
@@ -1603,11 +1603,11 @@ h6 {
   margin-bottom: 30px;
 }
 .contact-form .form-group .form-control {
-  background-color: #222;
+  background-color: rgb(213, 212, 212);
   border: none;
   height: 60px;
   border-radius: 2px;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 .contact-form .form-group .form-control:focus {
   -webkit-box-shadow: none;

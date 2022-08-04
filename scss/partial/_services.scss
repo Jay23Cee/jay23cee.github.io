@@ -1,0 +1,49 @@
+/* ==========================================================================
+   Services Section
+   ========================================================================== */
+.services-item {
+    padding: 40px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: #222;
+        transition: all 0.2s ease-in-out;
+
+        .dots {
+            visibility: visible;
+            opacity: 0.5;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    .dots {
+        background-image: url(../img/doted-pattern.png);
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        right: -50px;
+        bottom: -50px;
+        opacity: 0.5;
+        visibility: hidden;
+        opacity: 0;
+        display: block;
+        transition: all 0.2s ease-in-out;
+        z-index: -1;
+    }
+
+    i {
+        color: $main-color;
+        font-size: 50px;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,44 @@
+/* ==========================================================================
+   About Section
+   ========================================================================== */
+.about-bg {
+    img {
+        width: 100%;
+    }
+
+    position: relative;
+
+    .dots {
+        background-image: url(../img/doted-pattern.png);
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        left: -200px;
+        bottom: -100px;
+        opacity: 0.7;
+    }
+}
+
+.profile-info {
+    margin-bottom: 30px;
+
+    li {
+        line-height: 35px;
+
+        span {
+            font-weight: 600;
+            width: 100px;
+            letter-spacing: 0;
+            color: $main-color;
+            position: relative;
+            margin-right: 10px;
+
+            &:after {
+                content: ":";
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+    }
+}
