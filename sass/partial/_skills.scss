@@ -5,7 +5,9 @@
 
 .skill-section {}
 
-#skills {}
+.skill-section{
+   background:$white
+}
 
 .skill-item {
    background: darken($body-color, 5);

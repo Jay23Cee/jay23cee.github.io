@@ -160,7 +160,7 @@
   height: 100%;
   z-index: 9999999;
   overflow-y: auto;
-  background-color: #ebebeb;
+  background-color: #f3f2f1;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
@@ -1352,6 +1352,10 @@ h6 {
 /* ==========================================================================
    About Section
    ========================================================================== */
+.about-section {
+  background: #f3f2f1;
+}
+
 .about-bg {
   position: relative;
 }
@@ -1394,6 +1398,10 @@ h6 {
 /* ==========================================================================
    skill Section
    ========================================================================== */
+.skill-section {
+  background: #ffffff;
+}
+
 .skill-item {
   background: #ebebeb;
 }
@@ -1411,6 +1419,10 @@ h6 {
    Portfolio Section
    ========================================================================== */
 /* =======  Portfolio Filter Styles  ======= */
+.portfolio-section {
+  background-color: #f3f2f1;
+}
+
 .portfolio-box {
   position: relative;
   overflow: hidden;
@@ -1549,11 +1561,15 @@ h6 {
 /* ==========================================================================
    Contact Section
    ========================================================================== */
+.contact-section {
+  background-color: #ffffff;
+}
+
 .contact-form .form-group {
   margin-bottom: 30px;
 }
 .contact-form .form-group .form-control {
-  background-color: #e0dfdd;
+  background-color: #f3f2f1;
   border: none;
   height: 60px;
   border-radius: 2px;
@@ -1591,6 +1607,7 @@ h6 {
 footer {
   padding: 60px 0;
   border-top: 1px solid #333;
+  background-color: #f3f2f1;
 }
 footer p {
   color: rgb(0, 0, 0);
