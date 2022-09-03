@@ -1,0 +1,168 @@
+/* ==========================================================================
+   Portfolio Section
+   ========================================================================== */
+/* =======  Portfolio Filter Styles  ======= */
+.portfolio-section{
+    background-color: $light-gray;
+}
+.portfolio-box {
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+        .portfolio-content {
+            &:before {
+                bottom: 0;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        h3 {
+            transform: translateY(0);
+            transition-delay: 0.2s;
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
+.portfolio-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+
+    &:before {
+        background-color: #222;
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: -100%;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+        z-index: -1;
+    }
+
+    h3 {
+        margin-bottom: 0;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: all 0.2s ease-in-out;
+
+        a.img-popup {
+            display: block;
+            font-size: 28px;
+            color: #fff;
+            text-align: center;
+        }
+    }
+
+    a.img-popup {
+        span {
+            display: block;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+    }
+
+    .btns {
+        .btn {
+            line-height: 22px;
+        }
+    }
+}
+
+.portfolio-filter {
+    display: block;
+
+    li {
+        display: inline-block;
+        position: relative;
+        margin: 0 10px;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Teko', sans-serif;
+        font-weight: 400;
+
+        a {
+            display: inline-block;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 15px;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: $main-color;
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+            border-radius: 2px;
+        }
+
+        &:hover {
+            &:before {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+                -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+                transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            }
+
+            cursor: pointer;
+        }
+
+        &:focus {
+            &:before {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+                -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+                transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            }
+
+            cursor: pointer;
+        }
+
+        &:active {
+            &:before {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+                -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+                transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            }
+
+            cursor: pointer;
+        }
+    }
+
+    li.active {
+        &:before {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+        }
+    }
+}

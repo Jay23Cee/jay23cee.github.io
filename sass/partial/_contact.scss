@@ -1,0 +1,49 @@
+/* ==========================================================================
+   Contact Section
+   ========================================================================== */
+   .contact-section{
+    background-color: $white ;
+   }
+.contact-form {
+    .form-group {
+        margin-bottom: 30px;
+
+        .form-control {
+            background-color: $light-gray;
+            border: none;
+            height: 60px;
+            border-radius: 2px;
+            color: $text-color;
+
+            &:focus {
+                box-shadow: none;
+                outline: none;
+            }
+        }
+
+        .form-control.message {
+            height: 150px;
+        }
+    }
+
+    .default-btn {
+        border: none;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+#form-messages {
+    display: none;
+    margin: 0;
+
+    .alert {
+        margin: 0;
+    }
+}
+
+#form-messages.form-status {
+    display: block;
+}

@@ -1,0 +1,45 @@
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+.hero-section {
+    background-image: url(../img/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+
+    .overlay {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        width: 100%;
+        background-color: rgba($body-color, 0.75);
+    }
+}
+
+.hero-content {
+    h1 {
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-size: 24px;
+
+        span {
+            color: $main-color;
+        }
+    }
+}
+
+.hero-social {
+    position: absolute;
+    width: auto;
+    height: auto;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+
+    li {
+        line-height: 35px;
+    }
+}

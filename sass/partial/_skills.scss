@@ -1,0 +1,28 @@
+/* ==========================================================================
+   skill Section
+   ========================================================================== */
+
+
+.skill-section {}
+
+.skill-section{
+   background:$white
+}
+
+.skill-item {
+   background: darken($body-color, 5);
+
+   &:nth-child(odd) {}
+
+   .logo {
+      width: auto;
+      height: 40px;
+      min-width: 45px;
+      // max-width: 60px;
+   }
+
+   .exp {
+      font-weight: 600;
+      font-size: 12px;
+   }
+}
