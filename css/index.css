@@ -843,7 +843,7 @@ body {
   font-size: 15px;
   line-height: 26px;
   font-weight: 400;
-  color: rgb(0, 0, 0);
+  color: rgb(80, 80, 80);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f8f8f8;
@@ -854,7 +854,7 @@ p {
   font-size: 15px;
   line-height: 26px;
   font-weight: 400;
-  color: rgb(0, 0, 0);
+  color: rgb(80, 80, 80);
   margin-bottom: 20px;
 }
 
@@ -911,7 +911,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: rgb(0, 0, 0);
+  color: rgb(80, 80, 80);
   font-weight: 400;
   font-family: "Teko", sans-serif;
 }
@@ -1018,17 +1018,17 @@ h6 {
 
 /* selection */
 ::-webkit-selection {
-  color: rgb(0, 0, 0);
+  color: rgb(80, 80, 80);
   background: rgba(0, 0, 0, 0.1);
 }
 
 ::-moz-selection {
-  color: rgb(0, 0, 0);
+  color: rgb(80, 80, 80);
   background: rgba(0, 0, 0, 0.1);
 }
 
 ::selection {
-  color: rgb(0, 0, 0);
+  color: rgb(80, 80, 80);
   background: rgba(0, 0, 0, 0.1);
 }
 
@@ -1558,6 +1558,10 @@ h6 {
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 
+.modal-dialog h5 {
+  color: rgb(244, 180, 2);
+}
+
 /* ==========================================================================
    Contact Section
    ========================================================================== */
@@ -1573,7 +1577,7 @@ h6 {
   border: none;
   height: 60px;
   border-radius: 2px;
-  color: rgb(0, 0, 0);
+  color: rgb(80, 80, 80);
 }
 .contact-form .form-group .form-control:focus {
   box-shadow: none;
@@ -1610,7 +1614,7 @@ footer {
   background-color: #f3f2f1;
 }
 footer p {
-  color: rgb(0, 0, 0);
+  color: rgb(80, 80, 80);
   font-size: 12px;
   font-weight: 400;
   margin-bottom: 0;
