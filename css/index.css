@@ -1363,6 +1363,10 @@ h6 {
   height: auto;
   overflow: hidden;
 }
+.about-container button {
+  background-color: rgb(9, 195, 246);
+  font-weight: bold;
+}
 
 .about-bg {
   width: 100%;
