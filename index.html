@@ -58,17 +58,20 @@
 							<span class="small d-inline text-light lh-1" id="pro_summary"></span>
 						</p>
 						<p class="mb-1">
-							<b class="d-inline"> Obsticles:</b>
-							<span class="small d-inline text-light lh-1" id="pro_obsticles"></span>
+							<b class="d-inline"> Obstacles:</b>
+							<span class="small d-inline text-light lh-1" id="pro_obstacles"></span>
 						</p>
 						<p class="mb-1">
 							<b class="d-inline">Language:</b>
 							<span class="small d-inline text-light lh-1" id="pro_languages"></span>
 						</p>
 						<p class="mb-1">
-							<b class="d-inline">Updates:</b>
-							<span class="small d-inline text-light lh-1" id="pro_updates"></span>
+							<b class="d-inline">Features:</b>
+							<span class="small d-inline text-light lh-1" id="pro_features"></span>
 						</p>
+
+						 
+						
 						<hr class="my-3 bg-white">
 						<img class="img-fluid" id="pro_thumbnail" src="" alt="">
 					</div>
@@ -568,129 +571,173 @@
 	<script src="js/main.js"></script>
 
 	<script>
-		var jsonDataProjects = [
-		{
-				"pro_id": "1",
-				"pro_title": "Library Xpress",
-				"code_link": "https://github.com/Jay23Cee/library_center",
-				"pro_link": "https://librarycenter-production.up.railway.app/",
-				"pro_thumb": "img/port-2.jpg",
-				"summary": ".",
-				"obstacles": "I faced many challenges with this project. But the most difficult was uploading this project using a Docker container into Heroku",
-				"language": "Golang,React, Typescript",
-				"Project Includes": "MongoDB,C.R.U.D. API, JWT Auth, Cookies,Auth Login, Docker Container,   ",
-				"updates": "Removed the table catalog and create individuals small divs for each item.",
-			},
-
-			{
-				"pro_id": "2",
-				"pro_title": "Nikon",
-				"code_link": "https://github.com/Jay23Cee/Nikon_850_website",
-				"pro_link": "https://vigilant-agnesi-39b86d.netlify.app/",
-				"pro_thumb": "img/nikon.png",
-				"summary": "A website dedicated to the Nikon D850",
-				"obsticles": "",
-				"language": "Javascript, Html, Sass, Css",
-				"Updates": "Needs gallery of images. possibly places to find the camera.",
-			},
-
-			{
-				"pro_id": "3",
-				"pro_title": "Willing Workers",
-				"code_link": "https://github.com/Jay23Cee/WillingWorkersSite-1",
-				"pro_link": "https://singular-biscotti-08deb7.netlify.app/",
-				"pro_thumb": "img/wworkers2.JPG",
-				"summary": "Willing Workers is a service provider for people with special needs.",
-				"obsticles": "Getting the animation to line up on the right time.",
-				"language": "Javascript, Html, Sass, Css",
-				"Updates": "The About me needs to get updated.",
-			},
 	
-		
-		]
+var jsonDataProjects = [
+  {
+    pro_id: "1",
+    pro_title: "Library Xpress",
+    code_link: "https://github.com/Jay23Cee/library_center",
+    pro_link: "https://librarycenter-production.up.railway.app/",
+    pro_thumb: "img/port-2.jpg",
+    summary:
+      "Library Xpress is a web application for managing a library's collection. Users can browse the library's catalog, borrow books, and manage their accounts, while administrators can manage the library's collection and user accounts.",
+    obstacles:
+      "One of the main challenges of this project was deploying it using a Docker container on Heroku.",
+    languages: ["Go-lang", "React Typescript"],
+    features: [
+      "It utilizes MongoDB for data storage.",
+      "The project includes a C.R.U.D. API for managing the library's collection.",
+      "User authentication and authorization are handled using JWT and cookies.",
+      "The project is deployed using a Docker container.",
+      "The project features a responsive design for different screen sizes.",
+      "The project includes client and admin authentication for accessing protected resources.",
+    ],
+    updates: [
+      "Replaced the table catalog with small divs for each item to improve user experience.",
+    ],
+  },
+  {
+    pro_id: "2",
+    pro_title: "Nikon D850 Website",
+    code_link: "https://github.com/Jay23Cee/Nikon_850_website",
+    pro_link: "https://vigilant-agnesi-39b86d.netlify.app/",
+    pro_thumb: "img/nikon.png",
+    summary:
+      "A website providing information and reviews on the Nikon D850 camera.",
+    obstacles: "",
+    languages: ["JavaScript", "HTML", "Sass", "CSS"],
+    features: [
+      "Responsive design for different screen sizes",
+      "Animated image slider for showcasing product images",
+      "Contact form for user queries",
+    ],
+    updates: [
+      "Add a gallery of images to showcase different aspects of the camera",
+      "Include information on where to buy the camera",
+    ],
+  },
+  {
+    pro_id: "3",
+    pro_title: "Willing Workers",
+    code_link: "https://github.com/Jay23Cee/WillingWorkersSite-1",
+    pro_link: "https://singular-biscotti-08deb7.netlify.app/",
+    pro_thumb: "img/wworkers2.JPG",
+    summary: "A website for a service provider for people with special needs.",
+    obstacles: "Aligning the animation on the right time.",
+    languages: [ "JavaScript", "HTML", "Sass", "CSS"],
+    features: [
+      "Responsive design for different screen sizes",
+      "Interactive animations to engage users",
+      "Contact form for user queries",
+    ],
+    updates: ["Update the 'About Us' section with latest information."],
+  },
+];
 
-		var pro_main_id = 0;
+var pro_main_id = 0;
 
-		var model_title = document.getElementById("exampleModalLabel");
-		var pro_code = document.getElementById("pro_code");
-		var pro_link = document.getElementById("pro_link");
-		var pro_summary = document.getElementById("pro_summary");
-		var pro_obsticles = document.getElementById("pro_obsticles");
-		var pro_languages = document.getElementById("pro_languages");
-		var pro_updates = document.getElementById("pro_updates");
-		var pro_thumbnail = document.getElementById("pro_thumbnail");
+var model_title = document.getElementById("exampleModalLabel");
+var pro_code = document.getElementById("pro_code");
+var pro_link = document.getElementById("pro_link");
+var pro_summary = document.getElementById("pro_summary");
+var pro_obstacles = document.getElementById("pro_obstacles");
+var pro_languages = document.getElementById("pro_languages");
+// var pro_updates = document.getElementById("pro_updates");
+var pro_thumbnail = document.getElementById("pro_thumbnail");
+var projectIndex = 0; // or any other value you want to initialize projectIndex with
+var pro_features = document.getElementById("pro_features");
 
-		$('#exampleModal').on('show.bs.modal', function (event) {
-			var button = $(event.relatedTarget) // Button that triggered the modal
-			var pro_title = button.data('title') // Extract info from data-* attributes 
-			var pro_id = button.data('id')
-			document.getElementById("pro_id").value = pro_id
-			pro_main_id = pro_id - 1
-			var modal = $(this)
-			modal.find('.modal-title').text('Detail of ' + pro_title)
-			var pro_updates = document.getElementById("pro_updates")
-			JSONToHTMLTable(jsonDataProjects, pro_main_id)
-		})
+$("#exampleModal").on("show.bs.modal", function (event) {
+  console.log("MODAL OPEN SHOW");
+  var button = $(event.relatedTarget); // Button that triggered the modal
+  var pro_title = button.data("title"); // Extract info from data-* attributes
+  var pro_id = button.data("id");
+  document.getElementById("pro_id").value = pro_id;
+  pro_main_id = pro_id - 1;
+  var modal = $(this);
+  modal.find(".modal-title").text("Detail of " + pro_title);
+//   var pro_updates = document.getElementById("pro_updates");
+  JSONToHTMLTable(jsonDataProjects, pro_main_id);
+});
 
+function JSONToHTMLTable(jsonData, id_of_pro) {
+  //This Code gets all columns for header and stored in array col
+  var col = [];
+  for (var i = 0; i < jsonData.length; i++) {
+    for (var key in jsonData[i]) {
+      if (col.indexOf(key) === -1) {
+        col.push(key);
+      }
+    }
+  }
 
-		function JSONToHTMLTable(jsonData, id_of_pro) {
+  // This Code creates HTML table
+  var table = document.createElement("table");
+  // This Code getsrows for header creader above.
+  var tr = table.insertRow(-1);
 
-			//This Code gets all columns for header and stored in array col
-			var col = [];
-			for (var i = 0; i < jsonData.length; i++) {
-				for (var key in jsonData[i]) {
-					if (col.indexOf(key) === -1) {
-						col.push(key);
-					}
-				}
-			}
+  for (var i = 0; i < col.length; i++) {
+    var th = document.createElement("th");
+    th.innerHTML = col[i];
+    tr.appendChild(th);
+  }
 
-			// This Code creates HTML table
-			var table = document.createElement("table");
-			// This Code getsrows for header creader above.
-			var tr = table.insertRow(-1);
+  pro_main_id = document.getElementById("pro_id").value;
+  // This Code adds data to table as rows
+  for (var i = 0; i < jsonData.length; i++) {
+    tr = table.insertRow(-1);
 
-			for (var i = 0; i < col.length; i++) {
-				var th = document.createElement("th");
-				th.innerHTML = col[i];
-				tr.appendChild(th);
-			}
+    for (var j = 0; j < col.length; j++) {
+      var tabCell = tr.insertCell(-1);
 
-			pro_main_id = document.getElementById("pro_id").value;
-			// This Code adds data to table as rows
-			for (var i = 0; i < jsonData.length; i++) {
-				tr = table.insertRow(-1);
+      exampleModalLabel.innerHTML = jsonData[id_of_pro][col[1]];
+      pro_summary.innerHTML = "<br>  "+jsonData[id_of_pro]["summary"];
+      pro_obstacles.innerHTML ="<br>  "+jsonData[id_of_pro]["obstacles"];
+      pro_languages.innerHTML = "<br>  "+jsonData[id_of_pro]["language"];
+    //   pro_updates.innerHTML = jsonData[id_of_pro]["updates"];
 
-				for (var j = 0; j < col.length; j++) {
-					var tabCell = tr.insertCell(-1);
+      // Set pro_features to an unordered list
 
-					exampleModalLabel.innerHTML = jsonData[id_of_pro][col[1]];
-					pro_summary.innerHTML = jsonData[id_of_pro][col[5]];
-					pro_obsticles.innerHTML = jsonData[id_of_pro][col[6]];
-					pro_languages.innerHTML = jsonData[id_of_pro][col[7]];
-					pro_updates.innerHTML = jsonData[id_of_pro][col[8]];
+      pro_languages.innerHTML = "<ul>";
+      console.log(jsonData[id_of_pro]["languages"]);
+      for (var i = 0; i < jsonData[id_of_pro]["languages"].length; i++) {
+        // Add each feature to the list as a list item
+        pro_languages.innerHTML +=
+          "<li>" + jsonData[id_of_pro]["languages"][i] + "</li>";
+      }
+      pro_languages.innerHTML += "</ul>";
 
-					if (jsonData[id_of_pro][col[4]] != "") {
-						pro_thumbnail.src = jsonData[id_of_pro][col[4]];
-					} else {
-						pro_thumbnail.style.display = "none";
-					}
+      // Set pro_features to an unordered list
+      pro_features.innerHTML = "<ul>";
+      for (var i = 0; i < jsonData[id_of_pro]["features"].length; i++) {
+        // Add each feature to the list as a list item
+        pro_features.innerHTML +=
+          "<li>" + jsonData[id_of_pro]["features"][i] + "</li>";
+      }
+      pro_features.innerHTML += "</ul>";
 
-					if (jsonData[id_of_pro][col[2]] != "") {
-						pro_code.href = jsonData[id_of_pro][col[2]];
-					} else {
-						pro_code.style.display = "none";
-					}
-					if (jsonData[id_of_pro][col[3]]) {
-						pro_link.href = jsonData[id_of_pro][col[3]];
-					} else {
-						pro_link.style.display = "none";
-					}
+      if (jsonData[id_of_pro][col[4]] != "") {
+        pro_thumbnail.src = jsonData[id_of_pro][col[4]];
+      } else {
+        pro_thumbnail.style.display = "none";
+      }
 
-					console.log(jsonData[id_of_pro][col[3]]);
-				}
-			}
-		}
+      if (jsonData[id_of_pro][col[2]] != "") {
+        pro_code.href = jsonData[id_of_pro][col[2]];
+      } else {
+        pro_code.style.display = "none";
+      }
+      if (jsonData[id_of_pro][col[3]]) {
+        pro_link.href = jsonData[id_of_pro][col[3]];
+      } else {
+        pro_link.style.display = "none";
+      }
+
+      console.log(jsonData[id_of_pro][col[3]]);
+    }
+  }
+}
+
 	</script>
 
 </body>
