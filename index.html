@@ -41,7 +41,7 @@
 						<a target="_blank" href="#" type="button" class="btn btn-sm btn-info ml-3" id="pro_link">
 							View Website
 						</a>
-						<a target="_blank" href="#" type="button" class="btn btn-sm btn-secondary ml-2" id="pro_code">
+						<a target="_blank" href="#" type="button" class="btn btn-sm btn-secondary ml-2 btn-viewcode" id="pro_code">
 							View Code
 						</a>
 					</div>
@@ -64,6 +64,10 @@
 						<p class="mb-1">
 							<b class="d-inline">Language:</b>
 							<span class="small d-inline text-light lh-1" id="pro_languages"></span>
+						</p>
+						<p class="mb-1">
+							<b class="d-inline">Framework:</b>
+							<span class="small d-inline text-light lh-1" id="pro_framework"></span>
 						</p>
 						<p class="mb-1">
 							<b class="d-inline">Features:</b>
@@ -401,7 +405,33 @@
 					</div>
 
 					<div class="row portfolio-items">
+						<div class="col-md-4 col-sm-6 padding-10 single-item website website">
+							<div class="portfolio-box">
+								<img src="img/ByteIt.JPG" alt="img">
+								<div class="portfolio-content">
+									<h3 class="text-center">
+										<a href="#" type="button" class="img-popup mt-4" data-toggle="modal" data-target="#exampleModal"
+											data-id="1">
+										Byte it
 
+											<span></span>
+										</a>
+
+										<div class="btns">
+											<button type="button" class="btn default-btn btn-sm lh-1 p-2 mt-3" data-toggle="modal"
+												data-target="#exampleModal" data-id="4">
+												View Detail
+											</button>
+											<br />
+											<a href="https://next13-experiment-beta.vercel.app/" target="_blank"
+												class="btn default-btn btn-sm lh-1 p-2 mt-3">
+												Preview
+											</a>
+										</div>
+									</h3>
+								</div>
+							</div>
+						</div>
 						<!-- <div class="col-md-4 col-sm-6 padding-10 single-item website website">
 							<div class="portfolio-box">
 								<img src="img/port-2.jpg" alt="img">
@@ -583,7 +613,8 @@ var jsonDataProjects = [
       "Library Xpress is a web application for managing a library's collection. Users can browse the library's catalog, borrow books, and manage their accounts, while administrators can manage the library's collection and user accounts.",
     obstacles:
       "One of the main challenges of this project was deploying it using a Docker container on Heroku.",
-    languages: ["Go-lang", "React Typescript"],
+    languages: ["Go-lang", "Typescript"],
+	framework:["React"],
     features: [
       "It utilizes MongoDB for data storage.",
       "The project includes a C.R.U.D. API for managing the library's collection.",
@@ -606,6 +637,7 @@ var jsonDataProjects = [
       "A website providing information and reviews on the Nikon D850 camera.",
     obstacles: "",
     languages: ["JavaScript", "HTML", "Sass", "CSS"],
+	framework:["Vanilla"],
     features: [
       "Responsive design for different screen sizes",
       "Animated image slider for showcasing product images",
@@ -625,6 +657,7 @@ var jsonDataProjects = [
     summary: "A website for a service provider for people with special needs.",
     obstacles: "Aligning the animation on the right time.",
     languages: [ "JavaScript", "HTML", "Sass", "CSS"],
+	framework:["React"],
     features: [
       "Responsive design for different screen sizes",
       "Interactive animations to engage users",
@@ -632,6 +665,36 @@ var jsonDataProjects = [
     ],
     updates: ["Update the 'About Us' section with latest information."],
   },
+  {
+  "pro_id": "4",
+  "pro_title": "Byte It",
+  "code_link": "https://github.com/Jay23Cee/next13-experiment",
+  "pro_link": "https://next13-experiment-beta.vercel.app/",
+  "pro_thumb": "img/Byteit.JPG",
+  "summary": "It is a post that stores the post into a PostgreSQL database. It also uses Google login API. In addition, we are using Next.js and TypeScript. We also have a dashboard where the user can view and delete their own posts.",
+  "obstacles": "Managing state and data flow between client-side and server-side rendering in Next.js.",
+  "solution": "Using NextAuth.js as a centralized authentication library to securely manage user authentication and authorization on both the client-side and server-side. NextAuth.js also provides a session management API that can help manage state and data flow between client-side and server-side rendering.",
+  "languages": [
+    "JavaScript",
+    "HTML",
+    "Sass",
+    "CSS",
+    "TypeScript"
+  ],
+  "framework": [
+    "Next.js",
+    "React"
+  ],
+  "features": [
+    "Support for multiple authentication providers, including Google login API",
+    "Efficient data fetching with Next.js's built-in data fetching methods, such as `getStaticProps` or `getServerSideProps`",
+    "Responsive design for different screen sizes, optimized for mobile and desktop",
+    "User dashboard with the ability to view and delete their own posts",
+    "Advanced search functionality with filter and sorting options",
+    "Integration with a third-party email service for email notifications and newsletters",
+    "Social media sharing buttons for easy sharing of posts on popular social media platforms"
+  ]
+},
 ];
 
 var pro_main_id = 0;
@@ -642,6 +705,7 @@ var pro_link = document.getElementById("pro_link");
 var pro_summary = document.getElementById("pro_summary");
 var pro_obstacles = document.getElementById("pro_obstacles");
 var pro_languages = document.getElementById("pro_languages");
+var pro_framework = document.getElementById("pro_framework");
 // var pro_updates = document.getElementById("pro_updates");
 var pro_thumbnail = document.getElementById("pro_thumbnail");
 var projectIndex = 0; // or any other value you want to initialize projectIndex with
@@ -706,6 +770,17 @@ function JSONToHTMLTable(jsonData, id_of_pro) {
           "<li>" + jsonData[id_of_pro]["languages"][i] + "</li>";
       }
       pro_languages.innerHTML += "</ul>";
+
+
+      pro_framework.innerHTML = "<ul>";
+      console.log(jsonData[id_of_pro]["framework"]);
+      for (var i = 0; i < jsonData[id_of_pro]["framework"].length; i++) {
+        // Add each feature to the list as a list item
+        pro_framework.innerHTML +=
+          "<li>" + jsonData[id_of_pro]["framework"][i] + "</li>";
+      }
+	  pro_framework.innerHTML += "</ul>";
+
 
       // Set pro_features to an unordered list
       pro_features.innerHTML = "<ul>";

@@ -1156,6 +1156,21 @@ h1 {
   overflow: hidden;
 }
 
+.modal-header h5 {
+  color: rgb(0, 208, 255);
+}
+.modal-header .btn-viewcode {
+  background-color: rgba(249, 232, 1, 0.932);
+  color: black;
+}
+.modal-header .btn-viewcode:hover {
+  background-color: red;
+  color: white;
+}
+.modal-header .btn:hover {
+  background-color: red;
+}
+
 /* ==========================================================================
    Services Section
    ========================================================================== */

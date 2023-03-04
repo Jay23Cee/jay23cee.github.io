@@ -77,3 +77,22 @@
 .header.video {
     overflow: hidden;
 }
+
+.modal-header{
+    h5{
+        color:rgb(0, 208, 255);
+    }
+
+    .btn-viewcode{
+        background-color:rgba(249, 232, 1, 0.932);
+        color:black;
+        &:hover{
+            background-color: red;
+            color:white;
+        }
+        
+    }
+   .btn:hover{
+        background-color: red;
+    }
+}
