@@ -25,6 +25,30 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: $body-color;
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        font-size: 19px;
+        line-height: 34px;
+    }
 }
 
 p {
@@ -34,237 +58,103 @@ p {
     font-weight: 400;
     color: $text-color;
     margin-bottom: 20px;
-}
 
-img {
-    width: 100%;
-    height: auto;
-}
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+        font-size: 16px;
+        line-height: 28px;
+    }
 
-span,
-a {
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
-}
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        font-size: 17px;
+        line-height: 30px;
+    }
 
-span:hover,
-a:hover {
-    text-decoration: none;
-    color: $main-color;
-}
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        font-size: 18px;
+        line-height: 32px;
+    }
 
-b {
-    color: $main-color;
-    font-weight: 400;
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        font-size: 19px;
+        line-height: 34px;
+    }
 }
 
 h1 {
     font-size: 60px;
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+        font-size: 48px;
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        font-size: 54px;
+    }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        font-size: 60px;
+    }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        font-size: 66px;
+    }
+
+    // Extra-extra large devices (larger desktops, 1400px and up)
+    @media (min-width: 1400px) {
+        font-size: 72px;
+    }
+
+    // Ultra large devices (larger desktops, 1600px and up)
+    @media (min-width: 1600px) {
+        font-size: 78px;
+    }
 }
 
-h2 {
-    font-size: 50px;
-}
 
-h3 {
-    font-size: 40px;
-}
-
-h4 {
-    font-size: 30px;
-}
-
-h5 {
-    font-size: 20px;
-}
-
-h6 {
-    font-size: 15px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: $text-color;
-    font-weight: 400;
-    font-family: 'Teko', sans-serif;
-}
-
-/* =======  Margin  ======= */
-.mb-20 {
-    margin-bottom: 20px;
-}
-
-.mb-30 {
-    margin-bottom: 30px;
-}
-
-.mb-40 {
-    margin-bottom: 40px;
-}
-
-.mb-50 {
-    margin-bottom: 50px;
-}
-
-.mb-60 {
-    margin-bottom: 60px;
-}
-
-.mt-20 {
-    margin-top: 20px;
-}
-
-.mt-30 {
-    margin-top: 30px;
-}
-
-.mt-40 {
-    margin-top: 40px;
-}
-
-.mt-50 {
-    margin-top: 50px;
-}
-
-.mt-60 {
-    margin-top: 60px;
-}
-
-/* ======= Padding Styles  ======= */
 .section-padding {
     padding: 50px 0;
-
 
     // Small devices (landscape phones, 576px and up)
     @media (min-width: 576px) {
         padding: 60px 0;
+        font-size: 16px;
     }
 
     // Medium devices (tablets, 768px and up)
     @media (min-width: 768px) {
         padding: 70px 0;
+        font-size: 18px;
     }
 
     // Large devices (desktops, 992px and up)
     @media (min-width: 992px) {
         padding: 80px 0;
+        font-size: 20px;
     }
 
     // Extra large devices (large desktops, 1200px and up)
     @media (min-width: 1200px) {
         padding: 100px 0;
-    }
-}
-
-.padding-10 {
-    padding: 10px;
-}
-
-.padding-15 {
-    padding: 15px;
-}
-
-/* =======  Border Style  ======= */
-.bd-bottom {
-    border-bottom: 1px solid #333;
-}
-
-.bd-top {
-    border-top: 1px solid #333;
-}
-
-/* =======  Scrollbar  ======= */
-::-webkit-scrollbar {
-    width: 0px;
-}
-
-::-webkit-scrollbar-track {
-    background: #fff;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #292929;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #292929;
-}
-
-/* selection */
-::-webkit-selection {
-    color: $text-color;
-    background: rgba(0, 0, 0, 0.1);
-}
-
-::-moz-selection {
-    color: $text-color;
-    background: rgba(0, 0, 0, 0.1);
-}
-
-::selection {
-    color: $text-color;
-    background: rgba(0, 0, 0, 0.1);
-}
-
-/* =======  Preloader Styles  ======= */
-.loaded .site-preloader-wrap {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.site-preloader-wrap {
-    position: fixed;
-    z-index: 999;
-    height: 100%;
-    width: 100%;
-    background: #fff;
-    top: 0;
-    left: 0
-}
-
-.site-preloader-wrap .spinner {
-    background-color: $main-color;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -20px;
-    margin-top: -20px;
-}
-
-.spinner {
-    width: 40px;
-    height: 40px;
-
-    border-radius: 100%;
-    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
-    animation: sk-scaleout 1.0s infinite ease-in-out;
-}
-
-@-webkit-keyframes sk-scaleout {
-    0% {
-        -webkit-transform: scale(0)
+        font-size: 22px;
     }
 
-    100% {
-        -webkit-transform: scale(1.0);
-        opacity: 0;
-    }
-}
-
-@keyframes sk-scaleout {
-    0% {
-        -webkit-transform: scale(0);
-        transform: scale(0);
+    // Extra-extra large devices (larger desktops, 1400px and up)
+    @media (min-width: 1400px) {
+        padding: 120px 0;
+        font-size: 24px;
     }
 
-    100% {
-        -webkit-transform: scale(1.0);
-        transform: scale(1.0);
-        opacity: 0;
+    // Ultra large devices (larger desktops, 1600px and up)
+    @media (min-width: 1600px) {
+        padding: 140px 0;
+        font-size: 26px;
     }
 }

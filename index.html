@@ -41,7 +41,7 @@
 						<a target="_blank" href="#" type="button" class="btn btn-sm btn-info ml-3" id="pro_link">
 							View Website
 						</a>
-						<a target="_blank" href="#" type="button" class="btn btn-sm btn-secondary ml-2" id="pro_code">
+						<a target="_blank" href="#" type="button" class="btn btn-sm btn-secondary ml-2 btn-viewcode" id="pro_code">
 							View Code
 						</a>
 					</div>
@@ -58,17 +58,24 @@
 							<span class="small d-inline text-light lh-1" id="pro_summary"></span>
 						</p>
 						<p class="mb-1">
-							<b class="d-inline"> Obsticles:</b>
-							<span class="small d-inline text-light lh-1" id="pro_obsticles"></span>
+							<b class="d-inline"> Obstacles:</b>
+							<span class="small d-inline text-light lh-1" id="pro_obstacles"></span>
 						</p>
 						<p class="mb-1">
 							<b class="d-inline">Language:</b>
 							<span class="small d-inline text-light lh-1" id="pro_languages"></span>
 						</p>
 						<p class="mb-1">
-							<b class="d-inline">Updates:</b>
-							<span class="small d-inline text-light lh-1" id="pro_updates"></span>
+							<b class="d-inline">Framework:</b>
+							<span class="small d-inline text-light lh-1" id="pro_framework"></span>
 						</p>
+						<p class="mb-1">
+							<b class="d-inline">Features:</b>
+							<span class="small d-inline text-light lh-1" id="pro_features"></span>
+						</p>
+
+						 
+						
 						<hr class="my-3 bg-white">
 						<img class="img-fluid" id="pro_thumbnail" src="" alt="">
 					</div>
@@ -141,23 +148,27 @@
 		<section id="about" class="about-section section-padding bd-bottom px-4 px-md-5" data-scroll-index="1">
 			<div class="container">
 				<div class="row align-items-top">
-					<div class="col-md-12 sm-padding wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">
+					<div class="about-container col-md-12 sm-padding wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">
 						<div class="about-content">
 							<h2>Hey ! </h2>
-							<p>
-								check out some of the awesome things I've been working on recently.
+							<br>
+								I am a fullstack software developer with experience in languages such as Java, Python, and JavaScript, and proficiency in databases like SQL and MySQL. In my internship at Snap Inc, I developed additional features for an existing service and created a full-stack library project. I am fluent in Spanish and proficient in tools like GitHub and Git. I am committed to continually improving 
+								my skills and staying current with industry technologies.		</br>	</br>						
+								check out my resume and some of the awesome things I've been working on recently.
 							</p>
+							<button onclick="window.location='/files/Jackson_Cortez_Resume.pdf';">Download Resume</button>
 						</div>
-					</div>
-					<div class="col-md-7 sm-padding wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">
-
-					</div>
-					<div class="col-md-5 sm-padding wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1000ms">
 						<div class="about-bg">
 						
 							<!-- <img src="img/about.jpg" alt="img"> -->
 							<div class="dots"></div>
 						</div>
+					</div>
+					<div class="col-md-7 sm-padding wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">
+
+					</div>
+					<div class="about-bg col-md-5 sm-padding wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1000ms">
+						
 					</div>
 				</div>
 			</div>
@@ -303,27 +314,30 @@
 						<li class="active" data-filter="*">All</li>
 						<li data-filter=".website">website</li>
 					</ul> -->
+
+					
 					<!-- Portfolio Filter -->
 					<div class="row portfolio-items">
+
 						<div class="col-md-4 col-sm-6 padding-10 single-item website website">
 							<div class="portfolio-box">
-								<img src="img/port-3.jpg" alt="img">
+								<img src="img/port-2.jpg" alt="img">
 								<div class="portfolio-content">
 									<h3 class="text-center">
 										<a href="#" type="button" class="img-popup mt-4" data-toggle="modal" data-target="#exampleModal"
 											data-id="1">
-											COVID-19 TRACKER
+										Library Xpress
 
 											<span></span>
 										</a>
 
 										<div class="btns">
 											<button type="button" class="btn default-btn btn-sm lh-1 p-2 mt-3" data-toggle="modal"
-												data-target="#exampleModal" data-id="1">       
+												data-target="#exampleModal" data-id="1">
 												View Detail
 											</button>
 											<br />
-											<a href="https://covid19proj.herokuapp.com/" target="_blank"
+											<a href="https://librarycenter-production.up.railway.app/" target="_blank"
 												class="btn default-btn btn-sm lh-1 p-2 mt-3">
 												Preview
 											</a>
@@ -332,26 +346,107 @@
 								</div>
 							</div>
 						</div>
-					
-						
-					</div>
-					<!-- Second Container of Work Porfolio-->
-					<div class="row portfolio-items">
 						<div class="col-md-4 col-sm-6 padding-10 single-item website website">
 							<div class="portfolio-box">
-								<img src="img/port-2.jpg" alt="img">
+								<img src="img/Nikon2.PNG" alt="img">
 								<div class="portfolio-content">
 									<h3 class="text-center">
-										<a href="#" type="button" class="img-popup mt-4" data-toggle="modal" data-target="#exampleModal"
+										<a href="#" type="button" class="img-popup mt-" data-toggle="modal" data-target="#exampleModal"
 											data-id="2">
-											Library Center
+											Nikon D850
 
 											<span></span>
 										</a>
 
 										<div class="btns">
 											<button type="button" class="btn default-btn btn-sm lh-1 p-2 mt-3" data-toggle="modal"
-												data-target="#exampleModal" data-id="2">       
+												data-target="#exampleModal" data-id="2">
+												View Detail
+											</button>
+											<br />
+											<a href="https://vigilant-agnesi-39b86d.netlify.app/" target="_blank"
+												class="btn default-btn btn-sm lh-1 p-2 mt-3">
+												Preview
+											</a>
+										</div>
+									</h3>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 padding-10 single-item website website">
+							<div class="portfolio-box">
+								<img src="img/wworkers2.png  " alt="img">
+								<div class="portfolio-content">
+									<h3 class="text-center">
+										<a href="#" type="button" class="img-popup mt-4" data-toggle="modal" data-target="#exampleModal"
+											data-id="3">
+											Willing Workers
+
+											<span></span>
+										</a>
+
+										<div class="btns">
+											<button type="button" class="btn default-btn btn-sm lh-1 p-2 mt-3" data-toggle="modal"
+												data-target="#exampleModal" data-id="3">
+												View Detail
+											</button>
+											<br />
+											<a href="https://singular-biscotti-08deb7.netlify.app/" target="_blank"
+												class="btn default-btn btn-sm lh-1 p-2 mt-3">
+												Preview
+											</a>
+										</div>
+									</h3>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="row portfolio-items">
+						<div class="col-md-4 col-sm-6 padding-10 single-item website website">
+							<div class="portfolio-box">
+								<img src="img/ByteIt.JPG" alt="img">
+								<div class="portfolio-content">
+									<h3 class="text-center">
+										<a href="#" type="button" class="img-popup mt-4" data-toggle="modal" data-target="#exampleModal"
+											data-id="1">
+										Byte it
+
+											<span></span>
+										</a>
+
+										<div class="btns">
+											<button type="button" class="btn default-btn btn-sm lh-1 p-2 mt-3" data-toggle="modal"
+												data-target="#exampleModal" data-id="4">
+												View Detail
+											</button>
+											<br />
+											<a href="https://next13-experiment-beta.vercel.app/" target="_blank"
+												class="btn default-btn btn-sm lh-1 p-2 mt-3">
+												Preview
+											</a>
+										</div>
+									</h3>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="col-md-4 col-sm-6 padding-10 single-item website website">
+							<div class="portfolio-box">
+								<img src="img/port-2.jpg" alt="img">
+								<div class="portfolio-content">
+									<h3 class="text-center">
+										<a href="#" type="button" class="img-popup mt-4" data-toggle="modal" data-target="#exampleModal"
+											data-id="1">
+										Library Center
+
+											<span></span>
+										</a>
+
+										<div class="btns">
+											<button type="button" class="btn default-btn btn-sm lh-1 p-2 mt-3" data-toggle="modal"
+												data-target="#exampleModal" data-id="1">
 												View Detail
 											</button>
 											<br />
@@ -363,9 +458,66 @@
 									</h3>
 								</div>
 							</div>
-						</div>
-					
-						
+						</div> -->
+
+
+
+						<!-- <div class="col-md-4 col-sm-6 padding-10 single-item website website">
+							<div class="portfolio-box">
+								<img src="img/Nikon2.PNG" alt="img">
+								<div class="portfolio-content">
+									<h3 class="text-center">
+										<a href="#" type="button" class="img-popup mt-" data-toggle="modal" data-target="#exampleModal"
+											data-id="2">
+											Nikon D850
+
+											<span></span>
+										</a>
+
+										<div class="btns">
+											<button type="button" class="btn default-btn btn-sm lh-1 p-2 mt-3" data-toggle="modal"
+												data-target="#exampleModal" data-id="2">
+												View Detail
+											</button>
+											<br />
+											<a href="https://vigilant-agnesi-39b86d.netlify.app/" target="_blank"
+												class="btn default-btn btn-sm lh-1 p-2 mt-3">
+												Preview
+											</a>
+										</div>
+									</h3>
+								</div>
+							</div>
+						</div> -->
+<!-- 
+						<div class="col-md-4 col-sm-6 padding-10 single-item website website">
+							<div class="portfolio-box">
+								<img src="img/wworkers2.png" alt="img">
+								<div class="portfolio-content">
+									<h3 class="text-center">
+										<a href="#" type="button" class="img-popup mt-4" data-toggle="modal" data-target="#exampleModal"
+											data-id="3">
+											Willing Workers
+
+											<span></span>
+										</a>
+
+										<div class="btns">
+											<button type="button" class="btn default-btn btn-sm lh-1 p-2 mt-3" data-toggle="modal"
+												data-target="#exampleModal" data-id="3">
+												View Detail
+											</button>
+											<br />
+											<a href="https://singular-biscotti-08deb7.netlify.app/" target="_blank"
+												class="btn default-btn btn-sm lh-1 p-2 mt-3">
+												Preview
+											</a>
+										</div>
+									</h3>
+								</div>
+							</div>
+						</div> -->
+
 					</div>
 
 
@@ -449,116 +601,218 @@
 	<script src="js/main.js"></script>
 
 	<script>
-		var jsonDataProjects = [
+	
+var jsonDataProjects = [
+  {
+    pro_id: "1",
+    pro_title: "Library Xpress",
+    code_link: "https://github.com/Jay23Cee/library_center",
+    pro_link: "https://librarycenter-production.up.railway.app/",
+    pro_thumb: "img/port-2.jpg",
+    summary:
+      "Library Xpress is a web application for managing a library's collection. Users can browse the library's catalog, borrow books, and manage their accounts, while administrators can manage the library's collection and user accounts.",
+    obstacles:
+      "One of the main challenges of this project was deploying it using a Docker container on Heroku.",
+    languages: ["Go-lang", "Typescript"],
+	framework:["React"],
+    features: [
+      "It utilizes MongoDB for data storage.",
+      "The project includes a C.R.U.D. API for managing the library's collection.",
+      "User authentication and authorization are handled using JWT and cookies.",
+      "The project is deployed using a Docker container.",
+      "The project features a responsive design for different screen sizes.",
+      "The project includes client and admin authentication for accessing protected resources.",
+    ],
+    updates: [
+      "Replaced the table catalog with small divs for each item to improve user experience.",
+    ],
+  },
+  {
+    pro_id: "2",
+    pro_title: "Nikon D850 Website",
+    code_link: "https://github.com/Jay23Cee/Nikon_850_website",
+    pro_link: "https://vigilant-agnesi-39b86d.netlify.app/",
+    pro_thumb: "img/nikon.png",
+    summary:
+      "A website providing information and reviews on the Nikon D850 camera.",
+    obstacles: "",
+    languages: ["JavaScript", "HTML", "Sass", "CSS"],
+	framework:["Vanilla"],
+    features: [
+      "Responsive design for different screen sizes",
+      "Animated image slider for showcasing product images",
+      "Contact form for user queries",
+    ],
+    updates: [
+      "Add a gallery of images to showcase different aspects of the camera",
+      "Include information on where to buy the camera",
+    ],
+  },
+  {
+    pro_id: "3",
+    pro_title: "Willing Workers",
+    code_link: "https://github.com/Jay23Cee/WillingWorkersSite-1",
+    pro_link: "https://singular-biscotti-08deb7.netlify.app/",
+    pro_thumb: "img/wworkers2.JPG",
+    summary: "A website for a service provider for people with special needs.",
+    obstacles: "Aligning the animation on the right time.",
+    languages: [ "JavaScript", "HTML", "Sass", "CSS"],
+	framework:["React"],
+    features: [
+      "Responsive design for different screen sizes",
+      "Interactive animations to engage users",
+      "Contact form for user queries",
+    ],
+    updates: ["Update the 'About Us' section with latest information."],
+  },
+  {
+  "pro_id": "4",
+  "pro_title": "Byte It",
+  "code_link": "https://github.com/Jay23Cee/next13-experiment",
+  "pro_link": "https://next13-experiment-beta.vercel.app/",
+  "pro_thumb": "img/Byteit.JPG",
+  "summary": "It is a post that stores the post into a PostgreSQL database. It also uses Google login API. In addition, we are using Next.js and TypeScript. We also have a dashboard where the user can view and delete their own posts.",
+  "obstacles": "Managing state and data flow between client-side and server-side rendering in Next.js.",
+  "solution": "Using NextAuth.js as a centralized authentication library to securely manage user authentication and authorization on both the client-side and server-side. NextAuth.js also provides a session management API that can help manage state and data flow between client-side and server-side rendering.",
+  "languages": [
+    "JavaScript",
+    "HTML",
+    "Sass",
+    "CSS",
+    "TypeScript"
+  ],
+  "framework": [
+    "Next.js",
+    "React"
+  ],
+  "features": [
+    "Support for multiple authentication providers, including Google login API",
+    "Efficient data fetching with Next.js's built-in data fetching methods, such as `getStaticProps` or `getServerSideProps`",
+    "Responsive design for different screen sizes, optimized for mobile and desktop",
+    "User dashboard with the ability to view and delete their own posts",
+    "Advanced search functionality with filter and sorting options",
+    "Integration with a third-party email service for email notifications and newsletters",
+    "Social media sharing buttons for easy sharing of posts on popular social media platforms"
+  ]
+},
+];
+
+var pro_main_id = 0;
+
+var model_title = document.getElementById("exampleModalLabel");
+var pro_code = document.getElementById("pro_code");
+var pro_link = document.getElementById("pro_link");
+var pro_summary = document.getElementById("pro_summary");
+var pro_obstacles = document.getElementById("pro_obstacles");
+var pro_languages = document.getElementById("pro_languages");
+var pro_framework = document.getElementById("pro_framework");
+// var pro_updates = document.getElementById("pro_updates");
+var pro_thumbnail = document.getElementById("pro_thumbnail");
+var projectIndex = 0; // or any other value you want to initialize projectIndex with
+var pro_features = document.getElementById("pro_features");
+
+$("#exampleModal").on("show.bs.modal", function (event) {
+  console.log("MODAL OPEN SHOW");
+  var button = $(event.relatedTarget); // Button that triggered the modal
+  var pro_title = button.data("title"); // Extract info from data-* attributes
+  var pro_id = button.data("id");
+  document.getElementById("pro_id").value = pro_id;
+  pro_main_id = pro_id - 1;
+  var modal = $(this);
+  modal.find(".modal-title").text("Detail of " + pro_title);
+//   var pro_updates = document.getElementById("pro_updates");
+  JSONToHTMLTable(jsonDataProjects, pro_main_id);
+});
+
+function JSONToHTMLTable(jsonData, id_of_pro) {
+  //This Code gets all columns for header and stored in array col
+  var col = [];
+  for (var i = 0; i < jsonData.length; i++) {
+    for (var key in jsonData[i]) {
+      if (col.indexOf(key) === -1) {
+        col.push(key);
+      }
+    }
+  }
+
+  // This Code creates HTML table
+  var table = document.createElement("table");
+  // This Code getsrows for header creader above.
+  var tr = table.insertRow(-1);
+
+  for (var i = 0; i < col.length; i++) {
+    var th = document.createElement("th");
+    th.innerHTML = col[i];
+    tr.appendChild(th);
+  }
+
+  pro_main_id = document.getElementById("pro_id").value;
+  // This Code adds data to table as rows
+  for (var i = 0; i < jsonData.length; i++) {
+    tr = table.insertRow(-1);
+
+    for (var j = 0; j < col.length; j++) {
+      var tabCell = tr.insertCell(-1);
+
+      exampleModalLabel.innerHTML = jsonData[id_of_pro][col[1]];
+      pro_summary.innerHTML = "<br>  "+jsonData[id_of_pro]["summary"];
+      pro_obstacles.innerHTML ="<br>  "+jsonData[id_of_pro]["obstacles"];
+      pro_languages.innerHTML = "<br>  "+jsonData[id_of_pro]["language"];
+    //   pro_updates.innerHTML = jsonData[id_of_pro]["updates"];
+
+      // Set pro_features to an unordered list
+
+      pro_languages.innerHTML = "<ul>";
+      console.log(jsonData[id_of_pro]["languages"]);
+      for (var i = 0; i < jsonData[id_of_pro]["languages"].length; i++) {
+        // Add each feature to the list as a list item
+        pro_languages.innerHTML +=
+          "<li>" + jsonData[id_of_pro]["languages"][i] + "</li>";
+      }
+      pro_languages.innerHTML += "</ul>";
 
 
-			{
-				"pro_id": "1",
-				"pro_title": "COVID-19 TRACKER",
-				"code_link": "https://github.com/Jay23Cee/Covid19",
-				"pro_link": "https://covid19proj.herokuapp.com/",
-				"pro_thumb": "img/port-2.jpg",
-				"summary": "A website that with Covid-19 Data",
-				"obsticles": "They were many obsticles with this project. The most difficult was uploading the Flask project into Heroku.Solution was to download the proper setting configuration and create a requirement text file. use git to push and commit to Heroku.",
-				"language": "Flask, Python, Html,SaSS,CSS,Javascript",
-				"updates": "Needs more Data to be display. U.S Graph by state",
-			},
-			{
-				"pro_id": "2",
-				"pro_title": "Library Center",
-				"code_link": "https://github.com/Jay23Cee/library_center",
-				"pro_link": "https://library-center.herokuapp.com/",
-				"pro_thumb": "img/port-2.jpg",
-				"summary": "A website that with allows admin to enter data regarding Books.",
-				"obsticles": "The most difficult was uploading this project using a Docker container into Heroku",
-				"language": "Golang,React, Typescript, Sass, Mongodb",
-				"updates": "Creating a user login for guest, users and admin",
-			},
-		
-		]
-
-		var pro_main_id = 0;
-
-		var model_title = document.getElementById("exampleModalLabel");
-		var pro_code = document.getElementById("pro_code");
-		var pro_link = document.getElementById("pro_link");
-		var pro_summary = document.getElementById("pro_summary");
-		var pro_obsticles = document.getElementById("pro_obsticles");
-		var pro_languages = document.getElementById("pro_languages");
-		var pro_updates = document.getElementById("pro_updates");
-		var pro_thumbnail = document.getElementById("pro_thumbnail");
-
-		$('#exampleModal').on('show.bs.modal', function (event) {
-			var button = $(event.relatedTarget) // Button that triggered the modal
-			var pro_title = button.data('title') // Extract info from data-* attributes 
-			var pro_id = button.data('id')
-			document.getElementById("pro_id").value = pro_id
-			pro_main_id = pro_id - 1
-			var modal = $(this)
-			modal.find('.modal-title').text('Detail of ' + pro_title)
-			var pro_updates = document.getElementById("pro_updates")
-			JSONToHTMLTable(jsonDataProjects, pro_main_id)
-		})
+      pro_framework.innerHTML = "<ul>";
+      console.log(jsonData[id_of_pro]["framework"]);
+      for (var i = 0; i < jsonData[id_of_pro]["framework"].length; i++) {
+        // Add each feature to the list as a list item
+        pro_framework.innerHTML +=
+          "<li>" + jsonData[id_of_pro]["framework"][i] + "</li>";
+      }
+	  pro_framework.innerHTML += "</ul>";
 
 
-		function JSONToHTMLTable(jsonData, id_of_pro) {
+      // Set pro_features to an unordered list
+      pro_features.innerHTML = "<ul>";
+      for (var i = 0; i < jsonData[id_of_pro]["features"].length; i++) {
+        // Add each feature to the list as a list item
+        pro_features.innerHTML +=
+          "<li>" + jsonData[id_of_pro]["features"][i] + "</li>";
+      }
+      pro_features.innerHTML += "</ul>";
 
-			//This Code gets all columns for header and stored in array col
-			var col = [];
-			for (var i = 0; i < jsonData.length; i++) {
-				for (var key in jsonData[i]) {
-					if (col.indexOf(key) === -1) {
-						col.push(key);
-					}
-				}
-			}
+      if (jsonData[id_of_pro][col[4]] != "") {
+        pro_thumbnail.src = jsonData[id_of_pro][col[4]];
+      } else {
+        pro_thumbnail.style.display = "none";
+      }
 
-			// This Code creates HTML table
-			var table = document.createElement("table");
-			// This Code getsrows for header creader above.
-			var tr = table.insertRow(-1);
+      if (jsonData[id_of_pro][col[2]] != "") {
+        pro_code.href = jsonData[id_of_pro][col[2]];
+      } else {
+        pro_code.style.display = "none";
+      }
+      if (jsonData[id_of_pro][col[3]]) {
+        pro_link.href = jsonData[id_of_pro][col[3]];
+      } else {
+        pro_link.style.display = "none";
+      }
 
-			for (var i = 0; i < col.length; i++) {
-				var th = document.createElement("th");
-				th.innerHTML = col[i];
-				tr.appendChild(th);
-			}
+      console.log(jsonData[id_of_pro][col[3]]);
+    }
+  }
+}
 
-			pro_main_id = document.getElementById("pro_id").value;
-			// This Code adds data to table as rows
-			for (var i = 0; i < jsonData.length; i++) {
-				tr = table.insertRow(-1);
-
-				for (var j = 0; j < col.length; j++) {
-					var tabCell = tr.insertCell(-1);
-
-					exampleModalLabel.innerHTML = jsonData[id_of_pro][col[1]];
-					pro_summary.innerHTML = jsonData[id_of_pro][col[5]];
-					pro_obsticles.innerHTML = jsonData[id_of_pro][col[6]];
-					pro_languages.innerHTML = jsonData[id_of_pro][col[7]];
-					pro_updates.innerHTML = jsonData[id_of_pro][col[8]];
-
-					if (jsonData[id_of_pro][col[4]] != "") {
-						pro_thumbnail.src = jsonData[id_of_pro][col[4]];
-					} else {
-						pro_thumbnail.style.display = "none";
-					}
-
-					if (jsonData[id_of_pro][col[2]] != "") {
-						pro_code.href = jsonData[id_of_pro][col[2]];
-					} else {
-						pro_code.style.display = "none";
-					}
-					if (jsonData[id_of_pro][col[3]]) {
-						pro_link.href = jsonData[id_of_pro][col[3]];
-					} else {
-						pro_link.style.display = "none";
-					}
-
-					console.log(jsonData[id_of_pro][col[3]]);
-				}
-			}
-		}
 	</script>
 
 </body>

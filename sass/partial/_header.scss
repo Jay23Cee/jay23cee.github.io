@@ -11,7 +11,7 @@
         }
 
         h4 {
-            font-size: 20px;
+          //  font-size: 20px;
             font-weight: 400;
             text-transform: uppercase;
             margin-bottom: 0;
@@ -21,7 +21,7 @@
         }
 
         h1 {
-            font-size: 75px;
+        //   font-size: 75px;
             color: #fff;
             -webkit-animation-delay: .6s;
             animation-delay: .6s;
@@ -31,7 +31,7 @@
         }
 
         p {
-            font-size: 18px;
+          //  font-size: 18px;
             font-weight: 400;
             margin-top: 15px;
             color: #fff;
@@ -76,4 +76,23 @@
 
 .header.video {
     overflow: hidden;
+}
+
+.modal-header{
+    h5{
+        color:rgb(0, 208, 255);
+    }
+
+    .btn-viewcode{
+        background-color:rgba(249, 232, 1, 0.932);
+        color:black;
+        &:hover{
+            background-color: red;
+            color:white;
+        }
+        
+    }
+   .btn:hover{
+        background-color: red;
+    }
 }
