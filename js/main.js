@@ -101,3 +101,12 @@ $(function () {
     });
 
 });
+
+
+
+var carouselItems = document.querySelectorAll(".carousel-item");
+jsonDataProjects.forEach(function(project, index) {
+  var carouselItem = carouselItems[index];
+  var img = carouselItem.querySelector("img");
+  img.src = project.pro_thumb;
+});
