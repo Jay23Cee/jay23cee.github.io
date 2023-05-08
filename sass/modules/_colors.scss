@@ -22,3 +22,14 @@ $text-color: rgb(80, 80, 80);
 $secondary-color: #0926ffcc;
 $accent-color: #03AFC2;
 
+$color-blue: #3A8EBA; // a mid-tone blue
+$color-light-blue: #6CC3ED; // a light, vibrant blue
+$color-dark-blue: #1E5372; // a dark blue for text and accents
+
+$color-orange: #FFB85F; // a bright, warm orange
+$color-yellow: #F5D547; // a bright, sunny yellow
+$color-green: #A3CB38; // a bright, fresh green
+
+
+$main-gradient: linear-gradient(356deg, $color-yellow 27%, $color-orange 100%);
+$second-gradient: linear-gradient(356deg, $color-light-blue 27%, $color-orange 100%);

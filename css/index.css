@@ -505,8 +505,8 @@
     transition-duration: 0s;
   }
   .dl-side-content > .logo,
-.dl-fixed-sidebar + .dl-burger-menu,
-.dl-fixedsidebar-bg-overlay {
+  .dl-fixed-sidebar + .dl-burger-menu,
+  .dl-fixedsidebar-bg-overlay {
     display: none;
   }
   .dl-fixed-sidebar .logo {
@@ -534,7 +534,7 @@
     margin-left: auto;
   }
   .dl-sidebar-left,
-.dl-sidebar-right {
+  .dl-sidebar-right {
     -webkit-transform: translateX(0%);
     -moz-transform: translateX(0%);
     -o-transform: translateX(0%);
@@ -1259,10 +1259,6 @@ h1 {
 /* ==========================================================================
    About Section
    ========================================================================== */
-.about-section {
-  background: #f3f2f1;
-}
-
 .about-container {
   display: flex;
   flex-direction: column-reverse;
